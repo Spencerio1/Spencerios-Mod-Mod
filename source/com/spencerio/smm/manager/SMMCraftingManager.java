@@ -134,5 +134,27 @@ public class SMMCraftingManager
 			"/ ",
 			'e', Items.emerald, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.redstoneHelmet), new Object[] {
+			"rrr",
+			"r r",
+			'r', Items.redstone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.redstoneChestplate), new Object[] {
+			"r r",
+			"rrr",
+			"rrr",
+			'r', Items.redstone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.redstoneLeggings), new Object[] {
+			"rrr",
+			"r r",
+			"r r",
+			'r', Items.redstone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.redstoneBoots), new Object[] {
+			"r r",
+			"r r",
+			'r', Items.redstone
+		});
 	}
 }
