@@ -76,5 +76,27 @@ public class SMMCraftingManager
 			"/",
 			'c', Items.coal, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.emeraldHelmet), new Object[] {
+			"eee",
+			"e e",
+			'e', Items.emerald
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.emeraldChestplate), new Object[] {
+			"e e",
+			"eee",
+			"eee",
+			'e', Items.emerald
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.emeraldLeggings), new Object[] {
+			"eee",
+			"e e",
+			"e e",
+			'e', Items.emerald
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.emeraldBoots), new Object[] {
+			"e e",
+			"e e",
+			'e', Items.emerald
+		});
 	}
 }

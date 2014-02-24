@@ -1,0 +1,16 @@
+[
+{
+  "modid": "spencerio_smm",
+  "name": "Spencerio's Mod Mod",
+  "description": "A mod with the hope of making Minecraft much more fun and rewarding again! Special thanks to everyone who's supported this mod in any way.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://www.minecraftforum.net/topic/2067837-164-forge-ssp-spencerios-mod-mod-4850-dls/",
+  "updateUrl": "",
+  "authorList": ["Spencerio"],
+  "credits": "Original Mod by Spencerio",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

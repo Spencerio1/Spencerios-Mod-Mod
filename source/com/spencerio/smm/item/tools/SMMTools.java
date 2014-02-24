@@ -20,10 +20,10 @@ public class SMMTools
 	
 	public static void initTools()
 	{
-		GameRegistry.registerItem(coalPickaxe, Reference.MODID + "." + coalPickaxe.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(coalAxe, Reference.MODID + "." + coalAxe.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(coalShovel, Reference.MODID + "." + coalShovel.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(coalHoe, Reference.MODID + "." + coalHoe.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(coalSword, Reference.MODID + "." + coalSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(coalPickaxe, coalPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(coalAxe, coalAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(coalShovel, coalShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(coalHoe, coalHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(coalSword, coalSword.getUnlocalizedName().substring(5));
 	}
 }
