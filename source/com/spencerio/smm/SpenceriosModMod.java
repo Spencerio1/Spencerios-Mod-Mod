@@ -1,5 +1,6 @@
 package com.spencerio.smm;
 
+import com.spencerio.smm.item.armor.SMMArmor;
 import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.Mod;
@@ -12,6 +13,6 @@ public class SpenceriosModMod
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		
+		SMMArmor.initArmor();
 	}
 }
