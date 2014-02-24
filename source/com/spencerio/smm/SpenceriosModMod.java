@@ -1,7 +1,9 @@
 package com.spencerio.smm;
 
 import com.spencerio.smm.item.armor.SMMArmor;
+import com.spencerio.smm.item.tools.SMMTools;
 import com.spencerio.smm.lib.Reference;
+import com.spencerio.smm.manager.SMMCraftingManager;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -14,5 +16,7 @@ public class SpenceriosModMod
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		SMMArmor.initArmor();
+		SMMTools.initTools();
+		SMMCraftingManager.registerRecipes();
 	}
 }
