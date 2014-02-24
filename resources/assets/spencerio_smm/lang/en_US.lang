@@ -3,6 +3,11 @@ item.coalAxe.name=Coal Axe
 item.coalShovel.name=Coal Shovel
 item.coalHoe.name=Coal Hoe
 item.coalSword.name=Coal Sword
+item.emeraldPickaxe.name=Emerald Pickaxe
+item.emeraldAxe.name=Emerald Axe
+item.emeraldShovel.name=Emerald Shovel
+item.emeraldHoe.name=Emerald Hoe
+item.emeraldSword.name=Emerald Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

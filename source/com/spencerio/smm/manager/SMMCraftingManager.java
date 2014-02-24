@@ -98,5 +98,41 @@ public class SMMCraftingManager
 			"e e",
 			'e', Items.emerald
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.emeraldPickaxe), new Object[] {
+			"eee",
+			" / ",
+			" / ",
+			'e', Items.emerald, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.emeraldAxe), new Object[] {
+			"ee",
+			"e/",
+			" /",
+			'e', Items.emerald, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.emeraldAxe), new Object[] {
+			"ee",
+			"/e",
+			"/ ",
+			'e', Items.emerald, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.emeraldShovel), new Object[] {
+			"e",
+			"/",
+			"/",
+			'e', Items.emerald, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.emeraldHoe), new Object[] {
+			"ee",
+			" /",
+			" /",
+			'e', Items.emerald, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.emeraldHoe), new Object[] {
+			"ee",
+			"/ ",
+			"/ ",
+			'e', Items.emerald, '/', Items.stick
+		});
 	}
 }
