@@ -12,7 +12,7 @@ public class ItemSMMArmor extends ItemArmor
 	{
 		super(armorMaterial, par0, type);
 		armorName = armorPrefix;
-		this.setCreativeTab(SpenceriosModMod.tabSMM);
+		this.setCreativeTab(SpenceriosModMod.tabSMMArmor);
 	}
 	public String armorName;
 	

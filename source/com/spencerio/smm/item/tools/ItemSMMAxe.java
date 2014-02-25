@@ -8,6 +8,6 @@ public class ItemSMMAxe extends ItemAxe
 {
 	protected ItemSMMAxe(ToolMaterial toolMaterial) {
 		super(toolMaterial);
-		this.setCreativeTab(SpenceriosModMod.tabSMM);
+		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
 	}
 }

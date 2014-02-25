@@ -8,6 +8,6 @@ public class ItemSMMSword extends ItemSword
 {
 	public ItemSMMSword(ToolMaterial toolMaterial) {
 		super(toolMaterial);
-		this.setCreativeTab(SpenceriosModMod.tabSMM);
+		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
 	}
 }

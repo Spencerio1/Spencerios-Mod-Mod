@@ -26,5 +26,11 @@ item.redstoneHelmet.name=Redstone Helmet
 item.redstoneChestplate.name=Redstone Chestplate
 item.redstoneLeggings.name=Redstone Leggings
 item.redstoneBoots.name=Redstone Boots
+item.lapisLazuliHelmet.name=Lapis Lazuli Helmet
+item.lapisLazuliChestplate.name=Lapis Lazuli Chestplate
+item.lapisLazuliLeggings.name=Lapis Lazuli Leggings
+item.lapisLazuliBoots.name=Lapis Lazuli Boots
 
-itemGroup.tabSMM=Spencerio's Mod Mod
+
+itemGroup.tabSMMArmor=Spencerio's Armor
+itemGroup.tabSMMTools=Spencerio's Tools

@@ -8,6 +8,6 @@ public class ItemSMMHoe extends ItemHoe
 {
 	public ItemSMMHoe(ToolMaterial toolMaterial) {
 		super(toolMaterial);
-		this.setCreativeTab(SpenceriosModMod.tabSMM);
+		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
 	}
 }

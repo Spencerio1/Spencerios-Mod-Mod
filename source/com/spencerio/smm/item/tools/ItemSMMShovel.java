@@ -8,6 +8,6 @@ public class ItemSMMShovel extends ItemSpade
 {
 	public ItemSMMShovel(ToolMaterial toolMaterial) {
 		super(toolMaterial);
-		this.setCreativeTab(SpenceriosModMod.tabSMM);
+		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
 	}
 }

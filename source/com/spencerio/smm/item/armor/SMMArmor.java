@@ -13,6 +13,7 @@ public class SMMArmor
 	public static final ArmorMaterial COAL = EnumHelper.addArmorMaterial("COAL", 30, new int[] {4, 7, 6, 5}, 64);
 	public static final ArmorMaterial EMERALD = EnumHelper.addArmorMaterial("EMERALD", 35, new int[] {5, 8, 7, 6}, 10);
 	public static final ArmorMaterial REDSTONE = EnumHelper.addArmorMaterial("REDSTONE", 25, new int[] {3, 6, 5, 4}, 60);
+	public static final ArmorMaterial LAPISLAZULI = EnumHelper.addArmorMaterial("LAPISLAZULI", 20, new int[] {2, 5, 4, 3}, 50);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -26,6 +27,10 @@ public class SMMArmor
 	public static final Item redstoneChestplate = new ItemSMMArmor(REDSTONE, 0, 1, "redstone").setUnlocalizedName("redstoneChestplate").setTextureName(Reference.MODID + ":" + "redstoneChestplate");
 	public static final Item redstoneLeggings = new ItemSMMArmor(REDSTONE, 0, 2, "redstone").setUnlocalizedName("redstoneLeggings").setTextureName(Reference.MODID + ":" + "redstoneLeggings");
 	public static final Item redstoneBoots = new ItemSMMArmor(REDSTONE, 0, 3, "redstone").setUnlocalizedName("redstoneBoots").setTextureName(Reference.MODID + ":" + "redstoneBoots");
+	public static final Item lapisLazuliHelmet = new ItemSMMArmor(LAPISLAZULI, 0, 0, "lapisLazuli").setUnlocalizedName("lapisLazuliHelmet").setTextureName(Reference.MODID + ":" + "lapisLazuliHelmet");
+	public static final Item lapisLazuliChestplate = new ItemSMMArmor(LAPISLAZULI, 0, 1, "lapisLazuli").setUnlocalizedName("lapisLazuliChestplate").setTextureName(Reference.MODID + ":" + "lapisLazuliChestplate");
+	public static final Item lapisLazuliLeggings = new ItemSMMArmor(LAPISLAZULI, 0, 2, "lapisLazuli").setUnlocalizedName("lapisLazuliLeggings").setTextureName(Reference.MODID + ":" + "lapisLazuliLeggings");
+	public static final Item lapisLazuliBoots = new ItemSMMArmor(LAPISLAZULI, 0, 3, "lapisLazuli").setUnlocalizedName("lapisLazuliBoots").setTextureName(Reference.MODID + ":" + "lapisLazuliBoots");
 	
 	public static void initArmor()
 	{
@@ -41,5 +46,9 @@ public class SMMArmor
 		GameRegistry.registerItem(redstoneChestplate, redstoneChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(redstoneLeggings, redstoneLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(redstoneBoots, redstoneBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliHelmet, lapisLazuliHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliChestplate, lapisLazuliChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliLeggings, lapisLazuliLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliBoots, lapisLazuliBoots.getUnlocalizedName().substring(5));
 	}
 }

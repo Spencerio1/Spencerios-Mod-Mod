@@ -8,6 +8,6 @@ public class ItemSMMPickaxe extends ItemPickaxe
 {
 	protected ItemSMMPickaxe(ToolMaterial toolMaterial) {
 		super(toolMaterial);
-		this.setCreativeTab(SpenceriosModMod.tabSMM);
+		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
 	}
 }

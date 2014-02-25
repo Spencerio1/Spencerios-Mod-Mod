@@ -204,5 +204,27 @@ public class SMMCraftingManager
 			"/",
 			'r', Items.redstone, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.lapisLazuliHelmet), new Object[] {
+			"lll",
+			"l l",
+			'l', new ItemStack(Items.dye, 1, 4)
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.lapisLazuliChestplate), new Object[] {
+			"l l",
+			"lll",
+			"lll",
+			'l', new ItemStack(Items.dye, 1, 4)
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.lapisLazuliLeggings), new Object[] {
+			"lll",
+			"l l",
+			"l l",
+			'l', new ItemStack(Items.dye, 1, 4)
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.lapisLazuliBoots), new Object[] {
+			"l l",
+			"l l",
+			'l', new ItemStack(Items.dye, 1, 4)
+		});
 	}
 }

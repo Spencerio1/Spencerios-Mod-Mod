@@ -23,7 +23,13 @@ public class SpenceriosModMod
 		SMMCraftingManager.registerRecipes();
 	}
 	
-	public static CreativeTabs tabSMM = new CreativeTabs("tabSMM") {
+	public static CreativeTabs tabSMMArmor = new CreativeTabs("tabSMMArmor") {
+		public Item getTabIconItem() {
+			return SMMArmor.redstoneChestplate;
+		}
+	};
+	
+	public static CreativeTabs tabSMMTools = new CreativeTabs("tabSMMTools") {
 		public Item getTabIconItem() {
 			return SMMTools.redstoneSword;
 		}
