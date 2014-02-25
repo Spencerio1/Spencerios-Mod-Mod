@@ -8,6 +8,11 @@ item.emeraldAxe.name=Emerald Axe
 item.emeraldShovel.name=Emerald Shovel
 item.emeraldHoe.name=Emerald Hoe
 item.emeraldSword.name=Emerald Sword
+item.redstonePickaxe.name=Redstone Pickaxe
+item.redstoneAxe.name=Redstone Axe
+item.redstoneShovel.name=Redstone Shovel
+item.redstoneHoe.name=Redstone Hoe
+item.redstoneSword.name=Redstone Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate
@@ -21,3 +26,5 @@ item.redstoneHelmet.name=Redstone Helmet
 item.redstoneChestplate.name=Redstone Chestplate
 item.redstoneLeggings.name=Redstone Leggings
 item.redstoneBoots.name=Redstone Boots
+
+itemGroup.tabSMM=Spencerio's Mod Mod

@@ -1,5 +1,7 @@
 package com.spencerio.smm.item.armor;
 
+import com.spencerio.smm.SpenceriosModMod;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
@@ -10,6 +12,7 @@ public class ItemSMMArmor extends ItemArmor
 	{
 		super(armorMaterial, par0, type);
 		armorName = armorPrefix;
+		this.setCreativeTab(SpenceriosModMod.tabSMM);
 	}
 	public String armorName;
 	

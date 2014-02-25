@@ -8,10 +8,12 @@ import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
+
 public class SMMTools
 {
 	public static final ToolMaterial COAL = EnumHelper.addToolMaterial("COAL", 1, 128, 30F, 2, 64);
 	public static final ToolMaterial EMERALD = EnumHelper.addToolMaterial("EMERALD", 5, 2048, 10F, 3, 10);
+	public static final ToolMaterial REDSTONE = EnumHelper.addToolMaterial("REDSTONE", 2, 1048, 16F, 3, 60);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -23,6 +25,11 @@ public class SMMTools
 	public static final Item emeraldShovel = new ItemSMMShovel(EMERALD).setUnlocalizedName("emeraldShovel").setTextureName(Reference.MODID + ":" + "emeraldShovel");
 	public static final Item emeraldHoe = new ItemSMMHoe(EMERALD).setUnlocalizedName("emeraldHoe").setTextureName(Reference.MODID + ":" + "emeraldHoe");
 	public static final Item emeraldSword = new ItemSMMSword(EMERALD).setUnlocalizedName("emeraldSword").setTextureName(Reference.MODID + ":" + "emeraldSword");
+	public static final Item redstonePickaxe = new ItemSMMPickaxe(REDSTONE).setUnlocalizedName("redstonePickaxe").setTextureName(Reference.MODID + ":" + "redstonePickaxe");
+	public static final Item redstoneAxe = new ItemSMMAxe(REDSTONE).setUnlocalizedName("redstoneAxe").setTextureName(Reference.MODID + ":" + "redstoneAxe");
+	public static final Item redstoneShovel = new ItemSMMShovel(REDSTONE).setUnlocalizedName("redstoneShovel").setTextureName(Reference.MODID + ":" + "redstoneShovel");
+	public static final Item redstoneHoe = new ItemSMMHoe(REDSTONE).setUnlocalizedName("redstoneHoe").setTextureName(Reference.MODID + ":" + "redstoneHoe");
+	public static final Item redstoneSword = new ItemSMMSword(REDSTONE).setUnlocalizedName("redstoneSword").setTextureName(Reference.MODID + ":" + "redstoneSword");
 	
 	public static void initTools()
 	{
@@ -36,5 +43,10 @@ public class SMMTools
 		GameRegistry.registerItem(emeraldShovel, emeraldShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(emeraldHoe, emeraldHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(emeraldSword, emeraldSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(redstonePickaxe, redstonePickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(redstoneAxe, redstoneAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(redstoneShovel, redstoneShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(redstoneHoe, redstoneHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(redstoneSword, redstoneSword.getUnlocalizedName().substring(5));
 	}
 }

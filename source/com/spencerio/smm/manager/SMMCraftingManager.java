@@ -134,6 +134,12 @@ public class SMMCraftingManager
 			"/ ",
 			'e', Items.emerald, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.emeraldSword), new Object[] {
+			"e",
+			"e",
+			"/",
+			'e', Items.emerald, '/', Items.stick
+		});
 		GameRegistry.addRecipe(new ItemStack(SMMArmor.redstoneHelmet), new Object[] {
 			"rrr",
 			"r r",
@@ -155,6 +161,48 @@ public class SMMCraftingManager
 			"r r",
 			"r r",
 			'r', Items.redstone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.redstonePickaxe), new Object[] {
+			"rrr",
+			" / ",
+			" / ",
+			'r', Items.redstone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.redstoneAxe), new Object[] {
+			"rr",
+			"r/",
+			" /",
+			'r', Items.redstone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.redstoneAxe), new Object[] {
+			"rr",
+			"/r",
+			"/ ",
+			'r', Items.redstone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.redstoneShovel), new Object[] {
+			"r",
+			"/",
+			"/",
+			'r', Items.redstone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.redstoneHoe), new Object[] {
+			"rr",
+			" /",
+			" /",
+			'r', Items.redstone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.redstoneHoe), new Object[] {
+			"rr",
+			"/ ",
+			"/ ",
+			'r', Items.redstone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.redstoneSword), new Object[] {
+			"r",
+			"r",
+			"/",
+			'r', Items.redstone, '/', Items.stick
 		});
 	}
 }

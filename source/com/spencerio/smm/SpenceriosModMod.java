@@ -1,5 +1,8 @@
 package com.spencerio.smm;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
 import com.spencerio.smm.item.armor.SMMArmor;
 import com.spencerio.smm.item.tools.SMMTools;
 import com.spencerio.smm.lib.Reference;
@@ -19,4 +22,10 @@ public class SpenceriosModMod
 		SMMTools.initTools();
 		SMMCraftingManager.registerRecipes();
 	}
+	
+	public static CreativeTabs tabSMM = new CreativeTabs("tabSMM") {
+		public Item getTabIconItem() {
+			return SMMTools.redstoneSword;
+		}
+	};
 }
