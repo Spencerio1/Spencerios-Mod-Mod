@@ -14,6 +14,7 @@ public class SMMTools
 	public static final ToolMaterial COAL = EnumHelper.addToolMaterial("COAL", 1, 128, 30F, 2, 64);
 	public static final ToolMaterial EMERALD = EnumHelper.addToolMaterial("EMERALD", 5, 2048, 10F, 3, 10);
 	public static final ToolMaterial REDSTONE = EnumHelper.addToolMaterial("REDSTONE", 2, 1048, 16F, 3, 60);
+	public static final ToolMaterial LAPISLAZULI = EnumHelper.addToolMaterial("LAPISLAZULI", 1, 512, 20F, 2, 50);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -30,6 +31,11 @@ public class SMMTools
 	public static final Item redstoneShovel = new ItemSMMShovel(REDSTONE).setUnlocalizedName("redstoneShovel").setTextureName(Reference.MODID + ":" + "redstoneShovel");
 	public static final Item redstoneHoe = new ItemSMMHoe(REDSTONE).setUnlocalizedName("redstoneHoe").setTextureName(Reference.MODID + ":" + "redstoneHoe");
 	public static final Item redstoneSword = new ItemSMMSword(REDSTONE).setUnlocalizedName("redstoneSword").setTextureName(Reference.MODID + ":" + "redstoneSword");
+	public static final Item lapisLazuliPickaxe = new ItemSMMPickaxe(LAPISLAZULI).setUnlocalizedName("lapisLazuliPickaxe").setTextureName(Reference.MODID + ":" + "lapisLazuliPickaxe");
+	public static final Item lapisLazuliAxe = new ItemSMMAxe(LAPISLAZULI).setUnlocalizedName("lapisLazuliAxe").setTextureName(Reference.MODID + ":" + "lapisLazuliAxe");
+	public static final Item lapisLazuliShovel = new ItemSMMShovel(LAPISLAZULI).setUnlocalizedName("lapisLazuliShovel").setTextureName(Reference.MODID + ":" + "lapisLazuliShovel");
+	public static final Item lapisLazuliHoe = new ItemSMMHoe(LAPISLAZULI).setUnlocalizedName("lapisLazuliHoe").setTextureName(Reference.MODID + ":" + "lapisLazuliHoe");
+	public static final Item lapisLazuliSword = new ItemSMMSword(LAPISLAZULI).setUnlocalizedName("lapisLazuliSword").setTextureName(Reference.MODID + ":" + "lapisLazuliSword");
 	
 	public static void initTools()
 	{
@@ -48,5 +54,10 @@ public class SMMTools
 		GameRegistry.registerItem(redstoneShovel, redstoneShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(redstoneHoe, redstoneHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(redstoneSword, redstoneSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliPickaxe, lapisLazuliPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliAxe, lapisLazuliAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliShovel, lapisLazuliShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliHoe, lapisLazuliHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(lapisLazuliSword, lapisLazuliSword.getUnlocalizedName().substring(5));
 	}
 }

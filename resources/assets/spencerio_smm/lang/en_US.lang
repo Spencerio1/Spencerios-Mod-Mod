@@ -13,6 +13,11 @@ item.redstoneAxe.name=Redstone Axe
 item.redstoneShovel.name=Redstone Shovel
 item.redstoneHoe.name=Redstone Hoe
 item.redstoneSword.name=Redstone Sword
+item.lapisLazuliPickaxe.name=Lapis Lazuli Pickaxe
+item.lapisLazuliAxe.name=Lapis Lazuli Axe
+item.lapisLazuliShovel.name=Lapis Lazuli Shovel
+item.lapisLazuliHoe.name=Lapis Lazuli Hoe
+item.lapisLazuliSword.name=Lapis Lazuli Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

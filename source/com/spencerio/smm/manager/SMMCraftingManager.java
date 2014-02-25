@@ -226,5 +226,47 @@ public class SMMCraftingManager
 			"l l",
 			'l', new ItemStack(Items.dye, 1, 4)
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.lapisLazuliPickaxe), new Object[] {
+			"lll",
+			" / ",
+			" / ",
+			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.lapisLazuliAxe), new Object[] {
+			"ll",
+			"l/",
+			" /",
+			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.lapisLazuliAxe), new Object[] {
+			"ll",
+			"/l",
+			"/ ",
+			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.lapisLazuliShovel), new Object[] {
+			"l",
+			"/",
+			"/",
+			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.lapisLazuliHoe), new Object[] {
+			"ll",
+			" /",
+			" /",
+			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.lapisLazuliHoe), new Object[] {
+			"ll",
+			"/ ",
+			"/ ",
+			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.lapisLazuliSword), new Object[] {
+			"l",
+			"l",
+			"/",
+			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
+		});
 	}
 }
