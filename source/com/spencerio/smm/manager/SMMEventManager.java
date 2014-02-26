@@ -2,6 +2,8 @@ package com.spencerio.smm.manager;
 
 import java.util.Random;
 
+import com.spencerio.smm.block.SMMBlocks;
+
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
@@ -27,7 +29,7 @@ public class SMMEventManager implements IWorldGenerator
     }
     private void generateSurface(World world, Random random, int x, int z)
     {
-    	
+    	this.addOreSpawn(SMMBlocks.earthQuartzOre, world, random, x, z, 16, 16, 7, 13, 2, 63);
     }
     private void generateNether(World world, Random random, int x, int z)
     {
@@ -36,7 +38,7 @@ public class SMMEventManager implements IWorldGenerator
 
 	public void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY)
 	{
-	    assert maxY > minY: "The maximum Y must be greater than the Minimum Y";
+	    assert maxY > minY: "addOreSpawn: The maximum Y must be greater than the Minimum Y";
 	    assert maxX > 0 && maxX <= 16: "addOreSpawn: The Maximum X must be greater than 0 and less than 17";
 	    assert minY > 0: "addOreSpawn: The Minimum Y must be greater than 0";
 	    assert maxY < 256 && maxY > 0: "addOreSpawn: The Maximum Y must be less than 256 but greater than 0";
