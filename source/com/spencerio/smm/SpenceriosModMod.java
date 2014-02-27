@@ -4,6 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 import com.spencerio.smm.block.SMMBlocks;
+import com.spencerio.smm.item.SMMItems;
 import com.spencerio.smm.item.armor.SMMArmor;
 import com.spencerio.smm.item.tools.SMMTools;
 import com.spencerio.smm.lib.Reference;
@@ -28,6 +29,7 @@ public class SpenceriosModMod
 		SMMTools.initTools();
 		SMMCraftingManager.registerRecipes();
 		SMMBlocks.initBlocks();
+		SMMItems.initItems();
 	}
 	
 	public static CreativeTabs tabSMMArmor = new CreativeTabs("tabSMMArmor") {
@@ -42,9 +44,15 @@ public class SpenceriosModMod
 		}
 	};
 	
-	public static CreativeTabs tabSMMOres = new CreativeTabs("tabSMMOres") {
+	public static CreativeTabs tabSMMBlocks = new CreativeTabs("tabSMMBlocks") {
 		public Item getTabIconItem() {
 			return Item.getItemFromBlock(SMMBlocks.earthQuartzOre);
+		}
+	};
+	
+	public static CreativeTabs tabSMMItems = new CreativeTabs("tabSMMItems") {
+		public Item getTabIconItem() {
+			return SMMItems.earthQuartz;
 		}
 	};
 }

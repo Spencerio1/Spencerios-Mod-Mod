@@ -1,5 +1,7 @@
 tile.earthQuartzOre.name=Earth Quartz Ore
 
+item.earthQuartz.name=Earth Quartz
+
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe
 item.coalShovel.name=Coal Shovel
@@ -41,4 +43,5 @@ item.lapisLazuliBoots.name=Lapis Lazuli Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
-itemGroup.tabSMMOres=Spencerio's Ores
+itemGroup.tabSMMBlocks=Spencerio's Blocks
+itemGroup.tabSMMItems=Spencerio's Items

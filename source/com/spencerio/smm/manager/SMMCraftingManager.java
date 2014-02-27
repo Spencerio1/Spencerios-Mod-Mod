@@ -2,7 +2,10 @@ package com.spencerio.smm.manager;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.FurnaceRecipes;
 
+import com.spencerio.smm.block.SMMBlocks;
+import com.spencerio.smm.item.SMMItems;
 import com.spencerio.smm.item.armor.SMMArmor;
 import com.spencerio.smm.item.tools.SMMTools;
 
@@ -268,5 +271,7 @@ public class SMMCraftingManager
 			"/",
 			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
 		});
+		
+		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.earthQuartzOre, new ItemStack(SMMItems.earthQuartz), 1.0F);
 	}
 }
