@@ -272,6 +272,6 @@ public class SMMCraftingManager
 			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
 		});
 		
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.earthQuartzOre, new ItemStack(SMMItems.earthQuartz), 1.0F);
+		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.earthQuartzOre, new ItemStack(SMMItems.earthQuartz), 0.0F);
 	}
 }
