@@ -15,6 +15,7 @@ public class SMMArmor
 	public static final ArmorMaterial REDSTONE = EnumHelper.addArmorMaterial("REDSTONE", 25, new int[] {3, 6, 5, 4}, 60);
 	public static final ArmorMaterial LAPISLAZULI = EnumHelper.addArmorMaterial("LAPISLAZULI", 20, new int[] {2, 5, 4, 3}, 50);
 	public static final ArmorMaterial EARTHQUARTZ = EnumHelper.addArmorMaterial("EARTHQUARTZ", 30, new int[] {2, 7, 5, 3}, 20);
+	public static final ArmorMaterial COPPER = EnumHelper.addArmorMaterial("COPPER", 30, new int[] {3, 6, 5, 4}, 25);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -36,6 +37,10 @@ public class SMMArmor
 	public static final Item earthQuartzChestplate = new ItemSMMArmor(EARTHQUARTZ, 0, 1, "earthQuartz").setUnlocalizedName("earthQuartzChestplate").setTextureName(Reference.MODID + ":" + "earthQuartzChestplate");
 	public static final Item earthQuartzLeggings = new ItemSMMArmor(EARTHQUARTZ, 0, 2, "earthQuartz").setUnlocalizedName("earthQuartzLeggings").setTextureName(Reference.MODID + ":" + "earthQuartzLeggings");
 	public static final Item earthQuartzBoots = new ItemSMMArmor(EARTHQUARTZ, 0, 3, "earthQuartz").setUnlocalizedName("earthQuartzBoots").setTextureName(Reference.MODID + ":" + "earthQuartzBoots");
+	public static final Item copperHelmet = new ItemSMMArmor(COPPER, 0, 0, "copper").setUnlocalizedName("copperHelmet").setTextureName(Reference.MODID + ":" + "copperHelmet");
+	public static final Item copperChestplate = new ItemSMMArmor(COPPER, 0, 1, "copper").setUnlocalizedName("copperChestplate").setTextureName(Reference.MODID + ":" + "copperChestplate");
+	public static final Item copperLeggings = new ItemSMMArmor(COPPER, 0, 2, "copper").setUnlocalizedName("copperLeggings").setTextureName(Reference.MODID + ":" + "copperLeggings");
+	public static final Item copperBoots = new ItemSMMArmor(COPPER, 0, 3, "copper").setUnlocalizedName("copperBoots").setTextureName(Reference.MODID + ":" + "copperBoots");
 	
 	public static void initArmor()
 	{
@@ -59,5 +64,9 @@ public class SMMArmor
 		GameRegistry.registerItem(earthQuartzChestplate, earthQuartzChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(earthQuartzLeggings, earthQuartzLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(earthQuartzBoots, earthQuartzBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperHelmet, copperHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperChestplate, copperChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperLeggings, copperLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperBoots, copperBoots.getUnlocalizedName().substring(5));
 	}
 }

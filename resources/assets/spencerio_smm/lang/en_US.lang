@@ -52,6 +52,11 @@ item.earthQuartzHelmet.name=Earth Quartz Helmet
 item.earthQuartzChestplate.name=Earth Quartz Chestplate
 item.earthQuartzLeggings.name=Earth Quartz Leggings
 item.earthQuartzBoots.name=Earth Quartz Boots
+item.copperHelmet.name=Copper Helmet
+item.copperChestplate.name=Copper Chestplate
+item.copperLeggings.name=Copper Leggings
+item.copperBoots.name=Copper Boots
+
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
