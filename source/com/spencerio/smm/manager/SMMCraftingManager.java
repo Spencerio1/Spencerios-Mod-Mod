@@ -271,6 +271,16 @@ public class SMMCraftingManager
 			"/",
 			'l', new ItemStack(Items.dye, 1, 4), '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.earthQuartzBlock), new Object[] {
+			"qqq",
+			"qqq",
+			"qqq",
+			'q', SMMItems.earthQuartz
+		});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
+			new ItemStack(SMMBlocks.earthQuartzBlock)
+		});
 		
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.earthQuartzOre, new ItemStack(SMMItems.earthQuartz), 0.0F);
 	}

@@ -27,9 +27,9 @@ public class SpenceriosModMod
 		GameRegistry.registerWorldGenerator(eventManager, 0);
 		SMMArmor.initArmor();
 		SMMTools.initTools();
-		SMMCraftingManager.registerRecipes();
 		SMMBlocks.initBlocks();
 		SMMItems.initItems();
+		SMMCraftingManager.registerRecipes();
 	}
 	
 	public static CreativeTabs tabSMMArmor = new CreativeTabs("tabSMMArmor") {
