@@ -17,6 +17,7 @@ public class SMMArmor
 	public static final ArmorMaterial EARTHQUARTZ = EnumHelper.addArmorMaterial("EARTHQUARTZ", 30, new int[] {2, 7, 5, 3}, 20);
 	public static final ArmorMaterial COPPER = EnumHelper.addArmorMaterial("COPPER", 30, new int[] {3, 6, 5, 4}, 25);
 	public static final ArmorMaterial CARBON = EnumHelper.addArmorMaterial("CARBON", 35, new int[] {4, 7, 6, 5}, 15);
+	public static final ArmorMaterial SILVER = EnumHelper.addArmorMaterial("SILVER", 37, new int[] {4, 6, 5, 4}, 9);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -46,6 +47,10 @@ public class SMMArmor
 	public static final Item carbonChestplate = new ItemSMMArmor(CARBON, 0, 1, "carbon").setUnlocalizedName("carbonChestplate").setTextureName(Reference.MODID + ":" + "carbonChestplate");
 	public static final Item carbonLeggings = new ItemSMMArmor(CARBON, 0, 2, "carbon").setUnlocalizedName("carbonLeggings").setTextureName(Reference.MODID + ":" + "carbonLeggings");
 	public static final Item carbonBoots = new ItemSMMArmor(CARBON, 0, 3, "carbon").setUnlocalizedName("carbonBoots").setTextureName(Reference.MODID + ":" + "carbonBoots");
+	public static final Item silverHelmet = new ItemSMMArmor(SILVER, 0, 0, "silver").setUnlocalizedName("silverHelmet").setTextureName(Reference.MODID + ":" + "silverHelmet");
+	public static final Item silverChestplate = new ItemSMMArmor(SILVER, 0, 1, "silver").setUnlocalizedName("silverChestplate").setTextureName(Reference.MODID + ":" + "silverChestplate");
+	public static final Item silverLeggings = new ItemSMMArmor(SILVER, 0, 2, "silver").setUnlocalizedName("silverLeggings").setTextureName(Reference.MODID + ":" + "silverLeggings");
+	public static final Item silverBoots = new ItemSMMArmor(SILVER, 0, 3, "silver").setUnlocalizedName("silverBoots").setTextureName(Reference.MODID + ":" + "silverBoots");
 	
 	public static void initArmor()
 	{
@@ -77,5 +82,9 @@ public class SMMArmor
 		GameRegistry.registerItem(carbonChestplate, carbonChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(carbonLeggings, carbonLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(carbonBoots, carbonBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverHelmet, silverHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverChestplate, silverChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverLeggings, silverLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverBoots, silverBoots.getUnlocalizedName().substring(5));
 	}
 }

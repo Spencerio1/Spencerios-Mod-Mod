@@ -487,6 +487,28 @@ public class SMMCraftingManager
 			"sss",
 			's', SMMItems.silverIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.silverHelmet), new Object[] {
+			"sss",
+			"s s",
+			's', SMMItems.silverIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.silverChestplate), new Object[] {
+			"s s",
+			"sss",
+			"sss",
+			's', SMMItems.silverIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.silverLeggings), new Object[] {
+			"sss",
+			"s s",
+			"s s",
+			's', SMMItems.silverIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.silverBoots), new Object[] {
+			"s s",
+			"s s",
+			's', SMMItems.silverIngot
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
