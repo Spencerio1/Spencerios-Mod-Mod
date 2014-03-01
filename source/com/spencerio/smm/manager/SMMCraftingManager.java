@@ -417,6 +417,28 @@ public class SMMCraftingManager
 			"ccc",
 			'c', SMMItems.carbonIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.carbonHelmet), new Object[] {
+			"ccc",
+			"c c",
+			'c', SMMItems.carbonIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.carbonChestplate), new Object[] {
+			"c c",
+			"ccc",
+			"ccc",
+			'c', SMMItems.carbonIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.carbonLeggings), new Object[] {
+			"ccc",
+			"c c",
+			"c c",
+			'c', SMMItems.carbonIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.carbonBoots), new Object[] {
+			"c c",
+			"c c",
+			'c', SMMItems.carbonIngot
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)

@@ -64,6 +64,10 @@ item.copperHelmet.name=Copper Helmet
 item.copperChestplate.name=Copper Chestplate
 item.copperLeggings.name=Copper Leggings
 item.copperBoots.name=Copper Boots
+item.carbonHelmet.name=Carbon Helmet
+item.carbonChestplate.name=Carbon Chestplate
+item.carbonLeggings.name=Carbon Leggings
+item.carbonBoots.name=Carbon Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
