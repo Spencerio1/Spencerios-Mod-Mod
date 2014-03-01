@@ -299,6 +299,48 @@ public class SMMCraftingManager
 			"e e",
 			'e', SMMItems.earthQuartz
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.earthQuartzPickaxe), new Object[] {
+			"eee",
+			" / ",
+			" / ",
+			'e', SMMItems.earthQuartz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.earthQuartzAxe), new Object[] {
+			"ee",
+			"e/",
+			" /",
+			'e', SMMItems.earthQuartz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.earthQuartzAxe), new Object[] {
+			"ee",
+			"/e",
+			"/ ",
+			'e', SMMItems.earthQuartz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.earthQuartzShovel), new Object[] {
+			"e",
+			"/",
+			"/",
+			'e', SMMItems.earthQuartz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.earthQuartzHoe), new Object[] {
+			"ee",
+			" /",
+			" /",
+			'e', SMMItems.earthQuartz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.earthQuartzHoe), new Object[] {
+			"ee",
+			"/ ",
+			"/ ",
+			'e', SMMItems.earthQuartz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.earthQuartzSword), new Object[] {
+			"e",
+			"e",
+			"/",
+			'e', SMMItems.earthQuartz, '/', Items.stick
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)

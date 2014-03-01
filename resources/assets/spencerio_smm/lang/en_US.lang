@@ -23,6 +23,11 @@ item.lapisLazuliAxe.name=Lapis Lazuli Axe
 item.lapisLazuliShovel.name=Lapis Lazuli Shovel
 item.lapisLazuliHoe.name=Lapis Lazuli Hoe
 item.lapisLazuliSword.name=Lapis Lazuli Sword
+item.earthQuartzPickaxe.name=Earth Quartz Pickaxe
+item.earthQuartzAxe.name=Earth Quartz Axe
+item.earthQuartzShovel.name=Earth Quartz Shovel
+item.earthQuartzHoe.name=Earth Quartz Hoe
+item.earthQuartzSword.name=Earth Quartz Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

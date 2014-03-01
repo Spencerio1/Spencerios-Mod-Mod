@@ -15,6 +15,7 @@ public class SMMTools
 	public static final ToolMaterial EMERALD = EnumHelper.addToolMaterial("EMERALD", 5, 2048, 10F, 3, 10);
 	public static final ToolMaterial REDSTONE = EnumHelper.addToolMaterial("REDSTONE", 2, 1048, 16F, 3, 60);
 	public static final ToolMaterial LAPISLAZULI = EnumHelper.addToolMaterial("LAPISLAZULI", 1, 512, 20F, 2, 50);
+	public static final ToolMaterial EARTHQUARTZ = EnumHelper.addToolMaterial("EARTHQUARTZ", 2, 1500, 24F, 3, 20);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -36,6 +37,11 @@ public class SMMTools
 	public static final Item lapisLazuliShovel = new ItemSMMShovel(LAPISLAZULI).setUnlocalizedName("lapisLazuliShovel").setTextureName(Reference.MODID + ":" + "lapisLazuliShovel");
 	public static final Item lapisLazuliHoe = new ItemSMMHoe(LAPISLAZULI).setUnlocalizedName("lapisLazuliHoe").setTextureName(Reference.MODID + ":" + "lapisLazuliHoe");
 	public static final Item lapisLazuliSword = new ItemSMMSword(LAPISLAZULI).setUnlocalizedName("lapisLazuliSword").setTextureName(Reference.MODID + ":" + "lapisLazuliSword");
+	public static final Item earthQuartzPickaxe = new ItemSMMPickaxe(EARTHQUARTZ).setUnlocalizedName("earthQuartzPickaxe").setTextureName(Reference.MODID + ":" + "earthQuartzPickaxe");
+	public static final Item earthQuartzAxe = new ItemSMMAxe(EARTHQUARTZ).setUnlocalizedName("earthQuartzAxe").setTextureName(Reference.MODID + ":" + "earthQuartzAxe");
+	public static final Item earthQuartzShovel = new ItemSMMShovel(EARTHQUARTZ).setUnlocalizedName("earthQuartzShovel").setTextureName(Reference.MODID + ":" + "earthQuartzShovel");
+	public static final Item earthQuartzHoe = new ItemSMMHoe(EARTHQUARTZ).setUnlocalizedName("earthQuartzHoe").setTextureName(Reference.MODID + ":" + "earthQuartzHoe");
+	public static final Item earthQuartzSword = new ItemSMMSword(EARTHQUARTZ).setUnlocalizedName("earthQuartzSword").setTextureName(Reference.MODID + ":" + "earthQuartzSword");
 	
 	public static void initTools()
 	{
@@ -59,5 +65,10 @@ public class SMMTools
 		GameRegistry.registerItem(lapisLazuliShovel, lapisLazuliShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(lapisLazuliHoe, lapisLazuliHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(lapisLazuliSword, lapisLazuliSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthQuartzPickaxe, earthQuartzPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthQuartzAxe, earthQuartzAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthQuartzShovel, earthQuartzShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthQuartzHoe, earthQuartzHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthQuartzSword, earthQuartzSword.getUnlocalizedName().substring(5));
 	}
 }
