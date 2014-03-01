@@ -39,6 +39,11 @@ item.copperAxe.name=Copper Axe
 item.copperShovel.name=Copper Shovel
 item.copperHoe.name=Copper Hoe
 item.copperSword.name=Copper Sword
+item.carbonPickaxe.name=Carbon Pickaxe
+item.carbonAxe.name=Carbon Axe
+item.carbonShovel.name=Carbon Shovel
+item.carbonHoe.name=Carbon Hoe
+item.carbonSword.name=Carbon Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

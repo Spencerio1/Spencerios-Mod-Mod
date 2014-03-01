@@ -439,6 +439,48 @@ public class SMMCraftingManager
 			"c c",
 			'c', SMMItems.carbonIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.carbonPickaxe), new Object[] {
+			"ccc",
+			" / ",
+			" / ",
+			'c', SMMItems.carbonIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.carbonAxe), new Object[] {
+			"cc",
+			"c/",
+			" /",
+			'c', SMMItems.carbonIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.carbonAxe), new Object[] {
+			"cc",
+			"/c",
+			"/ ",
+			'c', SMMItems.carbonIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.carbonShovel), new Object[] {
+			"c",
+			"/",
+			"/",
+			'c', SMMItems.carbonIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.carbonHoe), new Object[] {
+			"cc",
+			" /",
+			" /",
+			'c', SMMItems.carbonIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.carbonHoe), new Object[] {
+			"cc",
+			"/ ",
+			"/ ",
+			'c', SMMItems.carbonIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.carbonSword), new Object[] {
+			"c",
+			"c",
+			"/",
+			'c', SMMItems.carbonIngot, '/', Items.stick
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
