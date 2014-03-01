@@ -347,6 +347,70 @@ public class SMMCraftingManager
 			"ccc",
 			'c', SMMItems.copperIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.copperHelmet), new Object[] {
+			"ccc",
+			"c c",
+			'c', SMMItems.copperIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.copperChestplate), new Object[] {
+			"c c",
+			"ccc",
+			"ccc",
+			'c', SMMItems.copperIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.copperLeggings), new Object[] {
+			"ccc",
+			"c c",
+			"c c",
+			'c', SMMItems.copperIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.copperBoots), new Object[] {
+			"c c",
+			"c c",
+			'c', SMMItems.copperIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.copperPickaxe), new Object[] {
+			"ccc",
+			" / ",
+			" / ",
+			'c', SMMItems.copperIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.copperAxe), new Object[] {
+			"cc",
+			"c/",
+			" /",
+			'c', SMMItems.copperIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.copperAxe), new Object[] {
+			"cc",
+			"/c",
+			"/ ",
+			'c', SMMItems.copperIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.copperShovel), new Object[] {
+			"c",
+			"/",
+			"/",
+			'c', SMMItems.copperIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.copperHoe), new Object[] {
+			"cc",
+			" /",
+			" /",
+			'c', SMMItems.copperIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.copperHoe), new Object[] {
+			"cc",
+			"/ ",
+			"/ ",
+			'c', SMMItems.copperIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.copperSword), new Object[] {
+			"c",
+			"c",
+			"/",
+			'c', SMMItems.copperIngot, '/', Items.stick
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)

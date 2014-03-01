@@ -16,6 +16,7 @@ public class SMMTools
 	public static final ToolMaterial REDSTONE = EnumHelper.addToolMaterial("REDSTONE", 2, 1048, 16F, 3, 60);
 	public static final ToolMaterial LAPISLAZULI = EnumHelper.addToolMaterial("LAPISLAZULI", 1, 512, 20F, 2, 50);
 	public static final ToolMaterial EARTHQUARTZ = EnumHelper.addToolMaterial("EARTHQUARTZ", 2, 1500, 24F, 3, 20);
+	public static final ToolMaterial COPPER = EnumHelper.addToolMaterial("COPPER", 2, 500, 10F, 4, 25);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -42,6 +43,11 @@ public class SMMTools
 	public static final Item earthQuartzShovel = new ItemSMMShovel(EARTHQUARTZ).setUnlocalizedName("earthQuartzShovel").setTextureName(Reference.MODID + ":" + "earthQuartzShovel");
 	public static final Item earthQuartzHoe = new ItemSMMHoe(EARTHQUARTZ).setUnlocalizedName("earthQuartzHoe").setTextureName(Reference.MODID + ":" + "earthQuartzHoe");
 	public static final Item earthQuartzSword = new ItemSMMSword(EARTHQUARTZ).setUnlocalizedName("earthQuartzSword").setTextureName(Reference.MODID + ":" + "earthQuartzSword");
+	public static final Item copperPickaxe = new ItemSMMPickaxe(COPPER).setUnlocalizedName("copperPickaxe").setTextureName(Reference.MODID + ":" + "copperPickaxe");
+	public static final Item copperAxe = new ItemSMMAxe(COPPER).setUnlocalizedName("copperAxe").setTextureName(Reference.MODID + ":" + "copperAxe");
+	public static final Item copperShovel = new ItemSMMShovel(COPPER).setUnlocalizedName("copperShovel").setTextureName(Reference.MODID + ":" + "copperShovel");
+	public static final Item copperHoe = new ItemSMMHoe(COPPER).setUnlocalizedName("copperHoe").setTextureName(Reference.MODID + ":" + "copperHoe");
+	public static final Item copperSword = new ItemSMMSword(COPPER).setUnlocalizedName("copperSword").setTextureName(Reference.MODID + ":" + "copperSword");
 	
 	public static void initTools()
 	{
@@ -70,5 +76,10 @@ public class SMMTools
 		GameRegistry.registerItem(earthQuartzShovel, earthQuartzShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(earthQuartzHoe, earthQuartzHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(earthQuartzSword, earthQuartzSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperPickaxe, copperPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperAxe, copperAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperShovel, copperShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperHoe, copperHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(copperSword, copperSword.getUnlocalizedName().substring(5));
 	}
 }
