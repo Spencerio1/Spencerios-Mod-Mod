@@ -40,7 +40,10 @@ item.lapisLazuliHelmet.name=Lapis Lazuli Helmet
 item.lapisLazuliChestplate.name=Lapis Lazuli Chestplate
 item.lapisLazuliLeggings.name=Lapis Lazuli Leggings
 item.lapisLazuliBoots.name=Lapis Lazuli Boots
-
+item.earthQuartzHelmet.name=Earth Quartz Helmet
+item.earthQuartzChestplate.name=Earth Quartz Chestplate
+item.earthQuartzLeggings.name=Earth Quartz Leggings
+item.earthQuartzBoots.name=Earth Quartz Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools

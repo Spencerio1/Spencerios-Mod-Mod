@@ -277,6 +277,28 @@ public class SMMCraftingManager
 			"qqq",
 			'q', SMMItems.earthQuartz
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.earthQuartzHelmet), new Object[] {
+			"eee",
+			"e e",
+			'e', SMMItems.earthQuartz
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.earthQuartzChestplate), new Object[] {
+			"e e",
+			"eee",
+			"eee",
+			'e', SMMItems.earthQuartz
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.earthQuartzLeggings), new Object[] {
+			"eee",
+			"e e",
+			"e e",
+			'e', SMMItems.earthQuartz
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.earthQuartzBoots), new Object[] {
+			"e e",
+			"e e",
+			'e', SMMItems.earthQuartz
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
