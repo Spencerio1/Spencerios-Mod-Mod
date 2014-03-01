@@ -509,6 +509,48 @@ public class SMMCraftingManager
 			"s s",
 			's', SMMItems.silverIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.silverPickaxe), new Object[] {
+			"sss",
+			" / ",
+			" / ",
+			's', SMMItems.silverIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.silverAxe), new Object[] {
+			"ss",
+			"s/",
+			" /",
+			's', SMMItems.silverIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.silverAxe), new Object[] {
+			"ss",
+			"/s",
+			"/ ",
+			's', SMMItems.silverIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.silverShovel), new Object[] {
+			"s",
+			"/",
+			"/",
+			's', SMMItems.silverIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.silverHoe), new Object[] {
+			"ss",
+			" /",
+			" /",
+			's', SMMItems.silverIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.silverHoe), new Object[] {
+			"ss",
+			"/ ",
+			"/ ",
+			's', SMMItems.silverIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.silverSword), new Object[] {
+			"s",
+			"s",
+			"/",
+			's', SMMItems.silverIngot, '/', Items.stick
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)

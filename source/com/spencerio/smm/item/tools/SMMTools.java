@@ -18,6 +18,7 @@ public class SMMTools
 	public static final ToolMaterial EARTHQUARTZ = EnumHelper.addToolMaterial("EARTHQUARTZ", 2, 1500, 24F, 3, 20);
 	public static final ToolMaterial COPPER = EnumHelper.addToolMaterial("COPPER", 2, 500, 10F, 4, 25);
 	public static final ToolMaterial CARBON = EnumHelper.addToolMaterial("CARBON", 3, 3150, 18F, 6, 15);
+	public static final ToolMaterial SILVER = EnumHelper.addToolMaterial("SILVER", 2, 1250, 14F, 6, 9);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -54,6 +55,11 @@ public class SMMTools
 	public static final Item carbonShovel = new ItemSMMShovel(CARBON).setUnlocalizedName("carbonShovel").setTextureName(Reference.MODID + ":" + "carbonShovel");
 	public static final Item carbonHoe = new ItemSMMHoe(CARBON).setUnlocalizedName("carbonHoe").setTextureName(Reference.MODID + ":" + "carbonHoe");
 	public static final Item carbonSword = new ItemSMMSword(CARBON).setUnlocalizedName("carbonSword").setTextureName(Reference.MODID + ":" + "carbonSword");
+	public static final Item silverPickaxe = new ItemSMMPickaxe(SILVER).setUnlocalizedName("silverPickaxe").setTextureName(Reference.MODID + ":" + "silverPickaxe");
+	public static final Item silverAxe = new ItemSMMAxe(SILVER).setUnlocalizedName("silverAxe").setTextureName(Reference.MODID + ":" + "silverAxe");
+	public static final Item silverShovel = new ItemSMMShovel(SILVER).setUnlocalizedName("silverShovel").setTextureName(Reference.MODID + ":" + "silverShovel");
+	public static final Item silverHoe = new ItemSMMHoe(SILVER).setUnlocalizedName("silverHoe").setTextureName(Reference.MODID + ":" + "silverHoe");
+	public static final Item silverSword = new ItemSMMSword(SILVER).setUnlocalizedName("silverSword").setTextureName(Reference.MODID + ":" + "silverSword");
 	
 	public static void initTools()
 	{
@@ -92,5 +98,10 @@ public class SMMTools
 		GameRegistry.registerItem(carbonShovel, carbonShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(carbonHoe, carbonHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(carbonSword, carbonSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverPickaxe, silverPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverAxe, silverAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverShovel, silverShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverHoe, silverHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(silverSword, silverSword.getUnlocalizedName().substring(5));
 	}
 }
