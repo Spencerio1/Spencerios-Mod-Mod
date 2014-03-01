@@ -1,10 +1,13 @@
 tile.earthQuartzOre.name=Earth Quartz Ore
-tile.earthQuartzBlock.name=Earth Quartz Block
+tile.earthQuartzBlock.name=Block of Earth Quartz
 tile.copperOre.name=Copper Ore
-tile.copperBlock.name=Copper Block
+tile.copperBlock.name=Block of Copper
+tile.carbonOre.name=Carbon Ore
+tile.carbonBlock.name=Block of Carbon
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
+item.carbonIngot.name=Carbon Ingot
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe
