@@ -719,6 +719,48 @@ public class SMMCraftingManager
 			"t t",
 			't', SMMItems.titaniumIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.titaniumPickaxe), new Object[] {
+			"ttt",
+			" / ",
+			" / ",
+			't', SMMItems.titaniumIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.titaniumAxe), new Object[] {
+			"tt",
+			"t/",
+			" /",
+			't', SMMItems.titaniumIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.titaniumAxe), new Object[] {
+			"tt",
+			"/t",
+			"/ ",
+			't', SMMItems.titaniumIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.titaniumShovel), new Object[] {
+			"t",
+			"/",
+			"/",
+			't', SMMItems.titaniumIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.titaniumHoe), new Object[] {
+			"tt",
+			" /",
+			" /",
+			't', SMMItems.titaniumIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.titaniumHoe), new Object[] {
+			"tt",
+			"/ ",
+			"/ ",
+			't', SMMItems.titaniumIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.titaniumSword), new Object[] {
+			"t",
+			"t",
+			"/",
+			't', SMMItems.titaniumIngot, '/', Items.stick
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)

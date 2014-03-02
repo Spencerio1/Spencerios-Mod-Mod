@@ -71,6 +71,11 @@ item.rubyAxe.name=Ruby Axe
 item.rubyShovel.name=Ruby Shovel
 item.rubyHoe.name=Ruby Hoe
 item.rubySword.name=Ruby Sword
+item.titaniumPickaxe.name=Titanium Pickaxe
+item.titaniumAxe.name=Titanium Axe
+item.titaniumShovel.name=Titanium Shovel
+item.titaniumHoe.name=Titanium Hoe
+item.titaniumSword.name=Titanium Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate
