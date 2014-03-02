@@ -18,6 +18,6 @@ public class BlockSMMOre extends BlockOre
 	
 	public Item getItemDropped(int par1, Random par2Random, int par3)
 	{
-		return this == SMMBlocks.earthQuartzOre ? SMMItems.earthQuartz : Item.getItemFromBlock(this);
+		return this == SMMBlocks.earthQuartzOre ? SMMItems.earthQuartz : this == SMMBlocks.rubyOre ? SMMItems.ruby : Item.getItemFromBlock(this);
 	}
 }
