@@ -20,6 +20,8 @@ public class SMMBlocks
 	public static final Block cobaltBlock = new BlockSMMCompressed().setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("cobaltBlock").setBlockTextureName(Reference.MODID + ":" + "cobaltBlock");
 	public static final Block rubyOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("rubyOre").setBlockTextureName(Reference.MODID + ":" + "rubyOre");
 	public static final Block rubyBlock = new BlockSMMCompressed().setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("rubyBlock").setBlockTextureName(Reference.MODID + ":" + "rubyBlock");
+	public static final Block titaniumOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("titaniumOre").setBlockTextureName(Reference.MODID + ":" + "titaniumOre");
+	public static final Block titaniumBlock = new BlockSMMCompressed().setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("titaniumBlock").setBlockTextureName(Reference.MODID + ":" + "titaniumBlock");
 	
 	public static void initBlocks()
 	{
@@ -41,6 +43,8 @@ public class SMMBlocks
 		GameRegistry.registerBlock(cobaltBlock, cobaltBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(rubyOre, rubyOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(rubyBlock, rubyBlock.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(titaniumOre, titaniumOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(titaniumBlock, titaniumBlock.getUnlocalizedName().substring(5));
 	}
 	private static void setHarvestLevels()
 	{
@@ -56,5 +60,7 @@ public class SMMBlocks
 		cobaltBlock.setHarvestLevel("pickaxe", 0);
 		rubyOre.setHarvestLevel("pickaxe", 2);
 		rubyBlock.setHarvestLevel("pickaxe", 0);
+		titaniumOre.setHarvestLevel("pickaxe", 0);
+		titaniumBlock.setHarvestLevel("pickaxe", 0);
 	}
 }
