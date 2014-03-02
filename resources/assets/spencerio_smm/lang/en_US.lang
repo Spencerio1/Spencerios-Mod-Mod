@@ -6,11 +6,14 @@ tile.carbonOre.name=Carbon Ore
 tile.carbonBlock.name=Block of Carbon
 tile.silverOre.name=Silver Ore
 tile.silverBlock.name=Block of Silver
+tile.cobaltOre.name=Cobalt Ore
+tile.cobaltBlock.name=Block of Cobalt
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
 item.carbonIngot.name=Carbon Ingot
 item.silverIngot.name=Silver Ingot
+item.cobaltIngot.name=Cobalt Ingot
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe

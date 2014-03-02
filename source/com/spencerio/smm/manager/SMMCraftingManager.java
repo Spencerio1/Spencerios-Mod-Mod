@@ -551,6 +551,12 @@ public class SMMCraftingManager
 			"/",
 			's', SMMItems.silverIngot, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.cobaltBlock), new Object[] {
+			"ccc",
+			"ccc",
+			"ccc",
+			'c', SMMItems.cobaltIngot
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
@@ -564,10 +570,14 @@ public class SMMCraftingManager
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.silverIngot, 9), new Object[] {
 			new ItemStack(SMMBlocks.silverBlock)
 		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.cobaltIngot, 9), new Object[] {
+			new ItemStack(SMMBlocks.cobaltBlock)
+		});
 		
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.earthQuartzOre, new ItemStack(SMMItems.earthQuartz), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.copperOre, new ItemStack(SMMItems.copperIngot), 1.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.carbonOre, new ItemStack(SMMItems.carbonIngot), 1.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.silverOre, new ItemStack(SMMItems.silverIngot), 1.0F);
+		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.cobaltOre, new ItemStack(SMMItems.cobaltIngot), 1.0F);
 	}
 }

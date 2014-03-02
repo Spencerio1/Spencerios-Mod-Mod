@@ -11,6 +11,7 @@ public class SMMItems
 	public static final Item copperIngot = new ItemSMMOreDrops().setUnlocalizedName("copperIngot").setTextureName(Reference.MODID + ":" + "copperIngot");
 	public static final Item carbonIngot = new ItemSMMOreDrops().setUnlocalizedName("carbonIngot").setTextureName(Reference.MODID + ":" + "carbonIngot");
 	public static final Item silverIngot = new ItemSMMOreDrops().setUnlocalizedName("silverIngot").setTextureName(Reference.MODID + ":" + "silverIngot");
+	public static final Item cobaltIngot = new ItemSMMOreDrops().setUnlocalizedName("cobaltIngot").setTextureName(Reference.MODID + ":" + "cobaltIngot");
 	
 	public static void initItems()
 	{
@@ -18,5 +19,6 @@ public class SMMItems
 		GameRegistry.registerItem(copperIngot, copperIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(carbonIngot, carbonIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(silverIngot, silverIngot.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cobaltIngot, cobaltIngot.getUnlocalizedName().substring(5));
 	}
 }
