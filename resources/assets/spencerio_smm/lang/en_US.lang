@@ -63,6 +63,11 @@ item.cobaltAxe.name=Cobalt Axe
 item.cobaltShovel.name=Cobalt Shovel
 item.cobaltHoe.name=Cobalt Hoe
 item.cobaltSword.name=Cobalt Sword
+item.rubyPickaxe.name=Ruby Pickaxe
+item.rubyAxe.name=Ruby Axe
+item.rubyShovel.name=Ruby Shovel
+item.rubyHoe.name=Ruby Hoe
+item.rubySword.name=Ruby Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

@@ -649,6 +649,48 @@ public class SMMCraftingManager
 			"r r",
 			'r', SMMItems.ruby
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.rubyPickaxe), new Object[] {
+			"rrr",
+			" / ",
+			" / ",
+			'r', SMMItems.ruby, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.rubyAxe), new Object[] {
+			"rr",
+			"r/",
+			" /",
+			'r', SMMItems.ruby, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.rubyAxe), new Object[] {
+			"rr",
+			"/r",
+			"/ ",
+			'r', SMMItems.ruby, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.rubyShovel), new Object[] {
+			"r",
+			"/",
+			"/",
+			'r', SMMItems.ruby, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.rubyHoe), new Object[] {
+			"rr",
+			" /",
+			" /",
+			'r', SMMItems.ruby, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.rubyHoe), new Object[] {
+			"rr",
+			"/ ",
+			"/ ",
+			'r', SMMItems.ruby, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.rubySword), new Object[] {
+			"r",
+			"r",
+			"/",
+			'r', SMMItems.ruby, '/', Items.stick
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
