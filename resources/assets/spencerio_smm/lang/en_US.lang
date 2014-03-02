@@ -88,6 +88,10 @@ item.silverHelmet.name=Silver Helmet
 item.silverChestplate.name=Silver Chestplate
 item.silverLeggings.name=Silver Leggings
 item.silverBoots.name=Silver Boots
+item.cobaltHelmet.name=Cobalt Helmet
+item.cobaltChestplate.name=Cobalt Chestplate
+item.cobaltLeggings.name=Cobalt Leggings
+item.cobaltBoots.name=Cobalt Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools

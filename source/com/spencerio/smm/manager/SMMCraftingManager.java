@@ -557,6 +557,28 @@ public class SMMCraftingManager
 			"ccc",
 			'c', SMMItems.cobaltIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.cobaltHelmet), new Object[] {
+			"ccc",
+			"c c",
+			'c', SMMItems.cobaltIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.cobaltChestplate), new Object[] {
+			"c c",
+			"ccc",
+			"ccc",
+			'c', SMMItems.cobaltIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.cobaltLeggings), new Object[] {
+			"ccc",
+			"c c",
+			"c c",
+			'c', SMMItems.cobaltIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.cobaltBoots), new Object[] {
+			"c c",
+			"c c",
+			'c', SMMItems.cobaltIngot
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
