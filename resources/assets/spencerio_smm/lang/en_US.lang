@@ -55,6 +55,11 @@ item.silverAxe.name=Silver Axe
 item.silverShovel.name=Silver Shovel
 item.silverHoe.name=Silver Hoe
 item.silverSword.name=Silver Sword
+item.cobaltPickaxe.name=Cobalt Pickaxe
+item.cobaltAxe.name=Cobalt Axe
+item.cobaltShovel.name=Cobalt Shovel
+item.cobaltHoe.name=Cobalt Hoe
+item.cobaltSword.name=Cobalt Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

@@ -579,6 +579,48 @@ public class SMMCraftingManager
 			"c c",
 			'c', SMMItems.cobaltIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.cobaltPickaxe), new Object[] {
+			"ccc",
+			" / ",
+			" / ",
+			'c', SMMItems.cobaltIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.cobaltAxe), new Object[] {
+			"cc",
+			"c/",
+			" /",
+			'c', SMMItems.cobaltIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.cobaltAxe), new Object[] {
+			"cc",
+			"/c",
+			"/ ",
+			'c', SMMItems.cobaltIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.cobaltShovel), new Object[] {
+			"c",
+			"/",
+			"/",
+			'c', SMMItems.cobaltIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.cobaltHoe), new Object[] {
+			"cc",
+			" /",
+			" /",
+			'c', SMMItems.cobaltIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.cobaltHoe), new Object[] {
+			"cc",
+			"/ ",
+			"/ ",
+			'c', SMMItems.cobaltIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.cobaltSword), new Object[] {
+			"c",
+			"c",
+			"/",
+			'c', SMMItems.cobaltIngot, '/', Items.stick
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
