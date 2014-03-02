@@ -100,6 +100,10 @@ item.cobaltHelmet.name=Cobalt Helmet
 item.cobaltChestplate.name=Cobalt Chestplate
 item.cobaltLeggings.name=Cobalt Leggings
 item.cobaltBoots.name=Cobalt Boots
+item.rubyHelmet.name=Ruby Helmet
+item.rubyChestplate.name=Ruby Chestplate
+item.rubyLeggings.name=Ruby Leggings
+item.rubyBoots.name=Ruby Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools

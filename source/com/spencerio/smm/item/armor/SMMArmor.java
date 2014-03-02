@@ -19,6 +19,7 @@ public class SMMArmor
 	public static final ArmorMaterial CARBON = EnumHelper.addArmorMaterial("CARBON", 35, new int[] {4, 7, 6, 5}, 15);
 	public static final ArmorMaterial SILVER = EnumHelper.addArmorMaterial("SILVER", 37, new int[] {4, 6, 5, 4}, 9);
 	public static final ArmorMaterial COBALT = EnumHelper.addArmorMaterial("COBALT", 30, new int[] {4, 7, 6, 5}, 10);
+	public static final ArmorMaterial RUBY = EnumHelper.addArmorMaterial("RUBY", 50, new int[] {6, 9, 8, 7}, 5);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -56,6 +57,10 @@ public class SMMArmor
 	public static final Item cobaltChestplate = new ItemSMMArmor(COBALT, 0, 1, "cobalt").setUnlocalizedName("cobaltChestplate").setTextureName(Reference.MODID + ":" + "cobaltChestplate");
 	public static final Item cobaltLeggings = new ItemSMMArmor(COBALT, 0, 2, "cobalt").setUnlocalizedName("cobaltLeggings").setTextureName(Reference.MODID + ":" + "cobaltLeggings");
 	public static final Item cobaltBoots = new ItemSMMArmor(COBALT, 0, 3, "cobalt").setUnlocalizedName("cobaltBoots").setTextureName(Reference.MODID + ":" + "cobaltBoots");
+	public static final Item rubyHelmet = new ItemSMMArmor(RUBY, 0, 0, "ruby").setUnlocalizedName("rubyHelmet").setTextureName(Reference.MODID + ":" + "rubyHelmet");
+	public static final Item rubyChestplate = new ItemSMMArmor(RUBY, 0, 1, "ruby").setUnlocalizedName("rubyChestplate").setTextureName(Reference.MODID + ":" + "rubyChestplate");
+	public static final Item rubyLeggings = new ItemSMMArmor(RUBY, 0, 2, "ruby").setUnlocalizedName("rubyLeggings").setTextureName(Reference.MODID + ":" + "rubyLeggings");
+	public static final Item rubyBoots = new ItemSMMArmor(RUBY, 0, 3, "ruby").setUnlocalizedName("rubyBoots").setTextureName(Reference.MODID + ":" + "rubyBoots");
 	
 	public static void initArmor()
 	{
@@ -95,5 +100,9 @@ public class SMMArmor
 		GameRegistry.registerItem(cobaltChestplate, cobaltChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(cobaltLeggings, cobaltLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(cobaltBoots, cobaltBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rubyHelmet, rubyHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rubyChestplate, rubyChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rubyLeggings, rubyLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rubyBoots, rubyBoots.getUnlocalizedName().substring(5));
 	}
 }

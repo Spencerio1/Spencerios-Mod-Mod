@@ -627,6 +627,28 @@ public class SMMCraftingManager
 			"rrr",
 			'r', SMMItems.ruby
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.rubyHelmet), new Object[] {
+			"rrr",
+			"r r",
+			'r', SMMItems.ruby
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.rubyChestplate), new Object[] {
+			"r r",
+			"rrr",
+			"rrr",
+			'r', SMMItems.ruby
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.rubyLeggings), new Object[] {
+			"rrr",
+			"r r",
+			"r r",
+			'r', SMMItems.ruby
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.rubyBoots), new Object[] {
+			"r r",
+			"r r",
+			'r', SMMItems.ruby
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
