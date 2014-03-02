@@ -697,6 +697,28 @@ public class SMMCraftingManager
 			"ttt",
 			't', SMMItems.titaniumIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.titaniumHelmet), new Object[] {
+			"ttt",
+			"t t",
+			't', SMMItems.titaniumIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.titaniumChestplate), new Object[] {
+			"t t",
+			"ttt",
+			"ttt",
+			't', SMMItems.titaniumIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.titaniumLeggings), new Object[] {
+			"ttt",
+			"t t",
+			"t t",
+			't', SMMItems.titaniumIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.titaniumBoots), new Object[] {
+			"t t",
+			"t t",
+			't', SMMItems.titaniumIngot
+		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)

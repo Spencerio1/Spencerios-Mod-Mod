@@ -20,6 +20,7 @@ public class SMMArmor
 	public static final ArmorMaterial SILVER = EnumHelper.addArmorMaterial("SILVER", 37, new int[] {4, 6, 5, 4}, 9);
 	public static final ArmorMaterial COBALT = EnumHelper.addArmorMaterial("COBALT", 30, new int[] {4, 7, 6, 5}, 10);
 	public static final ArmorMaterial RUBY = EnumHelper.addArmorMaterial("RUBY", 50, new int[] {6, 9, 8, 7}, 5);
+	public static final ArmorMaterial TITANIUM = EnumHelper.addArmorMaterial("TITANIUM", 32, new int[] {5, 8, 7, 6}, 11);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -61,6 +62,10 @@ public class SMMArmor
 	public static final Item rubyChestplate = new ItemSMMArmor(RUBY, 0, 1, "ruby").setUnlocalizedName("rubyChestplate").setTextureName(Reference.MODID + ":" + "rubyChestplate");
 	public static final Item rubyLeggings = new ItemSMMArmor(RUBY, 0, 2, "ruby").setUnlocalizedName("rubyLeggings").setTextureName(Reference.MODID + ":" + "rubyLeggings");
 	public static final Item rubyBoots = new ItemSMMArmor(RUBY, 0, 3, "ruby").setUnlocalizedName("rubyBoots").setTextureName(Reference.MODID + ":" + "rubyBoots");
+	public static final Item titaniumHelmet = new ItemSMMArmor(TITANIUM, 0, 0, "titanium").setUnlocalizedName("titaniumHelmet").setTextureName(Reference.MODID + ":" + "titaniumHelmet");
+	public static final Item titaniumChestplate = new ItemSMMArmor(TITANIUM, 0, 1, "titanium").setUnlocalizedName("titaniumChestplate").setTextureName(Reference.MODID + ":" + "titaniumChestplate");
+	public static final Item titaniumLeggings = new ItemSMMArmor(TITANIUM, 0, 2, "titanium").setUnlocalizedName("titaniumLeggings").setTextureName(Reference.MODID + ":" + "titaniumLeggings");
+	public static final Item titaniumBoots = new ItemSMMArmor(TITANIUM, 0, 3, "titanium").setUnlocalizedName("titaniumBoots").setTextureName(Reference.MODID + ":" + "titaniumBoots");
 	
 	public static void initArmor()
 	{
@@ -104,5 +109,9 @@ public class SMMArmor
 		GameRegistry.registerItem(rubyChestplate, rubyChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(rubyLeggings, rubyLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(rubyBoots, rubyBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(titaniumHelmet, titaniumHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(titaniumChestplate, titaniumChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(titaniumLeggings, titaniumLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(titaniumBoots, titaniumBoots.getUnlocalizedName().substring(5));
 	}
 }

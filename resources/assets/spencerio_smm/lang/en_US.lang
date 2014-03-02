@@ -112,6 +112,10 @@ item.rubyHelmet.name=Ruby Helmet
 item.rubyChestplate.name=Ruby Chestplate
 item.rubyLeggings.name=Ruby Leggings
 item.rubyBoots.name=Ruby Boots
+item.titaniumHelmet.name=Titanium Helmet
+item.titaniumChestplate.name=Titanium Chestplate
+item.titaniumLeggings.name=Titanium Leggings
+item.titaniumBoots.name=Titanium Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
