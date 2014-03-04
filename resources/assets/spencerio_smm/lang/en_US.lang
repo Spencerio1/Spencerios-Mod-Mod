@@ -79,6 +79,11 @@ item.titaniumAxe.name=Titanium Axe
 item.titaniumShovel.name=Titanium Shovel
 item.titaniumHoe.name=Titanium Hoe
 item.titaniumSword.name=Titanium Sword
+item.hellishPickaxe.name=Hellish Pickaxe
+item.hellishAxe.name=Hellish Axe
+item.hellishShovel.name=Hellish Shovel
+item.hellishHoe.name=Hellish Hoe
+item.hellishSword.name=Hellish Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

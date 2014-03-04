@@ -796,6 +796,48 @@ public class SMMCraftingManager
 			"h h",
 			'h', SMMItems.hellishIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.hellishPickaxe), new Object[] {
+			"hhh",
+			" / ",
+			" / ",
+			'h', SMMItems.hellishIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.hellishAxe), new Object[] {
+			"hh",
+			"h/",
+			" /",
+			'h', SMMItems.hellishIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.hellishAxe), new Object[] {
+			"hh",
+			"/h",
+			"/ ",
+			'h', SMMItems.hellishIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.hellishShovel), new Object[] {
+			"h",
+			"/",
+			"/",
+			'h', SMMItems.hellishIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.hellishHoe), new Object[] {
+			"hh",
+			" /",
+			" /",
+			'h', SMMItems.hellishIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.hellishHoe), new Object[] {
+			"hh",
+			"/ ",
+			"/ ",
+			'h', SMMItems.hellishIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.hellishSword), new Object[] {
+			"h",
+			"h",
+			"/",
+			'h', SMMItems.hellishIngot, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{
