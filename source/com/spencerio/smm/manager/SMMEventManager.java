@@ -39,7 +39,7 @@ public class SMMEventManager implements IWorldGenerator
     }
     private void generateNether(World world, Random random, int x, int z)
     {
-    	
+    	this.addOreSpawn(SMMBlocks.hellishOre, world, random, x, z, 16, 16, 4, 9, 1, 128);
     }
 
 	public void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY)
