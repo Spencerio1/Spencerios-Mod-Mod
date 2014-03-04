@@ -15,6 +15,13 @@ public class SMMCraftingManager
 {
 	public static void registerRecipes()
 	{
+		initShapedRecipes();
+		initShapelessRecipes();
+		initFurnaceRecipes();
+	}
+	
+	private static void initShapedRecipes()
+	{
 		GameRegistry.addRecipe(new ItemStack(SMMArmor.coalHelmet), new Object[] {
 			"ccc",
 			"c c",
@@ -767,7 +774,31 @@ public class SMMCraftingManager
 			"hhh",
 			'h', SMMItems.hellishIngot
 		});
-		
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.hellishHelmet), new Object[] {
+			"hhh",
+			"h h",
+			'h', SMMItems.hellishIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.hellishChestplate), new Object[] {
+			"h h",
+			"hhh",
+			"hhh",
+			'h', SMMItems.hellishIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.hellishLeggings), new Object[] {
+			"hhh",
+			"h h",
+			"h h",
+			'h', SMMItems.hellishIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.hellishBoots), new Object[] {
+			"h h",
+			"h h",
+			'h', SMMItems.hellishIngot
+		});
+	}
+	private static void initShapelessRecipes()
+	{
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.earthQuartz, 9), new Object[] {
 			new ItemStack(SMMBlocks.earthQuartzBlock)
 		});
@@ -792,7 +823,9 @@ public class SMMCraftingManager
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.hellishIngot, 9), new Object[] {
 			new ItemStack(SMMBlocks.hellishBlock)
 		});
-		
+	}
+	private static void initFurnaceRecipes()
+	{
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.earthQuartzOre, new ItemStack(SMMItems.earthQuartz), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.copperOre, new ItemStack(SMMItems.copperIngot), 1.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.carbonOre, new ItemStack(SMMItems.carbonIngot), 1.0F);

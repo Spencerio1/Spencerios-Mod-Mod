@@ -21,6 +21,7 @@ public class SMMArmor
 	public static final ArmorMaterial COBALT = EnumHelper.addArmorMaterial("COBALT", 30, new int[] {4, 7, 6, 5}, 10);
 	public static final ArmorMaterial RUBY = EnumHelper.addArmorMaterial("RUBY", 50, new int[] {6, 9, 8, 7}, 5);
 	public static final ArmorMaterial TITANIUM = EnumHelper.addArmorMaterial("TITANIUM", 32, new int[] {5, 8, 7, 6}, 11);
+	public static final ArmorMaterial HELLISH = EnumHelper.addArmorMaterial("HELLISH", 30, new int[] {3, 6, 5, 4}, 28);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -66,6 +67,10 @@ public class SMMArmor
 	public static final Item titaniumChestplate = new ItemSMMArmor(TITANIUM, 0, 1, "titanium").setUnlocalizedName("titaniumChestplate").setTextureName(Reference.MODID + ":" + "titaniumChestplate");
 	public static final Item titaniumLeggings = new ItemSMMArmor(TITANIUM, 0, 2, "titanium").setUnlocalizedName("titaniumLeggings").setTextureName(Reference.MODID + ":" + "titaniumLeggings");
 	public static final Item titaniumBoots = new ItemSMMArmor(TITANIUM, 0, 3, "titanium").setUnlocalizedName("titaniumBoots").setTextureName(Reference.MODID + ":" + "titaniumBoots");
+	public static final Item hellishHelmet = new ItemSMMArmor(HELLISH, 0, 0, "hellish").setUnlocalizedName("hellishHelmet").setTextureName(Reference.MODID + ":" + "hellishHelmet");
+	public static final Item hellishChestplate = new ItemSMMArmor(HELLISH, 0, 1, "hellish").setUnlocalizedName("hellishChestplate").setTextureName(Reference.MODID + ":" + "hellishChestplate");
+	public static final Item hellishLeggings = new ItemSMMArmor(HELLISH, 0, 2, "hellish").setUnlocalizedName("hellishLeggings").setTextureName(Reference.MODID + ":" + "hellishLeggings");
+	public static final Item hellishBoots = new ItemSMMArmor(HELLISH, 0, 3, "hellish").setUnlocalizedName("hellishBoots").setTextureName(Reference.MODID + ":" + "hellishBoots");
 	
 	public static void initArmor()
 	{
@@ -113,5 +118,9 @@ public class SMMArmor
 		GameRegistry.registerItem(titaniumChestplate, titaniumChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(titaniumLeggings, titaniumLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(titaniumBoots, titaniumBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(hellishHelmet, hellishHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(hellishChestplate, hellishChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(hellishLeggings, hellishLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(hellishBoots, hellishBoots.getUnlocalizedName().substring(5));
 	}
 }

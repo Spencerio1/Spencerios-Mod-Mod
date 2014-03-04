@@ -124,6 +124,10 @@ item.titaniumHelmet.name=Titanium Helmet
 item.titaniumChestplate.name=Titanium Chestplate
 item.titaniumLeggings.name=Titanium Leggings
 item.titaniumBoots.name=Titanium Boots
+item.hellishHelmet.name=Hellish Helmet
+item.hellishChestplate.name=Hellish Chestplate
+item.hellishLeggings.name=Hellish Leggings
+item.hellishBoots.name=Hellish Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
