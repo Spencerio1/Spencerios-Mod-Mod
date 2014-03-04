@@ -13,6 +13,7 @@ tile.rubyBlock.name=Block of Ruby
 tile.titaniumOre.name=Titanium Ore
 tile.titaniumBlock.name=Block of Titanium
 tile.hellishOre.name=Hellish Ore
+tile.hellishBlock.name=Hellish Block
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -21,6 +22,7 @@ item.silverIngot.name=Silver Ingot
 item.cobaltIngot.name=Cobalt Ingot
 item.ruby.name=Ruby
 item.titaniumIngot.name=Titanium Ingot
+item.hellishIngot.name=Hellish Ingot
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe

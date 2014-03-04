@@ -24,6 +24,8 @@ public class SMMBlocks
 	public static final Block titaniumOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("titaniumOre").setBlockTextureName(Reference.MODID + ":" + "titaniumOre");
 	public static final Block titaniumBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("titaniumBlock").setBlockTextureName(Reference.MODID + ":" + "titaniumBlock");
 	public static final Block hellishOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("hellishOre").setBlockTextureName(Reference.MODID + ":" + "hellishOre");
+	public static final Block hellishBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("hellishBlock").setBlockTextureName(Reference.MODID + ":" + "hellishBlock");
+	
 	
 	public static void initBlocks()
 	{
@@ -48,6 +50,7 @@ public class SMMBlocks
 		GameRegistry.registerBlock(titaniumOre, titaniumOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(titaniumBlock, titaniumBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(hellishOre, hellishOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(hellishBlock, hellishBlock.getUnlocalizedName().substring(5));
 	}
 	private static void setHarvestLevels()
 	{
@@ -66,5 +69,6 @@ public class SMMBlocks
 		titaniumOre.setHarvestLevel("pickaxe", 0);
 		titaniumBlock.setHarvestLevel("pickaxe", 0);
 		hellishOre.setHarvestLevel("pickaxe", 0);
+		hellishBlock.setHarvestLevel("pickaxe", 0);
 	}
 }

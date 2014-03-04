@@ -18,6 +18,7 @@ public class SMMItems
 	public static final Item cobaltIngot = new ItemSMMOreDrops().setUnlocalizedName("cobaltIngot").setTextureName(Reference.MODID + ":" + "cobaltIngot");
 	public static final Item ruby = new ItemSMMOreDrops().setUnlocalizedName("ruby").setTextureName(Reference.MODID + ":" + "ruby");
 	public static final Item titaniumIngot = new ItemSMMOreDrops().setUnlocalizedName("titaniumIngot").setTextureName(Reference.MODID + ":" + "titaniumIngot");
+	public static final Item hellishIngot = new ItemSMMOreDrops().setUnlocalizedName("hellishIngot").setTextureName(Reference.MODID + ":" + "hellishIngot");
 	
 	public static void initItems()
 	{
@@ -34,6 +35,7 @@ public class SMMItems
 		GameRegistry.registerItem(cobaltIngot, cobaltIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ruby, ruby.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(titaniumIngot, titaniumIngot.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(hellishIngot, hellishIngot.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{
