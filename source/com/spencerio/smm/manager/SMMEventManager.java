@@ -5,6 +5,7 @@ import java.util.Random;
 import com.spencerio.smm.block.SMMBlocks;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -39,10 +40,14 @@ public class SMMEventManager implements IWorldGenerator
     }
     private void generateNether(World world, Random random, int x, int z)
     {
-    	this.addOreSpawn(SMMBlocks.hellishOre, world, random, x, z, 16, 16, 4, 9, 1, 128);
+    	this.addOreSpawn(SMMBlocks.hellishOre, world, random, x, z, 16, 16, 4, 9, 1, 127, Blocks.netherrack);
     }
 
 	public void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY)
+	{
+	    this.addOreSpawn(block, world, random, blockXPos, blockZPos, maxX, maxZ, maxVeinSize, chancesToSpawn, minY, maxY, Blocks.stone);
+	}
+	public void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY, Block blockToReplace)
 	{
 	    assert maxY > minY: "addOreSpawn: The maximum Y must be greater than the Minimum Y";
 	    assert maxX > 0 && maxX <= 16: "addOreSpawn: The Maximum X must be greater than 0 and less than 17";
@@ -56,7 +61,7 @@ public class SMMEventManager implements IWorldGenerator
 	    	int posX = blockXPos + random.nextInt(maxX);
 	        int posY = minY + random.nextInt(diffBtwnMinMaxY);
 	        int posZ = blockZPos + random.nextInt(maxZ);
-	        (new WorldGenMinable(block, maxVeinSize)).generate(world, random, posX, posY, posZ);
+	        (new WorldGenMinable(block, maxVeinSize, blockToReplace)).generate(world, random, posX, posY, posZ);
 	    }
 	}
 }
