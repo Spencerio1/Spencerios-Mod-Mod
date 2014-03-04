@@ -11,6 +11,13 @@ import com.spencerio.smm.item.tools.SMMTools;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * The file where all of the recipes are kept for Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ * @see net.minecraft.item.crafting.CraftingManager
+ * @see net.minecraft.item.crafting.FurnaceRecipes
+ */
 public class SMMCraftingManager
 {
 	public static void registerRecipes()

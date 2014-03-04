@@ -6,6 +6,12 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
+/**
+ * The file for all of the Armor in Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ * @see net.minecraft.item.ItemArmor
+ */
 public class ItemSMMArmor extends ItemArmor
 {
 	public ItemSMMArmor(ArmorMaterial armorMaterial, int par0, int type, String armorPrefix)

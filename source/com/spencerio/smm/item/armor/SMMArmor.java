@@ -8,6 +8,13 @@ import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * The file in which all of the Armor is initialized for Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ * @see net.minecraft.item.Item
+ * @see net.minecraft.init.Items
+ */
 public class SMMArmor
 {
 	public static final ArmorMaterial COAL = EnumHelper.addArmorMaterial("COAL", 30, new int[] {4, 7, 6, 5}, 64);

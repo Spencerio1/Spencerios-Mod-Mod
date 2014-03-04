@@ -11,6 +11,12 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 
+/**
+ * The file that handles all of the World Generation for Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ * @see cpw.mods.fml.common.IWorldGenerator
+ */
 public class SMMEventManager implements IWorldGenerator
 {
 	@Override

@@ -7,6 +7,13 @@ import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * The Initialization of all Blocks in Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ * @see net.minecraft.block.Block
+ * @see net.minecraft.init.Blocks
+ */
 public class SMMBlocks
 {
 	public static final Block earthQuartzOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("earthQuartzOre").setBlockTextureName(Reference.MODID + ":" + "earthQuartzOre");

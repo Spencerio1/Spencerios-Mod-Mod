@@ -8,6 +8,12 @@ import net.minecraft.item.Item;
 import com.spencerio.smm.SpenceriosModMod;
 import com.spencerio.smm.item.SMMItems;
 
+/**
+ * The class for all of the Ores for Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ * @see net.minecraft.block.BlockOre
+ */
 public class BlockSMMOre extends BlockOre
 {
 	public BlockSMMOre()

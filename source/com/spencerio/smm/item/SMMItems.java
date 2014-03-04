@@ -9,6 +9,13 @@ import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * The file where all of the non-tool and armor Items are initialized for Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ * @see net.minecraft.item.Item
+ * @see net.minecraft.init.Items
+ */
 public class SMMItems
 {
 	public static final Item earthQuartz = new ItemSMMOreDrops().setUnlocalizedName("earthQuartz").setTextureName("minecraft:quartz");

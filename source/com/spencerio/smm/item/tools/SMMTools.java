@@ -8,7 +8,13 @@ import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
-
+/**
+ * The file in which all of the Tools are initialized for Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ * @see net.minecraft.item.Item
+ * @see net.minecraft.init.Items
+ */
 public class SMMTools
 {
 	public static final ToolMaterial COAL = EnumHelper.addToolMaterial("COAL", 1, 128, 30F, 2, 64);

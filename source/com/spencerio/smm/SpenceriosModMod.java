@@ -16,6 +16,11 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * Spencerio's Mod Mod
+ * @author Spencerio
+ * @author Parker8283
+ */
 @Mod(modid = Reference.MODID, name = Reference.MOD_NAME, version = Reference.SMM_VERSION, dependencies = Reference.DEPENDENCIES)
 public class SpenceriosModMod
 {
