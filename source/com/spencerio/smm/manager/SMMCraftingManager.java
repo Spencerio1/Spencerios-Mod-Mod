@@ -845,6 +845,12 @@ public class SMMCraftingManager
 			"/",
 			'h', SMMItems.hellishIngot, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.leadBlock), new Object[] {
+			"lll",
+			"lll",
+			"lll",
+			'l', SMMItems.leadIngot
+		});
 	}
 	private static void initShapelessRecipes()
 	{
@@ -872,6 +878,9 @@ public class SMMCraftingManager
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.hellishIngot, 9), new Object[] {
 			new ItemStack(SMMBlocks.hellishBlock)
 		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.leadIngot, 9), new Object[] {
+			new ItemStack(SMMBlocks.leadBlock)
+		});
 	}
 	private static void initFurnaceRecipes()
 	{
@@ -883,5 +892,6 @@ public class SMMCraftingManager
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.rubyOre, new ItemStack(SMMItems.ruby), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.titaniumOre, new ItemStack(SMMItems.titaniumIngot), 1.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.hellishOre, new ItemStack(SMMItems.hellishIngot), 1.0F);
+		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.leadOre, new ItemStack(SMMItems.leadIngot), 1.0F);
 	}
 }

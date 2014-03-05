@@ -32,7 +32,8 @@ public class SMMBlocks
 	public static final Block titaniumBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("titaniumBlock").setBlockTextureName(Reference.MODID + ":" + "titaniumBlock");
 	public static final Block hellishOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("hellishOre").setBlockTextureName(Reference.MODID + ":" + "hellishOre");
 	public static final Block hellishBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("hellishBlock").setBlockTextureName(Reference.MODID + ":" + "hellishBlock");
-	
+	public static final Block leadOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("leadOre").setBlockTextureName(Reference.MODID + ":" + "leadOre");
+	public static final Block leadBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("leadBlock").setBlockTextureName(Reference.MODID + ":" + "leadBlock");
 	
 	public static void initBlocks()
 	{
@@ -58,6 +59,8 @@ public class SMMBlocks
 		GameRegistry.registerBlock(titaniumBlock, titaniumBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(hellishOre, hellishOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(hellishBlock, hellishBlock.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(leadOre, leadOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(leadBlock, leadBlock.getUnlocalizedName().substring(5));
 	}
 	private static void setHarvestLevels()
 	{
@@ -77,5 +80,7 @@ public class SMMBlocks
 		titaniumBlock.setHarvestLevel("pickaxe", 0);
 		hellishOre.setHarvestLevel("pickaxe", 0);
 		hellishBlock.setHarvestLevel("pickaxe", 0);
+		leadOre.setHarvestLevel("pickaxe", 0);
+		leadBlock.setHarvestLevel("pickaxe", 0);
 	}
 }
