@@ -851,6 +851,28 @@ public class SMMCraftingManager
 			"lll",
 			'l', SMMItems.leadIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.leadHelmet), new Object[] {
+			"lll",
+			"l l",
+			'l', SMMItems.leadIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.leadChestplate), new Object[] {
+			"l l",
+			"lll",
+			"lll",
+			'l', SMMItems.leadIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.leadLeggings), new Object[] {
+			"lll",
+			"l l",
+			"l l",
+			'l', SMMItems.leadIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.leadBoots), new Object[] {
+			"l l",
+			"l l",
+			'l', SMMItems.leadIngot
+		});
 	}
 	private static void initShapelessRecipes()
 	{

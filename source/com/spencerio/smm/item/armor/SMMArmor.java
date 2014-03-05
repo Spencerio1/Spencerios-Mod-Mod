@@ -29,6 +29,7 @@ public class SMMArmor
 	public static final ArmorMaterial RUBY = EnumHelper.addArmorMaterial("RUBY", 50, new int[] {6, 9, 8, 7}, 5);
 	public static final ArmorMaterial TITANIUM = EnumHelper.addArmorMaterial("TITANIUM", 32, new int[] {5, 8, 7, 6}, 11);
 	public static final ArmorMaterial HELLISH = EnumHelper.addArmorMaterial("HELLISH", 30, new int[] {3, 6, 5, 4}, 28);
+	public static final ArmorMaterial LEAD = EnumHelper.addArmorMaterial("LEAD", 30, new int[] {1, 4, 3, 2}, 20);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -78,6 +79,10 @@ public class SMMArmor
 	public static final Item hellishChestplate = new ItemSMMArmor(HELLISH, 0, 1, "hellish").setUnlocalizedName("hellishChestplate").setTextureName(Reference.MODID + ":" + "hellishChestplate");
 	public static final Item hellishLeggings = new ItemSMMArmor(HELLISH, 0, 2, "hellish").setUnlocalizedName("hellishLeggings").setTextureName(Reference.MODID + ":" + "hellishLeggings");
 	public static final Item hellishBoots = new ItemSMMArmor(HELLISH, 0, 3, "hellish").setUnlocalizedName("hellishBoots").setTextureName(Reference.MODID + ":" + "hellishBoots");
+	public static final Item leadHelmet = new ItemSMMArmor(LEAD, 0, 0, "lead").setUnlocalizedName("leadHelmet").setTextureName(Reference.MODID + ":" + "leadHelmet");
+	public static final Item leadChestplate = new ItemSMMArmor(LEAD, 0, 1, "lead").setUnlocalizedName("leadChestplate").setTextureName(Reference.MODID + ":" + "leadChestplate");
+	public static final Item leadLeggings = new ItemSMMArmor(LEAD, 0, 2, "lead").setUnlocalizedName("leadLeggings").setTextureName(Reference.MODID + ":" + "leadLeggings");
+	public static final Item leadBoots = new ItemSMMArmor(LEAD, 0, 3, "lead").setUnlocalizedName("leadBoots").setTextureName(Reference.MODID + ":" + "leadBoots");
 	
 	public static void initArmor()
 	{
@@ -129,5 +134,9 @@ public class SMMArmor
 		GameRegistry.registerItem(hellishChestplate, hellishChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(hellishLeggings, hellishLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(hellishBoots, hellishBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadHelmet, leadHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadChestplate, leadChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadLeggings, leadLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadBoots, leadBoots.getUnlocalizedName().substring(5));
 	}
 }

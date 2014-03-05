@@ -136,6 +136,10 @@ item.hellishHelmet.name=Hellish Helmet
 item.hellishChestplate.name=Hellish Chestplate
 item.hellishLeggings.name=Hellish Leggings
 item.hellishBoots.name=Hellish Boots
+item.leadHelmet.name=Lead Helmet
+item.leadChestplate.name=Lead Chestplate
+item.leadLeggings.name=Lead Leggings
+item.leadBoots.name=Lead Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
