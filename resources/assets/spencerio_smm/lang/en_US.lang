@@ -154,6 +154,10 @@ item.obsidianHelmet.name=Obsidian Helmet
 item.obsidianChestplate.name=Obsidian Chestplate
 item.obsidianLeggings.name=Obsidian Leggings
 item.obsidianBoots.name=Obsidian Boots
+item.endStoneHelmet.name=End Stone Helmet
+item.endStoneChestplate.name=End Stone Chestplate
+item.endStoneLeggings.name=End Stone Leggings
+item.endStoneBoots.name=End Stone Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools

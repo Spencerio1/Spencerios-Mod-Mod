@@ -31,6 +31,7 @@ public class SMMArmor
 	public static final ArmorMaterial HELLISH = EnumHelper.addArmorMaterial("HELLISH", 30, new int[] {3, 6, 5, 4}, 28);
 	public static final ArmorMaterial LEAD = EnumHelper.addArmorMaterial("LEAD", 30, new int[] {1, 4, 3, 2}, 20);
 	public static final ArmorMaterial OBSIDIAN = EnumHelper.addArmorMaterial("OBSIDIAN", 30, new int[] {4, 7, 6, 5}, 15);
+	public static final ArmorMaterial ENDSTONE = EnumHelper.addArmorMaterial("ENDSTONE", 27, new int[] {3, 6, 5, 4}, 13);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -88,6 +89,10 @@ public class SMMArmor
 	public static final Item obsidianChestplate = new ItemSMMArmor(OBSIDIAN, 0, 1, "obsidian").setUnlocalizedName("obsidianChestplate").setTextureName(Reference.MODID + ":" + "obsidianChestplate");
 	public static final Item obsidianLeggings = new ItemSMMArmor(OBSIDIAN, 0, 2, "obsidian").setUnlocalizedName("obsidianLeggings").setTextureName(Reference.MODID + ":" + "obsidianLeggings");
 	public static final Item obsidianBoots = new ItemSMMArmor(OBSIDIAN, 0, 3, "obsidian").setUnlocalizedName("obsidianBoots").setTextureName(Reference.MODID + ":" + "obsidianBoots");
+	public static final Item endStoneHelmet = new ItemSMMArmor(ENDSTONE, 0, 0, "endStone").setUnlocalizedName("endStoneHelmet").setTextureName(Reference.MODID + ":" + "endStoneHelmet");
+	public static final Item endStoneChestplate = new ItemSMMArmor(ENDSTONE, 0, 1, "endStone").setUnlocalizedName("endStoneChestplate").setTextureName(Reference.MODID + ":" + "endStoneChestplate");
+	public static final Item endStoneLeggings = new ItemSMMArmor(ENDSTONE, 0, 2, "endStone").setUnlocalizedName("endStoneLeggings").setTextureName(Reference.MODID + ":" + "endStoneLeggings");
+	public static final Item endStoneBoots = new ItemSMMArmor(ENDSTONE, 0, 3, "endStone").setUnlocalizedName("endStoneBoots").setTextureName(Reference.MODID + ":" + "endStoneBoots");
 	
 	public static void initArmor()
 	{
@@ -147,5 +152,9 @@ public class SMMArmor
 		GameRegistry.registerItem(obsidianChestplate, obsidianChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(obsidianLeggings, obsidianLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(obsidianBoots, obsidianBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStoneHelmet, endStoneHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStoneChestplate, endStoneChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStoneLeggings, endStoneLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStoneBoots, endStoneBoots.getUnlocalizedName().substring(5));
 	}
 }

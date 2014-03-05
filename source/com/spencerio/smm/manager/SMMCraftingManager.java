@@ -980,6 +980,28 @@ public class SMMCraftingManager
 			"/",
 			'o', Blocks.obsidian, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.endStoneHelmet), new Object[] {
+			"eee",
+			"e e",
+			'e', Blocks.end_stone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.endStoneChestplate), new Object[] {
+			"e e",
+			"eee",
+			"eee",
+			'e', Blocks.end_stone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.endStoneLeggings), new Object[] {
+			"eee",
+			"e e",
+			"e e",
+			'e', Blocks.end_stone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.endStoneBoots), new Object[] {
+			"e e",
+			"e e",
+			'e', Blocks.end_stone
+		});
 	}
 	private static void initShapelessRecipes()
 	{
