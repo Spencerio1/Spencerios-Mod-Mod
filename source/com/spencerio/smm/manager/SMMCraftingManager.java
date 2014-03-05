@@ -1,5 +1,6 @@
 package com.spencerio.smm.manager;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
@@ -914,6 +915,28 @@ public class SMMCraftingManager
 			"l",
 			"/",
 			'l', SMMItems.leadIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.obsidianHelmet), new Object[] {
+			"ooo",
+			"o o",
+			'o', Blocks.obsidian
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.obsidianChestplate), new Object[] {
+			"o o",
+			"ooo",
+			"ooo",
+			'o', Blocks.obsidian
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.obsidianLeggings), new Object[] {
+			"ooo",
+			"o o",
+			"o o",
+			'o', Blocks.obsidian
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.obsidianBoots), new Object[] {
+			"o o",
+			"o o",
+			'o', Blocks.obsidian
 		});
 	}
 	private static void initShapelessRecipes()

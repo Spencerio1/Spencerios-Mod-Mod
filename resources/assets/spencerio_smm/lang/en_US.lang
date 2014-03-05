@@ -145,6 +145,10 @@ item.leadHelmet.name=Lead Helmet
 item.leadChestplate.name=Lead Chestplate
 item.leadLeggings.name=Lead Leggings
 item.leadBoots.name=Lead Boots
+item.obsidianHelmet.name=Obsidian Helmet
+item.obsidianChestplate.name=Obsidian Chestplate
+item.obsidianLeggings.name=Obsidian Leggings
+item.obsidianBoots.name=Obsidian Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
