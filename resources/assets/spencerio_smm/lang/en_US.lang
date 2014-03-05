@@ -87,6 +87,11 @@ item.hellishAxe.name=Hellish Axe
 item.hellishShovel.name=Hellish Shovel
 item.hellishHoe.name=Hellish Hoe
 item.hellishSword.name=Hellish Sword
+item.leadPickaxe.name=Lead Pickaxe
+item.leadAxe.name=Lead Axe
+item.leadShovel.name=Lead Shovel
+item.leadHoe.name=Lead Hoe
+item.leadSword.name=Lead Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

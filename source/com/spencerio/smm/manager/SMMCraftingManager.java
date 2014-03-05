@@ -873,6 +873,48 @@ public class SMMCraftingManager
 			"l l",
 			'l', SMMItems.leadIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.leadPickaxe), new Object[] {
+			"lll",
+			" / ",
+			" / ",
+			'l', SMMItems.leadIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.leadAxe), new Object[] {
+			"ll",
+			"l/",
+			" /",
+			'l', SMMItems.leadIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.leadAxe), new Object[] {
+			"ll",
+			"/l",
+			"/ ",
+			'l', SMMItems.leadIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.leadShovel), new Object[] {
+			"l",
+			"/",
+			"/",
+			'l', SMMItems.leadIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.leadHoe), new Object[] {
+			"ll",
+			" /",
+			" /",
+			'l', SMMItems.leadIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.leadHoe), new Object[] {
+			"ll",
+			"/ ",
+			"/ ",
+			'l', SMMItems.leadIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.leadSword), new Object[] {
+			"l",
+			"l",
+			"/",
+			'l', SMMItems.leadIngot, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{

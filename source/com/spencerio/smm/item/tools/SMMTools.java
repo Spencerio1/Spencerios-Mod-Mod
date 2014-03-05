@@ -29,6 +29,7 @@ public class SMMTools
 	public static final ToolMaterial RUBY = EnumHelper.addToolMaterial("RUBY", 5, 3950, 20F, 10, 5);
 	public static final ToolMaterial TITANIUM = EnumHelper.addToolMaterial("TITANIUM", 3, 3875, 17F, 5, 11);
 	public static final ToolMaterial HELLISH = EnumHelper.addToolMaterial("HELLISH", 3, 2750, 15F, 4, 28);
+	public static final ToolMaterial LEAD = EnumHelper.addToolMaterial("LEAD", 1, 650, 30F, 3, 20);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -90,6 +91,11 @@ public class SMMTools
 	public static final Item hellishShovel = new ItemSMMShovel(HELLISH).setUnlocalizedName("hellishShovel").setTextureName(Reference.MODID + ":" + "hellishShovel");
 	public static final Item hellishHoe = new ItemSMMHoe(HELLISH).setUnlocalizedName("hellishHoe").setTextureName(Reference.MODID + ":" + "hellishHoe");
 	public static final Item hellishSword = new ItemSMMSword(HELLISH).setUnlocalizedName("hellishSword").setTextureName(Reference.MODID + ":" + "hellishSword");
+	public static final Item leadPickaxe = new ItemSMMPickaxe(LEAD).setUnlocalizedName("leadPickaxe").setTextureName(Reference.MODID + ":" + "leadPickaxe");
+	public static final Item leadAxe = new ItemSMMAxe(LEAD).setUnlocalizedName("leadAxe").setTextureName(Reference.MODID + ":" + "leadAxe");
+	public static final Item leadShovel = new ItemSMMShovel(LEAD).setUnlocalizedName("leadShovel").setTextureName(Reference.MODID + ":" + "leadShovel");
+	public static final Item leadHoe = new ItemSMMHoe(LEAD).setUnlocalizedName("leadHoe").setTextureName(Reference.MODID + ":" + "leadHoe");
+	public static final Item leadSword = new ItemSMMSword(LEAD).setUnlocalizedName("leadSword").setTextureName(Reference.MODID + ":" + "leadSword");
 	
 	public static void initTools()
 	{
@@ -153,5 +159,10 @@ public class SMMTools
 		GameRegistry.registerItem(hellishShovel, hellishShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(hellishHoe, hellishHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(hellishSword, hellishSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadPickaxe, leadPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadAxe, leadAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadShovel, leadShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadHoe, leadHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(leadSword, leadSword.getUnlocalizedName().substring(5));
 	}
 }
