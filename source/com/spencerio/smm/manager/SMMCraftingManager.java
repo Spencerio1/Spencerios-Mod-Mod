@@ -938,6 +938,48 @@ public class SMMCraftingManager
 			"o o",
 			'o', Blocks.obsidian
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.obsidianPickaxe), new Object[] {
+			"ooo",
+			" / ",
+			" / ",
+			'o', Blocks.obsidian, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.obsidianAxe), new Object[] {
+			"oo",
+			"o/",
+			" /",
+			'o', Blocks.obsidian, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.obsidianAxe), new Object[] {
+			"oo",
+			"/o",
+			"/ ",
+			'o', Blocks.obsidian, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.obsidianShovel), new Object[] {
+			"o",
+			"/",
+			"/",
+			'o', Blocks.obsidian, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.obsidianHoe), new Object[] {
+			"oo",
+			" /",
+			" /",
+			'o', Blocks.obsidian, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.obsidianHoe), new Object[] {
+			"oo",
+			"/ ",
+			"/ ",
+			'o', Blocks.obsidian, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.obsidianSword), new Object[] {
+			"o",
+			"o",
+			"/",
+			'o', Blocks.obsidian, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{
