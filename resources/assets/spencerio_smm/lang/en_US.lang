@@ -105,6 +105,11 @@ item.endStoneAxe.name=End Stone Axe
 item.endStoneShovel.name=End Stone Shovel
 item.endStoneHoe.name=End Stone Hoe
 item.endStoneSword.name=End Stone Sword
+item.sapphirePickaxe.name=Sapphire Pickaxe
+item.sapphireAxe.name=Sapphire Axe
+item.sapphireShovel.name=Sapphire Shovel
+item.sapphireHoe.name=Sapphire Hoe
+item.sapphireSword.name=Sapphire Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

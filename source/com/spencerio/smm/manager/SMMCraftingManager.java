@@ -1116,6 +1116,48 @@ public class SMMCraftingManager
 			"s s",
 			's', SMMItems.sapphire
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.sapphirePickaxe), new Object[] {
+			"sss",
+			" / ",
+			" / ",
+			's', SMMItems.sapphire, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.sapphireAxe), new Object[] {
+			"ss",
+			"s/",
+			" /",
+			's', SMMItems.sapphire, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.sapphireAxe), new Object[] {
+			"ss",
+			"/s",
+			"/ ",
+			's', SMMItems.sapphire, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.sapphireShovel), new Object[] {
+			"s",
+			"/",
+			"/",
+			's', SMMItems.sapphire, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.sapphireHoe), new Object[] {
+			"ss",
+			" /",
+			" /",
+			's', SMMItems.sapphire, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.sapphireHoe), new Object[] {
+			"ss",
+			"/ ",
+			"/ ",
+			's', SMMItems.sapphire, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.sapphireSword), new Object[] {
+			"s",
+			"s",
+			"/",
+			's', SMMItems.sapphire, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{
