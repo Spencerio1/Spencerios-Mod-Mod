@@ -1094,6 +1094,28 @@ public class SMMCraftingManager
 			"sss",
 			's', SMMItems.sapphire
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.sapphireHelmet), new Object[] {
+			"sss",
+			"s s",
+			's', SMMItems.sapphire
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.sapphireChestplate), new Object[] {
+			"s s",
+			"sss",
+			"sss",
+			's', SMMItems.sapphire
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.sapphireLeggings), new Object[] {
+			"sss",
+			"s s",
+			"s s",
+			's', SMMItems.sapphire
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.sapphireBoots), new Object[] {
+			"s s",
+			"s s",
+			's', SMMItems.sapphire
+		});
 	}
 	private static void initShapelessRecipes()
 	{
