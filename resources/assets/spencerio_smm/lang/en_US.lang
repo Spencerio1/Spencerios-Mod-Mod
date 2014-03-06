@@ -167,6 +167,10 @@ item.cobblestoneHelmet.name=Cobblestone Helmet
 item.cobblestoneChestplate.name=Cobblestone Chestplate
 item.cobblestoneLeggings.name=Cobblestone Leggings
 item.cobblestoneBoots.name=Cobblestone Boots
+item.woodHelmet.name=Wooden Helmet
+item.woodChestplate.name=Wooden Chestplate
+item.woodLeggings.name=Wooden Leggings
+item.woodBoots.name=Wooden Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
