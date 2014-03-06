@@ -16,6 +16,8 @@ tile.hellishOre.name=Hellish Ore
 tile.hellishBlock.name=Hellish Block
 tile.leadOre.name=Lead Ore
 tile.leadBlock.name=Block of Lead
+tile.sapphireOre.name=Sapphire Ore
+tile.sapphireBlock.name=Block of Sapphire
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -26,6 +28,7 @@ item.ruby.name=Ruby
 item.titaniumIngot.name=Titanium Ingot
 item.hellishIngot.name=Hellish Ingot
 item.leadIngot.name=Lead Ingot
+item.sapphire.name=Sapphire
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe

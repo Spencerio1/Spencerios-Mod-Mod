@@ -34,6 +34,8 @@ public class SMMBlocks
 	public static final Block hellishBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("hellishBlock").setBlockTextureName(Reference.MODID + ":" + "hellishBlock");
 	public static final Block leadOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("leadOre").setBlockTextureName(Reference.MODID + ":" + "leadOre");
 	public static final Block leadBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("leadBlock").setBlockTextureName(Reference.MODID + ":" + "leadBlock");
+	public static final Block sapphireOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("sapphireOre").setBlockTextureName(Reference.MODID + ":" + "sapphireOre");
+	public static final Block sapphireBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("sapphireBlock").setBlockTextureName(Reference.MODID + ":" + "sapphireBlock");
 	
 	public static void initBlocks()
 	{
@@ -61,6 +63,8 @@ public class SMMBlocks
 		GameRegistry.registerBlock(hellishBlock, hellishBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(leadOre, leadOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(leadBlock, leadBlock.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(sapphireOre, sapphireOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(sapphireBlock, sapphireBlock.getUnlocalizedName().substring(5));
 	}
 	private static void setHarvestLevels()
 	{
@@ -82,5 +86,7 @@ public class SMMBlocks
 		hellishBlock.setHarvestLevel("pickaxe", 0);
 		leadOre.setHarvestLevel("pickaxe", 0);
 		leadBlock.setHarvestLevel("pickaxe", 0);
+		sapphireOre.setHarvestLevel("pickaxe", 0);
+		sapphireBlock.setHarvestLevel("pickaxe", 0);
 	}
 }

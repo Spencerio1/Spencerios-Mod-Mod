@@ -1088,6 +1088,12 @@ public class SMMCraftingManager
 			"w w",
 			'w', Blocks.planks
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.sapphireBlock), new Object[] {
+			"sss",
+			"sss",
+			"sss",
+			's', SMMItems.sapphire
+		});
 	}
 	private static void initShapelessRecipes()
 	{
@@ -1118,6 +1124,9 @@ public class SMMCraftingManager
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.leadIngot, 9), new Object[] {
 			new ItemStack(SMMBlocks.leadBlock)
 		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.sapphire, 9), new Object[] {
+			new ItemStack(SMMBlocks.sapphireBlock)
+		});
 	}
 	private static void initFurnaceRecipes()
 	{
@@ -1130,5 +1139,6 @@ public class SMMCraftingManager
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.titaniumOre, new ItemStack(SMMItems.titaniumIngot), 1.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.hellishOre, new ItemStack(SMMItems.hellishIngot), 1.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.leadOre, new ItemStack(SMMItems.leadIngot), 1.0F);
+		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.sapphireOre, new ItemStack(SMMItems.sapphire), 0.0F);
 	}
 }

@@ -44,6 +44,7 @@ public class SMMEventManager implements IWorldGenerator
     	this.addOreSpawn(SMMBlocks.rubyOre, world, random, x, z, 16, 16, 2, 2, 2, 45);
     	this.addOreSpawn(SMMBlocks.titaniumOre, world, random, x, z, 16, 16, 3, 3, 2, 63);
     	this.addOreSpawn(SMMBlocks.leadOre, world, random, x, z, 16, 16, 4, 7, 2, 63);
+    	this.addOreSpawn(SMMBlocks.sapphireOre, world, random, x, z, 16, 16, 5, 5, 2, 63);
     }
     private void generateNether(World world, Random random, int x, int z)
     {
