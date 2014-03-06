@@ -1186,6 +1186,48 @@ public class SMMCraftingManager
 			"t t",
 			't', SMMItems.topaz
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.topazPickaxe), new Object[] {
+			"ttt",
+			" / ",
+			" / ",
+			't', SMMItems.topaz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.topazAxe), new Object[] {
+			"tt",
+			"t/",
+			" /",
+			't', SMMItems.topaz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.topazAxe), new Object[] {
+			"tt",
+			"/t",
+			"/ ",
+			't', SMMItems.topaz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.topazShovel), new Object[] {
+			"t",
+			"/",
+			"/",
+			't', SMMItems.topaz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.topazHoe), new Object[] {
+			"tt",
+			" /",
+			" /",
+			't', SMMItems.topaz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.topazHoe), new Object[] {
+			"tt",
+			"/ ",
+			"/ ",
+			't', SMMItems.topaz, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.topazSword), new Object[] {
+			"t",
+			"t",
+			"/",
+			't', SMMItems.topaz, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{

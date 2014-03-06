@@ -113,6 +113,11 @@ item.sapphireAxe.name=Sapphire Axe
 item.sapphireShovel.name=Sapphire Shovel
 item.sapphireHoe.name=Sapphire Hoe
 item.sapphireSword.name=Sapphire Sword
+item.topazPickaxe.name=Topaz Pickaxe
+item.topazAxe.name=Topaz Axe
+item.topazShovel.name=Topaz Shovel
+item.topazHoe.name=Topaz Hoe
+item.topazSword.name=Topaz Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate
