@@ -38,6 +38,7 @@ public class SMMBlocks
 	public static final Block sapphireBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("sapphireBlock").setBlockTextureName(Reference.MODID + ":" + "sapphireBlock");
 	public static final Block topazOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("topazOre").setBlockTextureName(Reference.MODID + ":" + "topazOre");
 	public static final Block topazBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("topazBlock").setBlockTextureName(Reference.MODID + ":" + "topazBlock");
+	public static final Block saltBlock = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("saltBlock").setBlockTextureName(Reference.MODID + ":" + "saltBlock");
 	
 	public static void initBlocks()
 	{
@@ -69,6 +70,7 @@ public class SMMBlocks
 		GameRegistry.registerBlock(sapphireBlock, sapphireBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(topazOre, topazOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(topazBlock, topazBlock.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(saltBlock, saltBlock.getUnlocalizedName().substring(5));
 	}
 	private static void setHarvestLevels()
 	{
@@ -94,5 +96,6 @@ public class SMMBlocks
 		sapphireBlock.setHarvestLevel("pickaxe", 0);
 		topazOre.setHarvestLevel("pickaxe", 0);
 		topazBlock.setHarvestLevel("pickaxe", 0);
+		saltBlock.setHarvestLevel("pickaxe", 0);
 	}
 }

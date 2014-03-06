@@ -1366,6 +1366,11 @@ public class SMMCraftingManager
 			"cpc",
 			'c', Items.carrot, 'p', Items.potato, Items.egg
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.saltBlock), new Object[] {
+			"ss",
+			"ss",
+			's', SMMItems.salt
+		});
 	}
 	private static void initShapelessRecipes()
 	{
@@ -1401,6 +1406,9 @@ public class SMMCraftingManager
 		});
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.topaz, 9), new Object[] {
 			new ItemStack(SMMBlocks.topazBlock)
+		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.salt, 4), new Object[] {
+			new ItemStack(SMMBlocks.saltBlock)
 		});
 	}
 	private static void initFurnaceRecipes()

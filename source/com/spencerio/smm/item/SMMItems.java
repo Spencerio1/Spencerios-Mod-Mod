@@ -29,6 +29,7 @@ public class SMMItems
 	public static final Item leadIngot = new ItemSMMOreDrops().setUnlocalizedName("leadIngot").setTextureName(Reference.MODID + ":" + "leadIngot");
 	public static final Item sapphire = new ItemSMMOreDrops().setUnlocalizedName("sapphire").setTextureName(Reference.MODID + ":" + "sapphire");
 	public static final Item topaz = new ItemSMMOreDrops().setUnlocalizedName("topaz").setTextureName(Reference.MODID + ":" + "topaz");
+	public static final Item salt = new ItemSMMOreDrops().setUnlocalizedName("salt").setTextureName(Reference.MODID + ":" + "salt");
 	
 	public static void initItems()
 	{
@@ -49,6 +50,7 @@ public class SMMItems
 		GameRegistry.registerItem(leadIngot, leadIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(sapphire, sapphire.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(topaz, topaz.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(salt, salt.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{
