@@ -18,6 +18,8 @@ tile.leadOre.name=Lead Ore
 tile.leadBlock.name=Block of Lead
 tile.sapphireOre.name=Sapphire Ore
 tile.sapphireBlock.name=Block of Sapphire
+tile.topazOre.name=Topaz Ore
+tile.topazBlock.name=Topaz Block
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -29,6 +31,7 @@ item.titaniumIngot.name=Titanium Ingot
 item.hellishIngot.name=Hellish Ingot
 item.leadIngot.name=Lead Ingot
 item.sapphire.name=Sapphire
+item.topaz.name=Topaz
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe

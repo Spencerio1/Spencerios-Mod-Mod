@@ -28,6 +28,7 @@ public class SMMItems
 	public static final Item hellishIngot = new ItemSMMOreDrops().setUnlocalizedName("hellishIngot").setTextureName(Reference.MODID + ":" + "hellishIngot");
 	public static final Item leadIngot = new ItemSMMOreDrops().setUnlocalizedName("leadIngot").setTextureName(Reference.MODID + ":" + "leadIngot");
 	public static final Item sapphire = new ItemSMMOreDrops().setUnlocalizedName("sapphire").setTextureName(Reference.MODID + ":" + "sapphire");
+	public static final Item topaz = new ItemSMMOreDrops().setUnlocalizedName("topaz").setTextureName(Reference.MODID + ":" + "topaz");
 	
 	public static void initItems()
 	{
@@ -47,10 +48,12 @@ public class SMMItems
 		GameRegistry.registerItem(hellishIngot, hellishIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(leadIngot, leadIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(sapphire, sapphire.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(topaz, topaz.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{
 		new ChestGenHooks("dungeonChest").addItem(new WeightedRandomChestContent(new ItemStack(ruby), 1, 1, 10));
 		new ChestGenHooks("mineshaftCorridor").addItem(new WeightedRandomChestContent(new ItemStack(sapphire), 1, 3, 2));
+		new ChestGenHooks("mineshaftCorridor").addItem(new WeightedRandomChestContent(new ItemStack(topaz), 1, 3, 3));
 	}
 }
