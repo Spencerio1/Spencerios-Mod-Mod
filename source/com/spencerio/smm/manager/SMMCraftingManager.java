@@ -1002,6 +1002,48 @@ public class SMMCraftingManager
 			"e e",
 			'e', Blocks.end_stone
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.endStonePickaxe), new Object[] {
+			"eee",
+			" / ",
+			" / ",
+			'e', Blocks.end_stone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.endStoneAxe), new Object[] {
+			"ee",
+			"e/",
+			" /",
+			'e', Blocks.end_stone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.endStoneAxe), new Object[] {
+			"ee",
+			"/e",
+			"/ ",
+			'e', Blocks.end_stone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.endStoneShovel), new Object[] {
+			"e",
+			"/",
+			"/",
+			'e', Blocks.end_stone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.endStoneHoe), new Object[] {
+			"ee",
+			" /",
+			" /",
+			'e', Blocks.end_stone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.endStoneHoe), new Object[] {
+			"ee",
+			"/ ",
+			"/ ",
+			'e', Blocks.end_stone, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.endStoneSword), new Object[] {
+			"e",
+			"e",
+			"/",
+			'e', Blocks.end_stone, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{

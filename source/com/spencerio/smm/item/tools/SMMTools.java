@@ -31,6 +31,7 @@ public class SMMTools
 	public static final ToolMaterial HELLISH = EnumHelper.addToolMaterial("HELLISH", 3, 2750, 15F, 4, 28);
 	public static final ToolMaterial LEAD = EnumHelper.addToolMaterial("LEAD", 1, 650, 30F, 3, 20);
 	public static final ToolMaterial OBSIDIAN = EnumHelper.addToolMaterial("OBSIDIAN", 3, 2775, 10F, 2, 15);
+	public static final ToolMaterial ENDSTONE = EnumHelper.addToolMaterial("ENDSTONE", 2, 750, 6F, 2, 13);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -102,6 +103,11 @@ public class SMMTools
 	public static final Item obsidianShovel = new ItemSMMShovel(OBSIDIAN).setUnlocalizedName("obsidianShovel").setTextureName(Reference.MODID + ":" + "obsidianShovel");
 	public static final Item obsidianHoe = new ItemSMMHoe(OBSIDIAN).setUnlocalizedName("obsidianHoe").setTextureName(Reference.MODID + ":" + "obsidianHoe");
 	public static final Item obsidianSword = new ItemSMMSword(OBSIDIAN).setUnlocalizedName("obsidianSword").setTextureName(Reference.MODID + ":" + "obsidianSword");
+	public static final Item endStonePickaxe = new ItemSMMPickaxe(ENDSTONE).setUnlocalizedName("endStonePickaxe").setTextureName(Reference.MODID + ":" + "endStonePickaxe");
+	public static final Item endStoneAxe = new ItemSMMAxe(ENDSTONE).setUnlocalizedName("endStoneAxe").setTextureName(Reference.MODID + ":" + "endStoneAxe");
+	public static final Item endStoneShovel = new ItemSMMShovel(ENDSTONE).setUnlocalizedName("endStoneShovel").setTextureName(Reference.MODID + ":" + "endStoneShovel");
+	public static final Item endStoneHoe = new ItemSMMHoe(ENDSTONE).setUnlocalizedName("endStoneHoe").setTextureName(Reference.MODID + ":" + "endStoneHoe");
+	public static final Item endStoneSword = new ItemSMMSword(ENDSTONE).setUnlocalizedName("endStoneSword").setTextureName(Reference.MODID + ":" + "endStoneSword");
 	
 	public static void initTools()
 	{
@@ -175,5 +181,10 @@ public class SMMTools
 		GameRegistry.registerItem(obsidianShovel, obsidianShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(obsidianHoe, obsidianHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(obsidianSword, obsidianSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStonePickaxe, endStonePickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStoneAxe, endStoneAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStoneShovel, endStoneShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStoneHoe, endStoneHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(endStoneSword, endStoneSword.getUnlocalizedName().substring(5));
 	}
 }

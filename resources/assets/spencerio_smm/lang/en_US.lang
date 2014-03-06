@@ -97,6 +97,11 @@ item.obsidianAxe.name=Obsidian Axe
 item.obsidianShovel.name=Obsidian Shovel
 item.obsidianHoe.name=Obsidian Hoe
 item.obsidianSword.name=Obsidian Sword
+item.endStonePickaxe.name=End Stone Pickaxe
+item.endStoneAxe.name=End Stone Axe
+item.endStoneShovel.name=End Stone Shovel
+item.endStoneHoe.name=End Stone Hoe
+item.endStoneSword.name=End Stone Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate
