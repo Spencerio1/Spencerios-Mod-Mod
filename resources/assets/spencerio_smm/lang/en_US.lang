@@ -163,6 +163,10 @@ item.endStoneHelmet.name=End Stone Helmet
 item.endStoneChestplate.name=End Stone Chestplate
 item.endStoneLeggings.name=End Stone Leggings
 item.endStoneBoots.name=End Stone Boots
+item.cobblestoneHelmet.name=Cobblestone Helmet
+item.cobblestoneChestplate.name=Cobblestone Chestplate
+item.cobblestoneLeggings.name=Cobblestone Leggings
+item.cobblestoneBoots.name=Cobblestone Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools

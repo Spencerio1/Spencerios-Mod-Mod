@@ -32,6 +32,7 @@ public class SMMArmor
 	public static final ArmorMaterial LEAD = EnumHelper.addArmorMaterial("LEAD", 30, new int[] {1, 4, 3, 2}, 20);
 	public static final ArmorMaterial OBSIDIAN = EnumHelper.addArmorMaterial("OBSIDIAN", 30, new int[] {4, 7, 6, 5}, 15);
 	public static final ArmorMaterial ENDSTONE = EnumHelper.addArmorMaterial("ENDSTONE", 27, new int[] {3, 6, 5, 4}, 13);
+	public static final ArmorMaterial COBBLESTONE = EnumHelper.addArmorMaterial("COBBLESTONE", 10, new int[] {1, 4, 3, 2}, 8);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -93,6 +94,10 @@ public class SMMArmor
 	public static final Item endStoneChestplate = new ItemSMMArmor(ENDSTONE, 0, 1, "endStone").setUnlocalizedName("endStoneChestplate").setTextureName(Reference.MODID + ":" + "endStoneChestplate");
 	public static final Item endStoneLeggings = new ItemSMMArmor(ENDSTONE, 0, 2, "endStone").setUnlocalizedName("endStoneLeggings").setTextureName(Reference.MODID + ":" + "endStoneLeggings");
 	public static final Item endStoneBoots = new ItemSMMArmor(ENDSTONE, 0, 3, "endStone").setUnlocalizedName("endStoneBoots").setTextureName(Reference.MODID + ":" + "endStoneBoots");
+	public static final Item cobblestoneHelmet = new ItemSMMArmor(COBBLESTONE, 0, 0, "cobblestone").setUnlocalizedName("cobblestoneHelmet").setTextureName(Reference.MODID + ":" + "cobblestoneHelmet");
+	public static final Item cobblestoneChestplate = new ItemSMMArmor(COBBLESTONE, 0, 1, "cobblestone").setUnlocalizedName("cobblestoneChestplate").setTextureName(Reference.MODID + ":" + "cobblestoneChestplate");
+	public static final Item cobblestoneLeggings = new ItemSMMArmor(COBBLESTONE, 0, 2, "cobblestone").setUnlocalizedName("cobblestoneLeggings").setTextureName(Reference.MODID + ":" + "cobblestoneLeggings");
+	public static final Item cobblestoneBoots = new ItemSMMArmor(COBBLESTONE, 0, 3, "cobblestone").setUnlocalizedName("cobblestoneBoots").setTextureName(Reference.MODID + ":" + "cobblestoneBoots");
 	
 	public static void initArmor()
 	{
@@ -156,5 +161,9 @@ public class SMMArmor
 		GameRegistry.registerItem(endStoneChestplate, endStoneChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(endStoneLeggings, endStoneLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(endStoneBoots, endStoneBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cobblestoneHelmet, cobblestoneHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cobblestoneChestplate, cobblestoneChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cobblestoneLeggings, cobblestoneLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cobblestoneBoots, cobblestoneBoots.getUnlocalizedName().substring(5));
 	}
 }

@@ -1044,6 +1044,28 @@ public class SMMCraftingManager
 			"/",
 			'e', Blocks.end_stone, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.cobblestoneHelmet), new Object[] {
+			"ccc",
+			"c c",
+			'c', Blocks.cobblestone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.cobblestoneChestplate), new Object[] {
+			"c c",
+			"ccc",
+			"ccc",
+			'c', Blocks.cobblestone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.cobblestoneLeggings), new Object[] {
+			"ccc",
+			"c c",
+			"c c",
+			'c', Blocks.cobblestone
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.cobblestoneBoots), new Object[] {
+			"c c",
+			"c c",
+			'c', Blocks.cobblestone
+		});
 	}
 	private static void initShapelessRecipes()
 	{
