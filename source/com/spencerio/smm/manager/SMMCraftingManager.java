@@ -1228,6 +1228,144 @@ public class SMMCraftingManager
 			"/",
 			't', SMMItems.topaz, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 50), new Object[] {
+			"ggg",
+			"gEg",
+			"ggg",
+			'g', Items.gunpowder, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 51), new Object[] {
+			"bbb",
+			"bEb",
+			"bbb",
+			'b', Items.bone, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 52), new Object[] {
+			"eee",
+			"eEe",
+			"eee",
+			'e', Items.spider_eye, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 54), new Object[] {
+			"rrr",
+			"rEr",
+			"rrr",
+			'r', Items.rotten_flesh, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 55), new Object[] {
+			"sss",
+			"sEs",
+			"sss",
+			's', Items.slime_ball, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 56), new Object[] {
+			"ttt",
+			"tEt",
+			"ttt",
+			't', Items.ghast_tear, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 57), new Object[] {
+			"ggg",
+			"gEg",
+			"ggg",
+			'g', Items.gold_nugget, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 58), new Object[] {
+			"eee",
+			"eEe",
+			"eee",
+			'e', Items.ender_pearl, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 59), new Object[] {
+			"epe",
+			"eEe",
+			"eee",
+			'e', Items.spider_eye, 'p', new ItemStack(Items.potionitem, 1, 16388), 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 60), new Object[] {
+			"fbf",
+			"bEb",
+			"fbf",
+			'f', Blocks.iron_bars, 'b', Blocks.stonebrick, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 61), new Object[] {
+			"rrr",
+			"rEr",
+			"rrr",
+			'r', Items.blaze_rod, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 65), new Object[] {
+			"ccc",
+			"cEc",
+			"ccc",
+			'c', Blocks.cobblestone, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 66), new Object[] {
+			"sps",
+			"pEp",
+			"sps",
+			's', Items.stick, 'p', new ItemStack(Items.potionitem, 1, 8197), 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 90), new Object[] {
+			"ppp",
+			"pEp",
+			"ppp",
+			'p', Items.porkchop, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 91), new Object[] {
+			"www",
+			"wEw",
+			"www",
+			'w', Blocks.wool, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 92), new Object[] {
+			"bbb",
+			"bEb",
+			"bbb",
+			'b', Items.beef, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 93), new Object[] {
+			"fff",
+			"fEf",
+			"fff",
+			'f', Items.feather, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 94), new Object[] {
+			"sss",
+			"sEs",
+			"sss",
+			's', new ItemStack(Items.dye, 1, 0), 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 95), new Object[] {
+			"bbb",
+			"bEb",
+			"bnb",
+			'b', Items.bone, 'n', Items.name_tag, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 96), new Object[] {
+			"brb",
+			"bEb",
+			"bBb",
+			'b', Items.beef, 'r', Blocks.red_mushroom, 'B', Blocks.brown_mushroom, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 98), new Object[] {
+			"fff",
+			"fEf",
+			"fnf",
+			'f', Items.cooked_fished, 'n', Items.name_tag, 'E', Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 100), new Object[] {
+			"lll",
+			"lEl",
+			"lLl",
+			'l', Items.leather, 'L', Items.lead, Items.egg
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 120), new Object[] {
+			"cec",
+			"cEc",
+			"cpc",
+			'c', Items.carrot, 'p', Items.potato, Items.egg
+		});
 	}
 	private static void initShapelessRecipes()
 	{
