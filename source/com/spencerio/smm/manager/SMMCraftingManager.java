@@ -1066,6 +1066,28 @@ public class SMMCraftingManager
 			"c c",
 			'c', Blocks.cobblestone
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.woodHelmet), new Object[] {
+			"www",
+			"w w",
+			'w', Blocks.planks
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.woodChestplate), new Object[] {
+			"w w",
+			"www",
+			"www",
+			'w', Blocks.planks
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.woodLeggings), new Object[] {
+			"www",
+			"w w",
+			"w w",
+			'w', Blocks.planks
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.woodBoots), new Object[] {
+			"w w",
+			"w w",
+			'w', Blocks.planks
+		});
 	}
 	private static void initShapelessRecipes()
 	{
