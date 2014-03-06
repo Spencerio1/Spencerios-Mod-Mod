@@ -1164,6 +1164,28 @@ public class SMMCraftingManager
 			"ttt",
 			't', SMMItems.topaz
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.topazHelmet), new Object[] {
+			"ttt",
+			"t t",
+			't', SMMItems.topaz
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.topazChestplate), new Object[] {
+			"t t",
+			"ttt",
+			"ttt",
+			't', SMMItems.topaz
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.topazLeggings), new Object[] {
+			"ttt",
+			"t t",
+			"t t",
+			't', SMMItems.topaz
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.topazBoots), new Object[] {
+			"t t",
+			"t t",
+			't', SMMItems.topaz
+		});
 	}
 	private static void initShapelessRecipes()
 	{

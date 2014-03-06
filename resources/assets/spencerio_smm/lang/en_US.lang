@@ -186,6 +186,10 @@ item.sapphireHelmet.name=Sapphire Helmet
 item.sapphireChestplate.name=Sapphire Chestplate
 item.sapphireLeggings.name=Sapphire Leggings
 item.sapphireBoots.name=Sapphire Boots
+item.topazHelmet.name=Topaz Helmet
+item.topazChestplate.name=Topaz Chestplate
+item.topazLeggings.name=Topaz Leggings
+item.topazBoots.name=Topaz Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools

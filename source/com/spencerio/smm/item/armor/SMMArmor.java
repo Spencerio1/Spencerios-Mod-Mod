@@ -35,6 +35,7 @@ public class SMMArmor
 	public static final ArmorMaterial COBBLESTONE = EnumHelper.addArmorMaterial("COBBLESTONE", 10, new int[] {1, 4, 3, 2}, 8);
 	public static final ArmorMaterial WOOD = EnumHelper.addArmorMaterial("WOOD", 20, new int[] {1, 4, 3, 2}, 15);
 	public static final ArmorMaterial SAPPHIRE = EnumHelper.addArmorMaterial("SAPPHIRE", 36, new int[] {4, 7, 6, 5}, 12);
+	public static final ArmorMaterial TOPAZ = EnumHelper.addArmorMaterial("TOPAZ", 35, new int[] {4, 7, 6, 5}, 10);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -108,6 +109,10 @@ public class SMMArmor
 	public static final Item sapphireChestplate = new ItemSMMArmor(SAPPHIRE, 0, 1, "sapphire").setUnlocalizedName("sapphireChestplate").setTextureName(Reference.MODID + ":" + "sapphireChestplate");
 	public static final Item sapphireLeggings = new ItemSMMArmor(SAPPHIRE, 0, 2, "sapphire").setUnlocalizedName("sapphireLeggings").setTextureName(Reference.MODID + ":" + "sapphireLeggings");
 	public static final Item sapphireBoots = new ItemSMMArmor(SAPPHIRE, 0, 3, "sapphire").setUnlocalizedName("sapphireBoots").setTextureName(Reference.MODID + ":" + "sapphireBoots");
+	public static final Item topazHelmet = new ItemSMMArmor(TOPAZ, 0, 0, "topaz").setUnlocalizedName("topazHelmet").setTextureName(Reference.MODID + ":" + "topazHelmet");
+	public static final Item topazChestplate = new ItemSMMArmor(TOPAZ, 0, 1, "topaz").setUnlocalizedName("topazChestplate").setTextureName(Reference.MODID + ":" + "topazChestplate");
+	public static final Item topazLeggings = new ItemSMMArmor(TOPAZ, 0, 2, "topaz").setUnlocalizedName("topazLeggings").setTextureName(Reference.MODID + ":" + "topazLeggings");
+	public static final Item topazBoots = new ItemSMMArmor(TOPAZ, 0, 3, "topaz").setUnlocalizedName("topazBoots").setTextureName(Reference.MODID + ":" + "topazBoots");
 	
 	public static void initArmor()
 	{
@@ -183,5 +188,9 @@ public class SMMArmor
 		GameRegistry.registerItem(sapphireChestplate, sapphireChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(sapphireLeggings, sapphireLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(sapphireBoots, sapphireBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(topazHelmet, topazHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(topazChestplate, topazChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(topazLeggings, topazLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(topazBoots, topazBoots.getUnlocalizedName().substring(5));
 	}
 }
