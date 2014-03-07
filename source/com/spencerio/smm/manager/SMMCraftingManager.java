@@ -1358,13 +1358,13 @@ public class SMMCraftingManager
 			"lll",
 			"lEl",
 			"lLl",
-			'l', Items.leather, 'L', Items.lead, Items.egg
+			'l', Items.leather, 'L', Items.lead, 'E', Items.egg
 		});
 		GameRegistry.addRecipe(new ItemStack(Items.spawn_egg, 1, 120), new Object[] {
 			"cec",
 			"cEc",
 			"cpc",
-			'c', Items.carrot, 'p', Items.potato, Items.egg
+			'c', Items.carrot, 'p', Items.potato, 'E', Items.egg
 		});
 		GameRegistry.addRecipe(new ItemStack(SMMBlocks.saltBlock), new Object[] {
 			"ss",
