@@ -1416,6 +1416,9 @@ public class SMMCraftingManager
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.salt, 4), new Object[] {
 			new ItemStack(SMMBlocks.saltBlock)
 		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.film), new Object[] {
+			new ItemStack(Items.dye, 1, 0), new ItemStack(Items.paper)
+		});
 	}
 	private static void initFurnaceRecipes()
 	{

@@ -31,6 +31,7 @@ public class SMMItems
 	public static final Item topaz = new ItemSMMOreDrops().setUnlocalizedName("topaz").setTextureName(Reference.MODID + ":" + "topaz");
 	public static final Item salt = new ItemSMMOreDrops().setUnlocalizedName("salt").setTextureName(Reference.MODID + ":" + "salt");
 	public static final Item diamondGoldStaff = new ItemSMMDGStaff().setUnlocalizedName("diamondGoldStaff").setTextureName(Reference.MODID + ":" + "diamondGoldStaff");
+	public static final Item film = new ItemSMMFilm().setUnlocalizedName("film").setTextureName(Reference.MODID + ":" + "film");
 	
 	public static void initItems()
 	{
@@ -53,6 +54,7 @@ public class SMMItems
 		GameRegistry.registerItem(topaz, topaz.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(salt, salt.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(diamondGoldStaff, diamondGoldStaff.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(film, film.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{
