@@ -1377,6 +1377,78 @@ public class SMMCraftingManager
 			"GGG",
 			'D', Blocks.diamond_block, 'G', Blocks.gold_block
 		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_13), new Object[] {
+			"fff",
+			"fDf",
+			"fff",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 11)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_cat), new Object[] {
+			"fff",
+			"fDf",
+			"fdf",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 2), 'd', new ItemStack(Items.dye, 1, 10)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_blocks), new Object[] {
+			"fff",
+			"fDf",
+			"fff",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 14)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_chirp), new Object[] {
+			"fff",
+			"fDf",
+			"fff",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 1)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_far), new Object[] {
+			"fff",
+			"fDf",
+			"fdf",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 10), 'd', new ItemStack(Items.dye, 1, 11)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_mall), new Object[] {
+			"fff",
+			"fDf",
+			"fff",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 4)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_mellohi), new Object[] {
+			"fff",
+			"fDf",
+			"fdf",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 5), 'd', new ItemStack(Items.dye, 1, 15)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_stal), new Object[] {
+			"fff",
+			"fDf",
+			"fff",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 0)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_strad), new Object[] {
+			"fff",
+			"fDf",
+			"fff",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 15)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_ward), new Object[] {
+			"fff",
+			"fDf",
+			"fdf",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 6), 'd', new ItemStack(Items.dye, 1, 2)
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_11), new Object[] {
+			"fff",
+			"fCf",
+			"fff",
+			'f', SMMItems.film, 'C', Items.coal
+		});
+		GameRegistry.addRecipe(new ItemStack(Items.record_wait), new Object[] {
+			"fff",
+			"fDf",
+			"fdf",
+			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 12), 'd', new ItemStack(Items.dye, 1, 4)
+		});
 	}
 	private static void initShapelessRecipes()
 	{

@@ -36,7 +36,6 @@ public class ItemSMMDGStaff extends Item
 			world.spawnEntityInWorld(Lightning);
 		}
 		return itemStack;
-
 	}
 
 	public boolean onItemUse(ItemStack itemstack, EntityPlayer entity, World world, int i, int j, int k, int l, float a, float b, float c){
