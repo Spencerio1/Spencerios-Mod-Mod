@@ -1371,6 +1371,12 @@ public class SMMCraftingManager
 			"ss",
 			's', SMMItems.salt
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMItems.diamondGoldStaff), new Object[] {
+			"DDD",
+			"DDD",
+			"GGG",
+			'D', Blocks.diamond_block, 'G', Blocks.gold_block
+		});
 	}
 	private static void initShapelessRecipes()
 	{

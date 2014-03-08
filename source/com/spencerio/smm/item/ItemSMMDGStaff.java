@@ -7,9 +7,12 @@ import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.util.MovingObjectPosition.MovingObjectType;
 import net.minecraft.world.World;
 
 import com.spencerio.smm.SpenceriosModMod;
+import com.spencerio.smm.manager.SMMAchievementManager;
 
 public class ItemSMMDGStaff extends Item
 {
@@ -19,18 +22,21 @@ public class ItemSMMDGStaff extends Item
 		setMaxStackSize(1);
 		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
 	}
-	
-	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entity){
-		
-		float var4 = 1.0F;
-		int i = (int)(entity.prevPosX + (entity.posX - entity.prevPosX) * (double)var4);
-		int j = (int)(entity.prevPosY + (entity.posY - entity.prevPosY) * (double)var4 + 1.62D - (double)entity.yOffset);
-		int k = (int)(entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double)var4);
 
-		world.addWeatherEffect(new EntityLightningBolt(world, i, j, k));
-		itemstack.damageItem(10, entity);
+	public void onCreated(ItemStack itemstack, World world, EntityPlayer entity){
+		if(entity instanceof EntityPlayer)((EntityPlayer)entity).addStat(SMMAchievementManager.dgstaff, 1);
+	}
 
-		return itemstack;
+	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer Entityplayer) {
+
+		MovingObjectPosition Coord = Entityplayer.rayTrace(300, 1);
+		if(Coord != null && Coord.typeOfHit == MovingObjectType.BLOCK){
+			EntityLightningBolt Lightning = new EntityLightningBolt(world, 1, 1, 1);
+			Lightning.setPosition(Coord.blockX,Coord.blockY,Coord.blockZ);
+			world.spawnEntityInWorld(Lightning);
+		}
+		return itemStack;
+
 	}
 
 	public boolean onItemUse(ItemStack itemstack, EntityPlayer entity, World world, int i, int j, int k, int l, float a, float b, float c){

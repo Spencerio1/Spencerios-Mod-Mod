@@ -8,6 +8,7 @@ import com.spencerio.smm.item.SMMItems;
 import com.spencerio.smm.item.armor.SMMArmor;
 import com.spencerio.smm.item.tools.SMMTools;
 import com.spencerio.smm.lib.Reference;
+import com.spencerio.smm.manager.SMMAchievementManager;
 import com.spencerio.smm.manager.SMMCraftingManager;
 import com.spencerio.smm.manager.SMMEventManager;
 
@@ -31,15 +32,16 @@ public class SpenceriosModMod
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		GameRegistry.registerWorldGenerator(eventManager, 0);
-		SMMArmor.initArmor();
-		SMMTools.initTools();
 		SMMBlocks.initBlocks();
 		SMMItems.initItems();
+		SMMArmor.initArmor();
+		SMMTools.initTools();
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		SMMAchievementManager.registerAchievements();
 		SMMCraftingManager.registerRecipes();
 	}
 	
