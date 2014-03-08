@@ -34,6 +34,7 @@ item.leadIngot.name=Lead Ingot
 item.sapphire.name=Sapphire
 item.topaz.name=Topaz
 item.salt.name=Salt Crystals
+item.diamondGoldStaff.name=Diamond-Gold Staff
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe
@@ -202,3 +203,6 @@ itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
 itemGroup.tabSMMBlocks=Spencerio's Blocks
 itemGroup.tabSMMItems=Spencerio's Items
+
+achievement.dgstaff=The Ultimate Power
+achievement.dgstaff.desc=Craft a Diamond-Gold Staff
