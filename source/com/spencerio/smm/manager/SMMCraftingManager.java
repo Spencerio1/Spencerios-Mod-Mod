@@ -1570,6 +1570,9 @@ public class SMMCraftingManager
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.dye, 1, 2), new Object[] {
 			new ItemStack(SMMBlocks.camellia)
 		});
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.dye, 2, 9), new Object[] {
+			new ItemStack(SMMBlocks.hydrangea)
+		});
 	}
 	private static void initFurnaceRecipes()
 	{
