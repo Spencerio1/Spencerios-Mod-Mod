@@ -24,6 +24,7 @@ tile.saltBlock.name=Block of Salt
 tile.jadeOre.name=Jade Ore
 tile.jadeBlock.name=Block of Jade
 tile.chysanthemum.name=Chysanthemum
+tile.camellia.name=Camellia
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot

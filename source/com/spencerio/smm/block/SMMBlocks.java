@@ -43,6 +43,7 @@ public class SMMBlocks
 	public static final Block jadeOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("jadeOre").setBlockTextureName(Reference.MODID + ":" + "jadeOre");
 	public static final Block jadeBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("jadeBlock").setBlockTextureName(Reference.MODID + ":" + "jadeBlock");
 	public static final Block chysanthemum = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("chysanthemum").setBlockTextureName(Reference.MODID + ":" + "chysanthemum");
+	public static final Block camellia = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("camellia").setBlockTextureName(Reference.MODID + ":" + "camellia");
 	
 	public static void initBlocks()
 	{
@@ -79,6 +80,7 @@ public class SMMBlocks
 		GameRegistry.registerBlock(jadeOre, jadeOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(jadeBlock, jadeBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(chysanthemum, chysanthemum.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(camellia, camellia.getUnlocalizedName().substring(5));
 	}
 	private static void registerWithOreDictionary()
 	{

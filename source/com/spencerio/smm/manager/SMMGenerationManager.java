@@ -52,6 +52,7 @@ public class SMMGenerationManager implements IWorldGenerator
     	this.addOreSpawn(SMMBlocks.jadeOre, world, random, x, z, 16, 16, 7, 6, 0, 63);
     	
     	this.addFlowerSpawn(SMMBlocks.chysanthemum, world, random, x, z, 16, 16, 2, 256);
+    	this.addFlowerSpawn(SMMBlocks.camellia, world, random, x, z, 16, 16, 2, 256);
     }
     private void generateNether(World world, Random random, int x, int z)
     {
