@@ -125,6 +125,11 @@ item.topazAxe.name=Topaz Axe
 item.topazShovel.name=Topaz Shovel
 item.topazHoe.name=Topaz Hoe
 item.topazSword.name=Topaz Sword
+item.jadePickaxe.name=Jade Pickaxe
+item.jadeAxe.name=Jade Axe
+item.jadeShovel.name=Jade Shovel
+item.jadeHoe.name=Jade Hoe
+item.jadeSword.name=Jade Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

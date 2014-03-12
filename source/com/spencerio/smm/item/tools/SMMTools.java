@@ -34,6 +34,7 @@ public class SMMTools
 	public static final ToolMaterial ENDSTONE = EnumHelper.addToolMaterial("ENDSTONE", 2, 750, 6F, 2, 13);
 	public static final ToolMaterial SAPPHIRE = EnumHelper.addToolMaterial("SAPPHIRE", 4, 3250, 25F, 4, 12);
 	public static final ToolMaterial TOPAZ = EnumHelper.addToolMaterial("TOPAZ", 4, 3225, 30F, 5, 10);
+	public static final ToolMaterial JADE = EnumHelper.addToolMaterial("JADE", 5, 4000, 24F, 4, 14);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -120,6 +121,11 @@ public class SMMTools
 	public static final Item topazShovel = new ItemSMMShovel(TOPAZ).setUnlocalizedName("topazShovel").setTextureName(Reference.MODID + ":" + "topazShovel");
 	public static final Item topazHoe = new ItemSMMHoe(TOPAZ).setUnlocalizedName("topazHoe").setTextureName(Reference.MODID + ":" + "topazHoe");
 	public static final Item topazSword = new ItemSMMSword(TOPAZ).setUnlocalizedName("topazSword").setTextureName(Reference.MODID + ":" + "topazSword");
+	public static final Item jadePickaxe = new ItemSMMPickaxe(JADE).setUnlocalizedName("jadePickaxe").setTextureName(Reference.MODID + ":" + "jadePickaxe");
+	public static final Item jadeAxe = new ItemSMMAxe(JADE).setUnlocalizedName("jadeAxe").setTextureName(Reference.MODID + ":" + "jadeAxe");
+	public static final Item jadeShovel = new ItemSMMShovel(JADE).setUnlocalizedName("jadeShovel").setTextureName(Reference.MODID + ":" + "jadeShovel");
+	public static final Item jadeHoe = new ItemSMMHoe(JADE).setUnlocalizedName("jadeHoe").setTextureName(Reference.MODID + ":" + "jadeHoe");
+	public static final Item jadeSword = new ItemSMMSword(JADE).setUnlocalizedName("jadeSword").setTextureName(Reference.MODID + ":" + "jadeSword");
 	
 	public static void initTools()
 	{
@@ -208,5 +214,10 @@ public class SMMTools
 		GameRegistry.registerItem(topazShovel, topazShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(topazHoe, topazHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(topazSword, topazSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadePickaxe, jadePickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadeAxe, jadeAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadeShovel, jadeShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadeHoe, jadeHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadeSword, jadeSword.getUnlocalizedName().substring(5));
 	}
 }

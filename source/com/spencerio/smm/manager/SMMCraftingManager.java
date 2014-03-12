@@ -1477,6 +1477,48 @@ public class SMMCraftingManager
 			"j j",
 			'j', SMMItems.jade
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.jadePickaxe), new Object[] {
+			"jjj",
+			" / ",
+			" / ",
+			'j', SMMItems.jade, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.jadeAxe), new Object[] {
+			"jj",
+			"j/",
+			" /",
+			'j', SMMItems.jade, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.jadeAxe), new Object[] {
+			"jj",
+			"/j",
+			"/ ",
+			'j', SMMItems.jade, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.jadeShovel), new Object[] {
+			"j",
+			"/",
+			"/",
+			'j', SMMItems.jade, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.jadeHoe), new Object[] {
+			"jj",
+			" /",
+			" /",
+			'j', SMMItems.jade, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.jadeHoe), new Object[] {
+			"jj",
+			"/ ",
+			"/ ",
+			'j', SMMItems.jade, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.jadeSword), new Object[] {
+			"j",
+			"j",
+			"/",
+			'j', SMMItems.jade, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{
