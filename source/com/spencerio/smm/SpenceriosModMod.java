@@ -4,6 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 import com.spencerio.smm.block.SMMBlocks;
+import com.spencerio.smm.event.SMMAchievementToggles;
 import com.spencerio.smm.item.SMMItems;
 import com.spencerio.smm.item.armor.SMMArmor;
 import com.spencerio.smm.item.tools.SMMTools;
@@ -12,6 +13,7 @@ import com.spencerio.smm.manager.SMMAchievementManager;
 import com.spencerio.smm.manager.SMMCraftingManager;
 import com.spencerio.smm.manager.SMMGenerationManager;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -42,6 +44,7 @@ public class SpenceriosModMod
 	public void init(FMLInitializationEvent event)
 	{
 		SMMAchievementManager.registerAchievements();
+		FMLCommonHandler.instance().bus().register(new SMMAchievementToggles());
 		SMMCraftingManager.registerRecipes();
 	}
 	

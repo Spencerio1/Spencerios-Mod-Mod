@@ -7,7 +7,7 @@ import com.spencerio.smm.item.SMMItems;
 
 public class SMMAchievementManager
 {
-	public static final Achievement dgstaff = new Achievement("achievement.dgstaff", "dgstaff", 0, 0, SMMItems.diamondGoldStaff, (Achievement)null).initIndependentStat().registerStat();
+	public static final Achievement dgstaff = new Achievement("achievement.dgstaff", "dgstaff", 0, 0, SMMItems.diamondGoldStaff, (Achievement)null).initIndependentStat().setSpecial().registerStat();
 	
 	public static void registerAchievements()
 	{
