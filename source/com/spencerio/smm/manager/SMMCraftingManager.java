@@ -1455,6 +1455,28 @@ public class SMMCraftingManager
 			"jjj",
 			'j', SMMItems.jade
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.jadeHelmet), new Object[] {
+			"jjj",
+			"j j",
+			'j', SMMItems.jade
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.jadeChestplate), new Object[] {
+			"j j",
+			"jjj",
+			"jjj",
+			'j', SMMItems.jade
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.jadeLeggings), new Object[] {
+			"jjj",
+			"j j",
+			"j j",
+			'j', SMMItems.jade
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.jadeBoots), new Object[] {
+			"j j",
+			"j j",
+			'j', SMMItems.jade
+		});
 	}
 	private static void initShapelessRecipes()
 	{

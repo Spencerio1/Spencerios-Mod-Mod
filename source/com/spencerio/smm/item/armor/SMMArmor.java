@@ -114,6 +114,10 @@ public class SMMArmor
 	public static final Item topazChestplate = new ItemSMMArmor(TOPAZ, 0, 1, "topaz").setUnlocalizedName("topazChestplate").setTextureName(Reference.MODID + ":" + "topazChestplate");
 	public static final Item topazLeggings = new ItemSMMArmor(TOPAZ, 0, 2, "topaz").setUnlocalizedName("topazLeggings").setTextureName(Reference.MODID + ":" + "topazLeggings");
 	public static final Item topazBoots = new ItemSMMArmor(TOPAZ, 0, 3, "topaz").setUnlocalizedName("topazBoots").setTextureName(Reference.MODID + ":" + "topazBoots");
+	public static final Item jadeHelmet = new ItemSMMArmor(JADE, 0, 0, "jade").setUnlocalizedName("jadeHelmet").setTextureName(Reference.MODID + ":" + "jadeHelmet");
+	public static final Item jadeChestplate = new ItemSMMArmor(JADE, 0, 1, "jade").setUnlocalizedName("jadeChestplate").setTextureName(Reference.MODID + ":" + "jadeChestplate");
+	public static final Item jadeLeggings = new ItemSMMArmor(JADE, 0, 2, "jade").setUnlocalizedName("jadeLeggings").setTextureName(Reference.MODID + ":" + "jadeLeggings");
+	public static final Item jadeBoots = new ItemSMMArmor(JADE, 0, 3, "jade").setUnlocalizedName("jadeBoots").setTextureName(Reference.MODID + ":" + "jadeBoots");
 	
 	public static void initArmor()
 	{
@@ -193,5 +197,9 @@ public class SMMArmor
 		GameRegistry.registerItem(topazChestplate, topazChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(topazLeggings, topazLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(topazBoots, topazBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadeHelmet, jadeHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadeChestplate, jadeChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadeLeggings, jadeLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(jadeBoots, jadeBoots.getUnlocalizedName().substring(5));
 	}
 }
