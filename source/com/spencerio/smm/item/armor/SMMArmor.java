@@ -36,6 +36,7 @@ public class SMMArmor
 	public static final ArmorMaterial WOOD = EnumHelper.addArmorMaterial("WOOD", 20, new int[] {1, 4, 3, 2}, 15);
 	public static final ArmorMaterial SAPPHIRE = EnumHelper.addArmorMaterial("SAPPHIRE", 36, new int[] {4, 7, 6, 5}, 12);
 	public static final ArmorMaterial TOPAZ = EnumHelper.addArmorMaterial("TOPAZ", 35, new int[] {4, 7, 6, 5}, 10);
+	public static final ArmorMaterial JADE = EnumHelper.addArmorMaterial("JADE", 35, new int[] {4, 7, 6, 5}, 14);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");

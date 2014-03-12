@@ -36,21 +36,22 @@ public class SMMEventManager implements IWorldGenerator
     }
     private void generateSurface(World world, Random random, int x, int z)
     {
-    	this.addOreSpawn(SMMBlocks.earthQuartzOre, world, random, x, z, 16, 16, 7, 13, 2, 63);
-    	this.addOreSpawn(SMMBlocks.copperOre, world, random, x, z, 16, 16, 6, 5, 2, 63);
-    	this.addOreSpawn(SMMBlocks.carbonOre, world, random, x, z, 16, 16, 5, 4, 2, 63);
-    	this.addOreSpawn(SMMBlocks.silverOre, world, random, x, z, 16, 16, 4, 4, 2, 63);
-    	this.addOreSpawn(SMMBlocks.cobaltOre, world, random, x, z, 16, 16, 6, 3, 2, 63);
-    	this.addOreSpawn(SMMBlocks.rubyOre, world, random, x, z, 16, 16, 2, 2, 2, 45);
-    	this.addOreSpawn(SMMBlocks.titaniumOre, world, random, x, z, 16, 16, 3, 3, 2, 63);
-    	this.addOreSpawn(SMMBlocks.leadOre, world, random, x, z, 16, 16, 4, 7, 2, 63);
-    	this.addOreSpawn(SMMBlocks.sapphireOre, world, random, x, z, 16, 16, 5, 5, 2, 63);
-    	this.addOreSpawn(SMMBlocks.topazOre, world, random, x, z, 16, 16, 8, 7, 2, 63);
-    	this.addOreSpawn(SMMBlocks.saltBlock, world, random, x, z, 16, 16, 5, 9, 2, 63);
+    	this.addOreSpawn(SMMBlocks.earthQuartzOre, world, random, x, z, 16, 16, 7, 13, 0, 63);
+    	this.addOreSpawn(SMMBlocks.copperOre, world, random, x, z, 16, 16, 6, 5, 0, 63);
+    	this.addOreSpawn(SMMBlocks.carbonOre, world, random, x, z, 16, 16, 5, 4, 0, 63);
+    	this.addOreSpawn(SMMBlocks.silverOre, world, random, x, z, 16, 16, 4, 4, 0, 63);
+    	this.addOreSpawn(SMMBlocks.cobaltOre, world, random, x, z, 16, 16, 6, 3, 0, 63);
+    	this.addOreSpawn(SMMBlocks.rubyOre, world, random, x, z, 16, 16, 2, 2, 0, 45);
+    	this.addOreSpawn(SMMBlocks.titaniumOre, world, random, x, z, 16, 16, 3, 3, 0, 63);
+    	this.addOreSpawn(SMMBlocks.leadOre, world, random, x, z, 16, 16, 4, 7, 0, 63);
+    	this.addOreSpawn(SMMBlocks.sapphireOre, world, random, x, z, 16, 16, 5, 5, 0, 63);
+    	this.addOreSpawn(SMMBlocks.topazOre, world, random, x, z, 16, 16, 8, 7, 0, 63);
+    	this.addOreSpawn(SMMBlocks.saltBlock, world, random, x, z, 16, 16, 5, 9, 0, 63);
+    	this.addOreSpawn(SMMBlocks.jadeOre, world, random, x, z, 16, 16, 7, 6, 0, 63);
     }
     private void generateNether(World world, Random random, int x, int z)
     {
-    	this.addOreSpawn(SMMBlocks.hellishOre, world, random, x, z, 16, 16, 4, 9, 1, 127, Blocks.netherrack);
+    	this.addOreSpawn(SMMBlocks.hellishOre, world, random, x, z, 16, 16, 4, 9, 0, 128, Blocks.netherrack);
     }
 
 	public void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY)

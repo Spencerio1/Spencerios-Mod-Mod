@@ -21,6 +21,8 @@ tile.sapphireBlock.name=Block of Sapphire
 tile.topazOre.name=Topaz Ore
 tile.topazBlock.name=Topaz Block
 tile.saltBlock.name=Block of Salt
+tile.jadeOre.name=Jade Ore
+tile.jadeBlock.name=Block of Jade
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -36,6 +38,7 @@ item.topaz.name=Topaz
 item.salt.name=Salt Crystals
 item.diamondGoldStaff.name=Diamond-Gold Staff
 item.film.name=Film
+item.jade.name=Jade
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe

@@ -1449,6 +1449,12 @@ public class SMMCraftingManager
 			"fdf",
 			'f', SMMItems.film, 'D', new ItemStack(Items.dye, 1, 12), 'd', new ItemStack(Items.dye, 1, 4)
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.jadeBlock), new Object[] {
+			"jjj",
+			"jjj",
+			"jjj",
+			'j', SMMItems.jade
+		});
 	}
 	private static void initShapelessRecipes()
 	{
@@ -1491,6 +1497,9 @@ public class SMMCraftingManager
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.film), new Object[] {
 			new ItemStack(Items.dye, 1, 0), new ItemStack(Items.paper)
 		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.jade, 9), new Object[] {
+			new ItemStack(SMMBlocks.jadeBlock)
+		});
 	}
 	private static void initFurnaceRecipes()
 	{
@@ -1505,5 +1514,6 @@ public class SMMCraftingManager
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.leadOre, new ItemStack(SMMItems.leadIngot), 1.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.sapphireOre, new ItemStack(SMMItems.sapphire), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.topazOre, new ItemStack(SMMItems.topaz), 0.0F);
+		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.jadeOre, new ItemStack(SMMItems.jade), 0.0F);
 	}
 }

@@ -2,6 +2,7 @@ package com.spencerio.smm.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraftforge.oredict.OreDictionary;
 
 import com.spencerio.smm.lib.Reference;
 
@@ -39,10 +40,13 @@ public class SMMBlocks
 	public static final Block topazOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("topazOre").setBlockTextureName(Reference.MODID + ":" + "topazOre");
 	public static final Block topazBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("topazBlock").setBlockTextureName(Reference.MODID + ":" + "topazBlock");
 	public static final Block saltBlock = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("saltBlock").setBlockTextureName(Reference.MODID + ":" + "saltBlock");
+	public static final Block jadeOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("jadeOre").setBlockTextureName(Reference.MODID + ":" + "jadeOre");
+	public static final Block jadeBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("jadeBlock").setBlockTextureName(Reference.MODID + ":" + "jadeBlock");
 	
 	public static void initBlocks()
 	{
 		registerBlocks();
+		registerWithOreDictionary();
 		setHarvestLevels();
 	}
 	
@@ -71,6 +75,24 @@ public class SMMBlocks
 		GameRegistry.registerBlock(topazOre, topazOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(topazBlock, topazBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(saltBlock, saltBlock.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(jadeOre, jadeOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(jadeBlock, jadeBlock.getUnlocalizedName().substring(5));
+	}
+	private static void registerWithOreDictionary()
+	{
+		OreDictionary.registerOre("earthQuartzOre", earthQuartzOre);
+		OreDictionary.registerOre("copperOre", copperOre);
+		OreDictionary.registerOre("carbonOre", carbonOre);
+		OreDictionary.registerOre("silverOre", silverOre);
+		OreDictionary.registerOre("cobaltOre", cobaltOre);
+		OreDictionary.registerOre("rubyOre", rubyOre);
+		OreDictionary.registerOre("titaniumOre", titaniumOre);
+		OreDictionary.registerOre("hellishOre", hellishOre);
+		OreDictionary.registerOre("leadOre", leadOre);
+		OreDictionary.registerOre("sapphireOre", sapphireOre);
+		OreDictionary.registerOre("topazOre", topazOre);
+		OreDictionary.registerOre("saltBlock", saltBlock);
+		OreDictionary.registerOre("jadeOre", jadeOre);
 	}
 	private static void setHarvestLevels()
 	{
@@ -97,5 +119,7 @@ public class SMMBlocks
 		topazOre.setHarvestLevel("pickaxe", 0);
 		topazBlock.setHarvestLevel("pickaxe", 0);
 		saltBlock.setHarvestLevel("pickaxe", 0);
+		jadeOre.setHarvestLevel("pickaxe", 2);
+		jadeBlock.setHarvestLevel("pickaxe", 2);
 	}
 }
