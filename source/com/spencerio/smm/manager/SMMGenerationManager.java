@@ -17,7 +17,7 @@ import cpw.mods.fml.common.IWorldGenerator;
  * @author Parker8283
  * @see cpw.mods.fml.common.IWorldGenerator
  */
-public class SMMEventManager implements IWorldGenerator
+public class SMMGenerationManager implements IWorldGenerator
 {
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)

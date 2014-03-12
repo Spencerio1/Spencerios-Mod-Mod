@@ -10,7 +10,7 @@ import com.spencerio.smm.item.tools.SMMTools;
 import com.spencerio.smm.lib.Reference;
 import com.spencerio.smm.manager.SMMAchievementManager;
 import com.spencerio.smm.manager.SMMCraftingManager;
-import com.spencerio.smm.manager.SMMEventManager;
+import com.spencerio.smm.manager.SMMGenerationManager;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -26,7 +26,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @Mod(modid = Reference.MODID, name = Reference.MOD_NAME, version = Reference.SMM_VERSION, dependencies = Reference.DEPENDENCIES)
 public class SpenceriosModMod
 {
-	SMMEventManager eventManager = new SMMEventManager();
+	SMMGenerationManager eventManager = new SMMGenerationManager();
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)

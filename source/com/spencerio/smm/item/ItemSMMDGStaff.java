@@ -12,7 +12,6 @@ import net.minecraft.util.MovingObjectPosition.MovingObjectType;
 import net.minecraft.world.World;
 
 import com.spencerio.smm.SpenceriosModMod;
-import com.spencerio.smm.manager.SMMAchievementManager;
 
 public class ItemSMMDGStaff extends Item
 {
@@ -23,9 +22,9 @@ public class ItemSMMDGStaff extends Item
 		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
 	}
 
-	public void onCreated(ItemStack itemstack, World world, EntityPlayer entity){
-		if(entity instanceof EntityPlayer)((EntityPlayer)entity).addStat(SMMAchievementManager.dgstaff, 1);
-	}
+//	public void onCreated(ItemStack itemstack, World world, EntityPlayer entity){
+//		if(entity instanceof EntityPlayer)((EntityPlayer)entity).addStat(SMMAchievementManager.dgstaff, 1);
+//	}
 
 	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer Entityplayer) {
 
