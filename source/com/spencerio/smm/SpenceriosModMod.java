@@ -71,4 +71,10 @@ public class SpenceriosModMod
 			return SMMItems.earthQuartz;
 		}
 	};
+	
+	public static CreativeTabs tabSMMMisc = new CreativeTabs("tabSMMMisc") {
+		public Item getTabIconItem() {
+			return Item.getItemFromBlock(SMMBlocks.chysanthemum);
+		}
+	};
 }

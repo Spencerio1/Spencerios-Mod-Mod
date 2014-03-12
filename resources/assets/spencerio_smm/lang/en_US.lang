@@ -23,6 +23,7 @@ tile.topazBlock.name=Topaz Block
 tile.saltBlock.name=Block of Salt
 tile.jadeOre.name=Jade Ore
 tile.jadeBlock.name=Block of Jade
+tile.chysanthemum.name=Chysanthemum
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -216,6 +217,7 @@ itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
 itemGroup.tabSMMBlocks=Spencerio's Blocks
 itemGroup.tabSMMItems=Spencerio's Items
+itemGroup.tabSMMMisc=Spencerio's Others
 
 achievement.dgstaff=The Ultimate Power
 achievement.dgstaff.desc=Craft a Diamond-Gold Staff
