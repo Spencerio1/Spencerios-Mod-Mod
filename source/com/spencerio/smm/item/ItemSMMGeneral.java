@@ -5,13 +5,13 @@ import net.minecraft.item.Item;
 import com.spencerio.smm.SpenceriosModMod;
 
 /**
- * The file for all of the elements extracted from the Ores in Spencerio's Mod Mod
+ * The file for (almost) all of the items in Spencerio's Mod Mod
  * @author Spencerio
  * @author Parker8283
  */
-public class ItemSMMOreDrops extends Item
+public class ItemSMMGeneral extends Item
 {
-	public ItemSMMOreDrops()
+	public ItemSMMGeneral()
 	{
 		super();
 		this.setCreativeTab(SpenceriosModMod.tabSMMItems);

@@ -18,22 +18,22 @@ import cpw.mods.fml.common.registry.GameRegistry;
  */
 public class SMMItems
 {
-	public static final Item earthQuartz = new ItemSMMOreDrops().setUnlocalizedName("earthQuartz").setTextureName("minecraft:quartz");
-	public static final Item copperIngot = new ItemSMMOreDrops().setUnlocalizedName("copperIngot").setTextureName(Reference.MODID + ":" + "copperIngot");
-	public static final Item carbonIngot = new ItemSMMOreDrops().setUnlocalizedName("carbonIngot").setTextureName(Reference.MODID + ":" + "carbonIngot");
-	public static final Item silverIngot = new ItemSMMOreDrops().setUnlocalizedName("silverIngot").setTextureName(Reference.MODID + ":" + "silverIngot");
-	public static final Item cobaltIngot = new ItemSMMOreDrops().setUnlocalizedName("cobaltIngot").setTextureName(Reference.MODID + ":" + "cobaltIngot");
-	public static final Item ruby = new ItemSMMOreDrops().setUnlocalizedName("ruby").setTextureName(Reference.MODID + ":" + "ruby");
-	public static final Item titaniumIngot = new ItemSMMOreDrops().setUnlocalizedName("titaniumIngot").setTextureName(Reference.MODID + ":" + "titaniumIngot");
-	public static final Item hellishIngot = new ItemSMMOreDrops().setUnlocalizedName("hellishIngot").setTextureName(Reference.MODID + ":" + "hellishIngot");
-	public static final Item leadIngot = new ItemSMMOreDrops().setUnlocalizedName("leadIngot").setTextureName(Reference.MODID + ":" + "leadIngot");
-	public static final Item sapphire = new ItemSMMOreDrops().setUnlocalizedName("sapphire").setTextureName(Reference.MODID + ":" + "sapphire");
-	public static final Item topaz = new ItemSMMOreDrops().setUnlocalizedName("topaz").setTextureName(Reference.MODID + ":" + "topaz");
-	public static final Item salt = new ItemSMMOreDrops().setUnlocalizedName("salt").setTextureName(Reference.MODID + ":" + "salt");
+	public static final Item earthQuartz = new ItemSMMGeneral().setUnlocalizedName("earthQuartz").setTextureName("minecraft:quartz");
+	public static final Item copperIngot = new ItemSMMGeneral().setUnlocalizedName("copperIngot").setTextureName(Reference.MODID + ":" + "copperIngot");
+	public static final Item carbonIngot = new ItemSMMGeneral().setUnlocalizedName("carbonIngot").setTextureName(Reference.MODID + ":" + "carbonIngot");
+	public static final Item silverIngot = new ItemSMMGeneral().setUnlocalizedName("silverIngot").setTextureName(Reference.MODID + ":" + "silverIngot");
+	public static final Item cobaltIngot = new ItemSMMGeneral().setUnlocalizedName("cobaltIngot").setTextureName(Reference.MODID + ":" + "cobaltIngot");
+	public static final Item ruby = new ItemSMMGeneral().setUnlocalizedName("ruby").setTextureName(Reference.MODID + ":" + "ruby");
+	public static final Item titaniumIngot = new ItemSMMGeneral().setUnlocalizedName("titaniumIngot").setTextureName(Reference.MODID + ":" + "titaniumIngot");
+	public static final Item hellishIngot = new ItemSMMGeneral().setUnlocalizedName("hellishIngot").setTextureName(Reference.MODID + ":" + "hellishIngot");
+	public static final Item leadIngot = new ItemSMMGeneral().setUnlocalizedName("leadIngot").setTextureName(Reference.MODID + ":" + "leadIngot");
+	public static final Item sapphire = new ItemSMMGeneral().setUnlocalizedName("sapphire").setTextureName(Reference.MODID + ":" + "sapphire");
+	public static final Item topaz = new ItemSMMGeneral().setUnlocalizedName("topaz").setTextureName(Reference.MODID + ":" + "topaz");
+	public static final Item salt = new ItemSMMGeneral().setUnlocalizedName("salt").setTextureName(Reference.MODID + ":" + "salt");
 	public static final Item diamondGoldStaff = new ItemSMMDGStaff().setUnlocalizedName("diamondGoldStaff").setTextureName(Reference.MODID + ":" + "diamondGoldStaff");
-	public static final Item film = new ItemSMMFilm().setUnlocalizedName("film").setTextureName(Reference.MODID + ":" + "film");
-	public static final Item jade = new ItemSMMOreDrops().setUnlocalizedName("jade").setTextureName(Reference.MODID + ":" + "jade");
-	public static final Item limestone = new ItemSMMOreDrops().setUnlocalizedName("limestoneDust").setTextureName(Reference.MODID + ":" + "limestone");
+	public static final Item film = new ItemSMMGeneral().setUnlocalizedName("film").setTextureName(Reference.MODID + ":" + "film");
+	public static final Item jade = new ItemSMMGeneral().setUnlocalizedName("jade").setTextureName(Reference.MODID + ":" + "jade");
+	public static final Item limestone = new ItemSMMGeneral().setUnlocalizedName("limestoneDust").setTextureName(Reference.MODID + ":" + "limestone");
 	
 	public static void initItems()
 	{
