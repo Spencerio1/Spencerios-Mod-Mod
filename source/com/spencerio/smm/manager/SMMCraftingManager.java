@@ -1602,5 +1602,6 @@ public class SMMCraftingManager
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.sapphireOre, new ItemStack(SMMItems.sapphire), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.topazOre, new ItemStack(SMMItems.topaz), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.jadeOre, new ItemStack(SMMItems.jade), 0.0F);
+		FurnaceRecipes.smelting().func_151396_a(Items.iron_ingot, new ItemStack(SMMItems.moltenIron), 1.0F);
 	}
 }

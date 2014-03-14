@@ -35,6 +35,7 @@ public class SMMItems
 	public static final Item film = new ItemSMMGeneral().setUnlocalizedName("film").setTextureName(Reference.MODID + ":" + "film");
 	public static final Item jade = new ItemSMMGeneral().setUnlocalizedName("jade").setTextureName(Reference.MODID + ":" + "jade");
 	public static final Item limestone = new ItemSMMGeneral().setUnlocalizedName("limestoneDust").setTextureName(Reference.MODID + ":" + "limestone");
+	public static final Item moltenIron = new ItemSMMGeneral().setUnlocalizedName("moltenIronIngot").setTextureName(Reference.MODID + ":" + "moltenIronIngot");
 	
 	public static void initItems()
 	{
@@ -60,6 +61,7 @@ public class SMMItems
 		GameRegistry.registerItem(film, film.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(jade, jade.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(limestone, limestone.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(moltenIron, moltenIron.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{
