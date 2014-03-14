@@ -50,6 +50,7 @@ public class SMMGenerationManager implements IWorldGenerator
     	this.addOreSpawn(SMMBlocks.topazOre, world, random, x, z, 16, 16, 8, 7, 0, 63);
     	this.addOreSpawn(SMMBlocks.saltBlock, world, random, x, z, 16, 16, 5, 9, 0, 63);
     	this.addOreSpawn(SMMBlocks.jadeOre, world, random, x, z, 16, 16, 7, 6, 0, 63);
+    	this.addOreSpawn(SMMBlocks.limestone, world, random, x, z, 16, 16, 9, 8, 0, 63);
     	
     	this.addFlowerSpawn(SMMBlocks.chysanthemum, world, random, x, z, 16, 16, 2, 256);
     	this.addFlowerSpawn(SMMBlocks.camellia, world, random, x, z, 16, 16, 2, 256);

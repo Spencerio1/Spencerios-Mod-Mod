@@ -33,6 +33,7 @@ public class SMMItems
 	public static final Item diamondGoldStaff = new ItemSMMDGStaff().setUnlocalizedName("diamondGoldStaff").setTextureName(Reference.MODID + ":" + "diamondGoldStaff");
 	public static final Item film = new ItemSMMFilm().setUnlocalizedName("film").setTextureName(Reference.MODID + ":" + "film");
 	public static final Item jade = new ItemSMMOreDrops().setUnlocalizedName("jade").setTextureName(Reference.MODID + ":" + "jade");
+	public static final Item limestone = new ItemSMMOreDrops().setUnlocalizedName("limestoneDust").setTextureName(Reference.MODID + ":" + "limestone");
 	
 	public static void initItems()
 	{
@@ -57,6 +58,7 @@ public class SMMItems
 		GameRegistry.registerItem(diamondGoldStaff, diamondGoldStaff.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(film, film.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(jade, jade.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(limestone, limestone.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{

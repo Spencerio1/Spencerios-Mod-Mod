@@ -27,6 +27,7 @@ tile.chysanthemum.name=Chysanthemum
 tile.camellia.name=Camellia
 tile.hydrangea.name=Hydrangea
 tile.help.name=Spencerio's Help Block
+tile.limestone.name=Block of Limestone
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -43,6 +44,7 @@ item.salt.name=Salt Crystals
 item.diamondGoldStaff.name=Diamond-Gold Staff
 item.film.name=Film
 item.jade.name=Jade
+item.limestoneDust.name=Limestone
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe

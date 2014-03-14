@@ -1525,6 +1525,11 @@ public class SMMCraftingManager
 			"ddd",
 			'd', Blocks.dirt, 'i', new ItemStack(Items.dye, 1, 0)
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.limestone), new Object[] {
+			"ll",
+			"ll",
+			'l', SMMItems.limestone
+		});
 	}
 	private static void initShapelessRecipes()
 	{
@@ -1578,6 +1583,9 @@ public class SMMCraftingManager
 		});
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.dye, 2, 9), new Object[] {
 			new ItemStack(SMMBlocks.hydrangea)
+		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.limestone, 4), new Object[] {
+			new ItemStack(SMMBlocks.limestone)
 		});
 	}
 	private static void initFurnaceRecipes()

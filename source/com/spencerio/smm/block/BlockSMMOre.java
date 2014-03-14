@@ -24,11 +24,11 @@ public class BlockSMMOre extends BlockOre
 	
 	public Item getItemDropped(int par1, Random par2Random, int par3)
 	{
-		return this == SMMBlocks.earthQuartzOre ? SMMItems.earthQuartz : this == SMMBlocks.rubyOre ? SMMItems.ruby : this == SMMBlocks.sapphireOre ? SMMItems.sapphire : this == SMMBlocks.topazOre ? SMMItems.topaz : this == SMMBlocks.saltBlock ? SMMItems.salt : this == SMMBlocks.jadeOre ? SMMItems.jade : Item.getItemFromBlock(this);
+		return this == SMMBlocks.earthQuartzOre ? SMMItems.earthQuartz : this == SMMBlocks.rubyOre ? SMMItems.ruby : this == SMMBlocks.sapphireOre ? SMMItems.sapphire : this == SMMBlocks.topazOre ? SMMItems.topaz : this == SMMBlocks.saltBlock ? SMMItems.salt : this == SMMBlocks.jadeOre ? SMMItems.jade : this == SMMBlocks.limestone ? SMMItems.limestone : Item.getItemFromBlock(this);
 	}
 	
 	public int quantityDropped(Random par1Random)
 	{
-		return this == SMMBlocks.saltBlock ? 4 : 1;
+		return this == SMMBlocks.saltBlock ? 4 : this == SMMBlocks.limestone ? 4 : 1;
 	}
 }
