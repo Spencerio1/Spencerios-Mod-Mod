@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
 
+import com.spencerio.smm.item.tools.ItemSMMDGStaff;
 import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;

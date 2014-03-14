@@ -1,6 +1,6 @@
 package com.spencerio.smm.event;
 
-import com.spencerio.smm.item.ItemSMMDGStaff;
+import com.spencerio.smm.item.tools.ItemSMMDGStaff;
 import com.spencerio.smm.manager.SMMAchievementManager;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
