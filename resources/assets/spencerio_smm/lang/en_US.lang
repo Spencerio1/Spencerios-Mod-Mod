@@ -26,6 +26,7 @@ tile.jadeBlock.name=Block of Jade
 tile.chysanthemum.name=Chysanthemum
 tile.camellia.name=Camellia
 tile.hydrangea.name=Hydrangea
+tile.help.name=Spencerio's Help Block
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot

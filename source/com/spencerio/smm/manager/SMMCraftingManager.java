@@ -1519,6 +1519,12 @@ public class SMMCraftingManager
 			"/",
 			'j', SMMItems.jade, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.help), new Object[] {
+			"ddd",
+			"did",
+			"ddd",
+			'd', Blocks.dirt, 'i', new ItemStack(Items.dye, 1, 0)
+		});
 	}
 	private static void initShapelessRecipes()
 	{

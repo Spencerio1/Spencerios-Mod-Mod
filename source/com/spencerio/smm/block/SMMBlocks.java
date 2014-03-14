@@ -45,6 +45,7 @@ public class SMMBlocks
 	public static final Block chysanthemum = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("chysanthemum").setBlockTextureName(Reference.MODID + ":" + "chysanthemum");
 	public static final Block camellia = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("camellia").setBlockTextureName(Reference.MODID + ":" + "camellia");
 	public static final Block hydrangea = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("hydrangea").setBlockTextureName(Reference.MODID + ":" + "hydrangea");
+	public static final Block help = new BlockSMMHelp().setHardness(0.6F).setResistance(1.0F).setStepSound(Block.soundTypeGravel).setBlockName("help").setBlockTextureName(Reference.MODID + ":" + "helpBlock");
 	
 	public static void initBlocks()
 	{
@@ -83,6 +84,7 @@ public class SMMBlocks
 		GameRegistry.registerBlock(chysanthemum, chysanthemum.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(camellia, camellia.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(hydrangea, hydrangea.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(help, help.getUnlocalizedName().substring(5));
 	}
 	private static void registerWithOreDictionary()
 	{
@@ -127,5 +129,6 @@ public class SMMBlocks
 		saltBlock.setHarvestLevel("pickaxe", 0);
 		jadeOre.setHarvestLevel("pickaxe", 2);
 		jadeBlock.setHarvestLevel("pickaxe", 2);
+		help.setHarvestLevel("shovel", 0);
 	}
 }
