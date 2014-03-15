@@ -1542,6 +1542,28 @@ public class SMMCraftingManager
 			"sss",
 			's', SMMItems.steelIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.steelHelmet), new Object[] {
+			"sss",
+			"s s",
+			's', SMMItems.steelIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.steelChestplate), new Object[] {
+			"s s",
+			"sss",
+			"sss",
+			's', SMMItems.steelIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.steelLeggings), new Object[] {
+			"sss",
+			"s s",
+			"s s",
+			's', SMMItems.steelIngot
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.steelBoots), new Object[] {
+			"s s",
+			"s s",
+			's', SMMItems.steelIngot
+		});
 	}
 	private static void initShapelessRecipes()
 	{

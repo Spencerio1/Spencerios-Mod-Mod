@@ -139,6 +139,11 @@ item.jadeAxe.name=Jade Axe
 item.jadeShovel.name=Jade Shovel
 item.jadeHoe.name=Jade Hoe
 item.jadeSword.name=Jade Sword
+item.steelPickaxe.name=Steel Pickaxe
+item.steelAxe.name=Steel Axe
+item.steelShovel.name=Steel Shovel
+item.steelHoe.name=Steel Hoe
+item.steelSword.name=Steel Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

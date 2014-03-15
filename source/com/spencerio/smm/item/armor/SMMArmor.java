@@ -37,6 +37,7 @@ public class SMMArmor
 	public static final ArmorMaterial SAPPHIRE = EnumHelper.addArmorMaterial("SAPPHIRE", 36, new int[] {4, 7, 6, 5}, 12);
 	public static final ArmorMaterial TOPAZ = EnumHelper.addArmorMaterial("TOPAZ", 35, new int[] {4, 7, 6, 5}, 10);
 	public static final ArmorMaterial JADE = EnumHelper.addArmorMaterial("JADE", 35, new int[] {4, 7, 6, 5}, 14);
+	public static final ArmorMaterial STEEL = EnumHelper.addArmorMaterial("STEEL", 45, new int[] {4, 7, 5, 4}, 12);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -118,6 +119,10 @@ public class SMMArmor
 	public static final Item jadeChestplate = new ItemSMMArmor(JADE, 0, 1, "jade").setUnlocalizedName("jadeChestplate").setTextureName(Reference.MODID + ":" + "jadeChestplate");
 	public static final Item jadeLeggings = new ItemSMMArmor(JADE, 0, 2, "jade").setUnlocalizedName("jadeLeggings").setTextureName(Reference.MODID + ":" + "jadeLeggings");
 	public static final Item jadeBoots = new ItemSMMArmor(JADE, 0, 3, "jade").setUnlocalizedName("jadeBoots").setTextureName(Reference.MODID + ":" + "jadeBoots");
+	public static final Item steelHelmet = new ItemSMMArmor(STEEL, 0, 0, "steel").setUnlocalizedName("steelHelmet").setTextureName(Reference.MODID + ":" + "steelHelmet");
+	public static final Item steelChestplate = new ItemSMMArmor(STEEL, 0, 1, "steel").setUnlocalizedName("steelChestplate").setTextureName(Reference.MODID + ":" + "steelChestplate");
+	public static final Item steelLeggings = new ItemSMMArmor(STEEL, 0, 2, "steel").setUnlocalizedName("steelLeggings").setTextureName(Reference.MODID + ":" + "steelLeggings");
+	public static final Item steelBoots = new ItemSMMArmor(STEEL, 0, 3, "steel").setUnlocalizedName("steelBoots").setTextureName(Reference.MODID + ":" + "steelBoots");
 	
 	public static void initArmor()
 	{
@@ -201,5 +206,9 @@ public class SMMArmor
 		GameRegistry.registerItem(jadeChestplate, jadeChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(jadeLeggings, jadeLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(jadeBoots, jadeBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelHelmet, steelHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelChestplate, steelChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelLeggings, steelLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelBoots, steelBoots.getUnlocalizedName().substring(5));
 	}
 }
