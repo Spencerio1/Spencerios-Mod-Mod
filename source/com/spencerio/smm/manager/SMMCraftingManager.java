@@ -1530,6 +1530,12 @@ public class SMMCraftingManager
 			"ll",
 			'l', SMMItems.limestone
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMItems.steelIngot), new Object[] {
+			"mmm",
+			"lll",
+			"sss",
+			'm', SMMItems.moltenIron, 'l', SMMItems.limestone, 's', Blocks.stone
+		});
 	}
 	private static void initShapelessRecipes()
 	{

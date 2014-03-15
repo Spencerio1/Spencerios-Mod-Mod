@@ -36,6 +36,7 @@ public class SMMItems
 	public static final Item jade = new ItemSMMGeneral().setUnlocalizedName("jade").setTextureName(Reference.MODID + ":" + "jade");
 	public static final Item limestone = new ItemSMMGeneral().setUnlocalizedName("limestoneDust").setTextureName(Reference.MODID + ":" + "limestone");
 	public static final Item moltenIron = new ItemSMMGeneral().setUnlocalizedName("moltenIronIngot").setTextureName(Reference.MODID + ":" + "moltenIronIngot");
+	public static final Item steelIngot = new ItemSMMGeneral().setUnlocalizedName("steelIngot").setTextureName(Reference.MODID + ":" + "steelIngot");
 	
 	public static void initItems()
 	{
@@ -62,11 +63,13 @@ public class SMMItems
 		GameRegistry.registerItem(jade, jade.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(limestone, limestone.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(moltenIron, moltenIron.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelIngot, steelIngot.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{
 		new ChestGenHooks("dungeonChest").addItem(new WeightedRandomChestContent(new ItemStack(ruby), 1, 1, 10));
 		new ChestGenHooks("mineshaftCorridor").addItem(new WeightedRandomChestContent(new ItemStack(sapphire), 1, 3, 2));
 		new ChestGenHooks("mineshaftCorridor").addItem(new WeightedRandomChestContent(new ItemStack(topaz), 1, 3, 3));
+		new ChestGenHooks("mineshaftCorridor").addItem(new WeightedRandomChestContent(new ItemStack(steelIngot), 1, 3, 3));
 	}
 }
