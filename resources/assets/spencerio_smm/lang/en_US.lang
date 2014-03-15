@@ -28,6 +28,7 @@ tile.camellia.name=Camellia
 tile.hydrangea.name=Hydrangea
 tile.help.name=Spencerio's Help Block
 tile.limestone.name=Block of Limestone
+tile.steelBlock.name=Block of Steel
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot

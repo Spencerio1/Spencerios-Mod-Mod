@@ -1536,6 +1536,12 @@ public class SMMCraftingManager
 			"sss",
 			'm', SMMItems.moltenIron, 'l', SMMItems.limestone, 's', Blocks.stone
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.steelBlock), new Object[] {
+			"sss",
+			"sss",
+			"sss",
+			's', SMMItems.steelIngot
+		});
 	}
 	private static void initShapelessRecipes()
 	{
@@ -1592,6 +1598,9 @@ public class SMMCraftingManager
 		});
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.limestone, 4), new Object[] {
 			new ItemStack(SMMBlocks.limestone)
+		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.steelIngot, 9), new Object[] {
+			new ItemStack(SMMBlocks.steelBlock)
 		});
 	}
 	private static void initFurnaceRecipes()

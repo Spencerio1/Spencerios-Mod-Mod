@@ -47,6 +47,7 @@ public class SMMBlocks
 	public static final Block hydrangea = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("hydrangea").setBlockTextureName(Reference.MODID + ":" + "hydrangea");
 	public static final Block help = new BlockSMMHelp().setHardness(0.6F).setResistance(1.0F).setStepSound(Block.soundTypeGravel).setBlockName("help").setBlockTextureName(Reference.MODID + ":" + "helpBlock");
 	public static final Block limestone = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("limestone").setBlockTextureName(Reference.MODID + ":" + "limestone");
+	public static final Block steelBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("steelBlock").setBlockTextureName(Reference.MODID + ":" + "steelBlock");
 	
 	public static void initBlocks()
 	{
@@ -87,6 +88,7 @@ public class SMMBlocks
 		GameRegistry.registerBlock(hydrangea, hydrangea.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(help, help.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(limestone, limestone.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(steelBlock, steelBlock.getUnlocalizedName().substring(5));
 	}
 	private static void registerWithOreDictionary()
 	{
@@ -134,5 +136,6 @@ public class SMMBlocks
 		jadeBlock.setHarvestLevel("pickaxe", 2);
 		help.setHarvestLevel("shovel", 0);
 		limestone.setHarvestLevel("pickaxe", 0);
+		steelBlock.setHarvestLevel("pickaxe", 2);
 	}
 }
