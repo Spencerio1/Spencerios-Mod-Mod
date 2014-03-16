@@ -1564,6 +1564,48 @@ public class SMMCraftingManager
 			"s s",
 			's', SMMItems.steelIngot
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.steelPickaxe), new Object[] {
+			"sss",
+			" / ",
+			" / ",
+			's', SMMItems.steelIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.steelAxe), new Object[] {
+			"ss",
+			"s/",
+			" /",
+			's', SMMItems.steelIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.steelAxe), new Object[] {
+			"ss",
+			"/s",
+			"/ ",
+			's', SMMItems.steelIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.steelShovel), new Object[] {
+			"s",
+			"/",
+			"/",
+			's', SMMItems.steelIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.steelHoe), new Object[] {
+			"ss",
+			" /",
+			" /",
+			's', SMMItems.steelIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.steelHoe), new Object[] {
+			"ss",
+			"/ ",
+			"/ ",
+			's', SMMItems.steelIngot, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.steelSword), new Object[] {
+			"s",
+			"s",
+			"/",
+			's', SMMItems.steelIngot, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{

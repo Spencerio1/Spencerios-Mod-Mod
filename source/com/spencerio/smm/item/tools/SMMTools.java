@@ -35,6 +35,7 @@ public class SMMTools
 	public static final ToolMaterial SAPPHIRE = EnumHelper.addToolMaterial("SAPPHIRE", 4, 3250, 25F, 4, 12);
 	public static final ToolMaterial TOPAZ = EnumHelper.addToolMaterial("TOPAZ", 4, 3225, 30F, 5, 10);
 	public static final ToolMaterial JADE = EnumHelper.addToolMaterial("JADE", 5, 4000, 24F, 4, 14);
+	public static final ToolMaterial STEEL = EnumHelper.addToolMaterial("STEEL", 5, 3800, 11F, 4, 12);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -126,6 +127,11 @@ public class SMMTools
 	public static final Item jadeShovel = new ItemSMMShovel(JADE).setUnlocalizedName("jadeShovel").setTextureName(Reference.MODID + ":" + "jadeShovel");
 	public static final Item jadeHoe = new ItemSMMHoe(JADE).setUnlocalizedName("jadeHoe").setTextureName(Reference.MODID + ":" + "jadeHoe");
 	public static final Item jadeSword = new ItemSMMSword(JADE).setUnlocalizedName("jadeSword").setTextureName(Reference.MODID + ":" + "jadeSword");
+	public static final Item steelPickaxe = new ItemSMMPickaxe(STEEL).setUnlocalizedName("steelPickaxe").setTextureName(Reference.MODID + ":" + "steelPickaxe");
+	public static final Item steelAxe = new ItemSMMAxe(STEEL).setUnlocalizedName("steelAxe").setTextureName(Reference.MODID + ":" + "steelAxe");
+	public static final Item steelShovel = new ItemSMMShovel(STEEL).setUnlocalizedName("steelShovel").setTextureName(Reference.MODID + ":" + "steelShovel");
+	public static final Item steelHoe = new ItemSMMHoe(STEEL).setUnlocalizedName("steelHoe").setTextureName(Reference.MODID + ":" + "steelHoe");
+	public static final Item steelSword = new ItemSMMSword(STEEL).setUnlocalizedName("steelSword").setTextureName(Reference.MODID + ":" + "steelSword");
 	
 	public static void initTools()
 	{
@@ -219,5 +225,10 @@ public class SMMTools
 		GameRegistry.registerItem(jadeShovel, jadeShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(jadeHoe, jadeHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(jadeSword, jadeSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelPickaxe, steelPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelAxe, steelAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelShovel, steelShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelHoe, steelHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(steelSword, steelSword.getUnlocalizedName().substring(5));
 	}
 }
