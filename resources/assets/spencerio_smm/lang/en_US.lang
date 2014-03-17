@@ -29,6 +29,8 @@ tile.hydrangea.name=Hydrangea
 tile.help.name=Spencerio's Help Block
 tile.limestone.name=Block of Limestone
 tile.steelBlock.name=Block of Steel
+tile.tanzaniteOre.name=Tanzanite Ore
+tile.tanzaniteBlock.name=Tanzanite Block
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -48,6 +50,7 @@ item.jade.name=Jade
 item.limestoneDust.name=Limestone
 item.moltenIronIngot.name=Molten Iron Ingot
 item.steelIngot.name=Steel Ingot
+item.tanzanite.name=Tanzanite
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe

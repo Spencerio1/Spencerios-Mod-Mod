@@ -1606,6 +1606,12 @@ public class SMMCraftingManager
 			"/",
 			's', SMMItems.steelIngot, '/', Items.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.tanzaniteBlock), new Object[] {
+			"ttt",
+			"ttt",
+			"ttt",
+			't', SMMItems.tanzanite
+		});
 	}
 	private static void initShapelessRecipes()
 	{
@@ -1666,6 +1672,9 @@ public class SMMCraftingManager
 		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.steelIngot, 9), new Object[] {
 			new ItemStack(SMMBlocks.steelBlock)
 		});
+		GameRegistry.addShapelessRecipe(new ItemStack(SMMItems.tanzanite, 9), new Object[] {
+			new ItemStack(SMMBlocks.tanzaniteBlock)
+		});
 	}
 	private static void initFurnaceRecipes()
 	{
@@ -1682,5 +1691,6 @@ public class SMMCraftingManager
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.topazOre, new ItemStack(SMMItems.topaz), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.jadeOre, new ItemStack(SMMItems.jade), 0.0F);
 		FurnaceRecipes.smelting().func_151396_a(Items.iron_ingot, new ItemStack(SMMItems.moltenIron), 1.0F);
+		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.tanzaniteOre, new ItemStack(SMMItems.tanzanite), 0.0F);
 	}
 }

@@ -48,6 +48,8 @@ public class SMMBlocks
 	public static final Block help = new BlockSMMHelp().setHardness(0.6F).setResistance(1.0F).setStepSound(Block.soundTypeGravel).setBlockName("help").setBlockTextureName(Reference.MODID + ":" + "helpBlock");
 	public static final Block limestone = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("limestone").setBlockTextureName(Reference.MODID + ":" + "limestone");
 	public static final Block steelBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("steelBlock").setBlockTextureName(Reference.MODID + ":" + "steelBlock");
+	public static final Block tanzaniteOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("tanzaniteOre").setBlockTextureName(Reference.MODID + ":" + "tanzaniteOre");
+	public static final Block tanzaniteBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("tanzaniteBlock").setBlockTextureName(Reference.MODID + ":" + "tanzaniteBlock");
 	
 	public static void initBlocks()
 	{
@@ -89,6 +91,8 @@ public class SMMBlocks
 		GameRegistry.registerBlock(help, help.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(limestone, limestone.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(steelBlock, steelBlock.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(tanzaniteOre, tanzaniteOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(tanzaniteBlock, tanzaniteBlock.getUnlocalizedName().substring(5));
 	}
 	private static void registerWithOreDictionary()
 	{
@@ -106,6 +110,7 @@ public class SMMBlocks
 		OreDictionary.registerOre("saltBlock", saltBlock);
 		OreDictionary.registerOre("jadeOre", jadeOre);
 		OreDictionary.registerOre("limestone", limestone);
+		OreDictionary.registerOre("tanzaniteOre", tanzaniteOre);
 	}
 	private static void setHarvestLevels()
 	{
@@ -137,5 +142,7 @@ public class SMMBlocks
 		help.setHarvestLevel("shovel", 0);
 		limestone.setHarvestLevel("pickaxe", 0);
 		steelBlock.setHarvestLevel("pickaxe", 2);
+		tanzaniteOre.setHarvestLevel("pickaxe", 2);
+		tanzaniteBlock.setHarvestLevel("pickaxe", 1);
 	}
 }
