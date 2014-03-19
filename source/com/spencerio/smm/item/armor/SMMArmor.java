@@ -38,6 +38,7 @@ public class SMMArmor
 	public static final ArmorMaterial TOPAZ = EnumHelper.addArmorMaterial("TOPAZ", 35, new int[] {4, 7, 6, 5}, 10);
 	public static final ArmorMaterial JADE = EnumHelper.addArmorMaterial("JADE", 35, new int[] {4, 7, 6, 5}, 14);
 	public static final ArmorMaterial STEEL = EnumHelper.addArmorMaterial("STEEL", 45, new int[] {4, 7, 5, 4}, 12);
+	public static final ArmorMaterial TANZANITE = EnumHelper.addArmorMaterial("TANZANITE", 35, new int[] {4, 7, 5, 4}, 13);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -123,6 +124,10 @@ public class SMMArmor
 	public static final Item steelChestplate = new ItemSMMArmor(STEEL, 0, 1, "steel").setUnlocalizedName("steelChestplate").setTextureName(Reference.MODID + ":" + "steelChestplate");
 	public static final Item steelLeggings = new ItemSMMArmor(STEEL, 0, 2, "steel").setUnlocalizedName("steelLeggings").setTextureName(Reference.MODID + ":" + "steelLeggings");
 	public static final Item steelBoots = new ItemSMMArmor(STEEL, 0, 3, "steel").setUnlocalizedName("steelBoots").setTextureName(Reference.MODID + ":" + "steelBoots");
+	public static final Item tanzaniteHelmet = new ItemSMMArmor(TANZANITE, 0, 0, "tanzanite").setUnlocalizedName("tanzaniteHelmet").setTextureName(Reference.MODID + ":" + "tanzaniteHelmet");
+	public static final Item tanzaniteChestplate = new ItemSMMArmor(TANZANITE, 0, 1, "tanzanite").setUnlocalizedName("tanzaniteChestplate").setTextureName(Reference.MODID + ":" + "tanzaniteChestplate");
+	public static final Item tanzaniteLeggings = new ItemSMMArmor(TANZANITE, 0, 2, "tanzanite").setUnlocalizedName("tanzaniteLeggings").setTextureName(Reference.MODID + ":" + "tanzaniteLeggings");
+	public static final Item tanzaniteBoots = new ItemSMMArmor(TANZANITE, 0, 3, "tanzanite").setUnlocalizedName("tanzaniteBoots").setTextureName(Reference.MODID + ":" + "tanzaniteBoots");
 	
 	public static void initArmor()
 	{
@@ -210,5 +215,9 @@ public class SMMArmor
 		GameRegistry.registerItem(steelChestplate, steelChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(steelLeggings, steelLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(steelBoots, steelBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzaniteHelmet, tanzaniteHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzaniteChestplate, tanzaniteChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzaniteLeggings, tanzaniteLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzaniteBoots, tanzaniteBoots.getUnlocalizedName().substring(5));
 	}
 }

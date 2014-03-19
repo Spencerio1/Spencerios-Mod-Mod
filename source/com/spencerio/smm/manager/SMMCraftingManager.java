@@ -1612,6 +1612,28 @@ public class SMMCraftingManager
 			"ttt",
 			't', SMMItems.tanzanite
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.tanzaniteHelmet), new Object[] {
+			"ttt",
+			"t t",
+			't', SMMItems.tanzanite
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.tanzaniteChestplate), new Object[] {
+			"t t",
+			"ttt",
+			"ttt",
+			't', SMMItems.tanzanite
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.tanzaniteLeggings), new Object[] {
+			"ttt",
+			"t t",
+			"t t",
+			't', SMMItems.tanzanite
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.tanzaniteBoots), new Object[] {
+			"t t",
+			"t t",
+			't', SMMItems.tanzanite
+		});
 	}
 	private static void initShapelessRecipes()
 	{

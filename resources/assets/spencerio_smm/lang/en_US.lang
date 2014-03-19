@@ -232,6 +232,10 @@ item.steelHelmet.name=Steel Helmet
 item.steelChestplate.name=Steel Chestplate
 item.steelLeggings.name=Steel Leggings
 item.steelBoots.name=Steel Boots
+item.tanzaniteHelmet.name=Tanzanite Helmet
+item.tanzaniteChestplate.name=Tanzanite Chestplate
+item.tanzaniteLeggings.name=Tanzanite Leggings
+item.tanzaniteBoots.name=Tanzanite Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
