@@ -147,6 +147,11 @@ item.steelAxe.name=Steel Axe
 item.steelShovel.name=Steel Shovel
 item.steelHoe.name=Steel Hoe
 item.steelSword.name=Steel Sword
+item.tanzanitePickaxe.name=Tanzanite Pickaxe
+item.tanzaniteAxe.name=Tanzanite Axe
+item.tanzaniteShovel.name=Tanzanite Shovel
+item.tanzaniteHoe.name=Tanzanite Hoe
+item.tanzaniteSword.name=Tanzanite Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

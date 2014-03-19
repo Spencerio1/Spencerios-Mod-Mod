@@ -36,6 +36,7 @@ public class SMMTools
 	public static final ToolMaterial TOPAZ = EnumHelper.addToolMaterial("TOPAZ", 4, 3225, 30F, 5, 10);
 	public static final ToolMaterial JADE = EnumHelper.addToolMaterial("JADE", 5, 4000, 24F, 4, 14);
 	public static final ToolMaterial STEEL = EnumHelper.addToolMaterial("STEEL", 5, 3800, 11F, 4, 12);
+	public static final ToolMaterial TANZANITE = EnumHelper.addToolMaterial("TANZANITE", 4, 3900, 14F, 5, 13);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -132,6 +133,11 @@ public class SMMTools
 	public static final Item steelShovel = new ItemSMMShovel(STEEL).setUnlocalizedName("steelShovel").setTextureName(Reference.MODID + ":" + "steelShovel");
 	public static final Item steelHoe = new ItemSMMHoe(STEEL).setUnlocalizedName("steelHoe").setTextureName(Reference.MODID + ":" + "steelHoe");
 	public static final Item steelSword = new ItemSMMSword(STEEL).setUnlocalizedName("steelSword").setTextureName(Reference.MODID + ":" + "steelSword");
+	public static final Item tanzanitePickaxe = new ItemSMMPickaxe(TANZANITE).setUnlocalizedName("tanzanitePickaxe").setTextureName(Reference.MODID + ":" + "tanzanitePickaxe");
+	public static final Item tanzaniteAxe = new ItemSMMAxe(TANZANITE).setUnlocalizedName("tanzaniteAxe").setTextureName(Reference.MODID + ":" + "tanzaniteAxe");
+	public static final Item tanzaniteShovel = new ItemSMMShovel(TANZANITE).setUnlocalizedName("tanzaniteShovel").setTextureName(Reference.MODID + ":" + "tanzaniteShovel");
+	public static final Item tanzaniteHoe = new ItemSMMHoe(TANZANITE).setUnlocalizedName("tanzaniteHoe").setTextureName(Reference.MODID + ":" + "tanzaniteHoe");
+	public static final Item tanzaniteSword = new ItemSMMSword(TANZANITE).setUnlocalizedName("tanzaniteSword").setTextureName(Reference.MODID + ":" + "tanzaniteSword");
 	
 	public static void initTools()
 	{
@@ -230,5 +236,10 @@ public class SMMTools
 		GameRegistry.registerItem(steelShovel, steelShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(steelHoe, steelHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(steelSword, steelSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzanitePickaxe, tanzanitePickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzaniteAxe, tanzaniteAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzaniteShovel, tanzaniteShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzaniteHoe, tanzaniteHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(tanzaniteSword, tanzaniteSword.getUnlocalizedName().substring(5));
 	}
 }

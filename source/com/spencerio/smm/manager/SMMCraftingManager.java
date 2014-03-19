@@ -1634,6 +1634,48 @@ public class SMMCraftingManager
 			"t t",
 			't', SMMItems.tanzanite
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.tanzanitePickaxe), new Object[] {
+			"ttt",
+			" / ",
+			" / ",
+			't', SMMItems.tanzanite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.tanzaniteAxe), new Object[] {
+			"tt",
+			"t/",
+			" /",
+			't', SMMItems.tanzanite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.tanzaniteAxe), new Object[] {
+			"tt",
+			"/t",
+			"/ ",
+			't', SMMItems.tanzanite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.tanzaniteShovel), new Object[] {
+			"t",
+			"/",
+			"/",
+			't', SMMItems.tanzanite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.tanzaniteHoe), new Object[] {
+			"tt",
+			" /",
+			" /",
+			't', SMMItems.tanzanite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.tanzaniteHoe), new Object[] {
+			"tt",
+			"/ ",
+			"/ ",
+			't', SMMItems.tanzanite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.tanzaniteSword), new Object[] {
+			"t",
+			"t",
+			"/",
+			't', SMMItems.tanzanite, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{
