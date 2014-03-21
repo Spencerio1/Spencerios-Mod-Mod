@@ -50,6 +50,8 @@ public class SMMBlocks
 	public static final Block steelBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("steelBlock").setBlockTextureName(Reference.MODID + ":" + "steelBlock");
 	public static final Block tanzaniteOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("tanzaniteOre").setBlockTextureName(Reference.MODID + ":" + "tanzaniteOre");
 	public static final Block tanzaniteBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("tanzaniteBlock").setBlockTextureName(Reference.MODID + ":" + "tanzaniteBlock");
+	public static final Block customSpawner = new BlockSMMSpawners().setHardness(5.0F).setStepSound(Block.soundTypeMetal).setBlockName("customSpawner").setBlockTextureName("minecraft:mob_spawner");
+	public static final Block bossSpawner = new BlockSMMSpawners().setHardness(5.0F).setStepSound(Block.soundTypeMetal).setBlockName("bossSpawner").setBlockTextureName("minecraft:mob_spawner");
 	
 	public static void initBlocks()
 	{
@@ -93,6 +95,8 @@ public class SMMBlocks
 		GameRegistry.registerBlock(steelBlock, steelBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(tanzaniteOre, tanzaniteOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(tanzaniteBlock, tanzaniteBlock.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(customSpawner, customSpawner.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(bossSpawner, bossSpawner.getUnlocalizedName().substring(5));
 	}
 	private static void registerWithOreDictionary()
 	{
@@ -144,5 +148,7 @@ public class SMMBlocks
 		steelBlock.setHarvestLevel("pickaxe", 2);
 		tanzaniteOre.setHarvestLevel("pickaxe", 2);
 		tanzaniteBlock.setHarvestLevel("pickaxe", 1);
+		customSpawner.setHarvestLevel("pickaxe", 0);
+		bossSpawner.setHarvestLevel("pickaxe", 0);
 	}
 }

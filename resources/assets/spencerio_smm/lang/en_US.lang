@@ -31,6 +31,8 @@ tile.limestone.name=Block of Limestone
 tile.steelBlock.name=Block of Steel
 tile.tanzaniteOre.name=Tanzanite Ore
 tile.tanzaniteBlock.name=Tanzanite Block
+tile.customSpawner.name=Customizable Spawner
+tile.bossSpawner.name=Customizable Boss Spawner
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
