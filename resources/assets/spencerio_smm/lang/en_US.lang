@@ -246,6 +246,10 @@ item.tanzaniteHelmet.name=Tanzanite Helmet
 item.tanzaniteChestplate.name=Tanzanite Chestplate
 item.tanzaniteLeggings.name=Tanzanite Leggings
 item.tanzaniteBoots.name=Tanzanite Boots
+item.apatiteHelmet.name=Apatite Helmet
+item.apatiteChestplate.name=Apatite Chestplate
+item.apatiteLeggings.name=Apatite Leggings
+item.apatiteBoots.name=Apatite Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools

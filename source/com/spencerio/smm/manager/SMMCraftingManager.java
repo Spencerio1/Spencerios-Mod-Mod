@@ -1682,6 +1682,28 @@ public class SMMCraftingManager
 			"aaa",
 			'a', SMMBlocks.apatiteBlock
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.apatiteHelmet), new Object[] {
+			"aaa",
+			"a a",
+			'a', SMMItems.apatite
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.apatiteChestplate), new Object[] {
+			"a a",
+			"aaa",
+			"aaa",
+			'a', SMMItems.apatite
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.apatiteLeggings), new Object[] {
+			"aaa",
+			"a a",
+			"a a",
+			'a', SMMItems.apatite
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMArmor.apatiteBoots), new Object[] {
+			"a a",
+			"a a",
+			'a', SMMItems.apatite
+		});
 	}
 	private static void initShapelessRecipes()
 	{
