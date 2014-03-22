@@ -37,6 +37,7 @@ public class SMMTools
 	public static final ToolMaterial JADE = EnumHelper.addToolMaterial("JADE", 5, 4000, 24F, 4, 14);
 	public static final ToolMaterial STEEL = EnumHelper.addToolMaterial("STEEL", 5, 3800, 11F, 4, 12);
 	public static final ToolMaterial TANZANITE = EnumHelper.addToolMaterial("TANZANITE", 4, 3900, 14F, 5, 13);
+	public static final ToolMaterial APATITE = EnumHelper.addToolMaterial("APATITE", 4, 3025, 11F, 3, 13);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -138,6 +139,11 @@ public class SMMTools
 	public static final Item tanzaniteShovel = new ItemSMMShovel(TANZANITE).setUnlocalizedName("tanzaniteShovel").setTextureName(Reference.MODID + ":" + "tanzaniteShovel");
 	public static final Item tanzaniteHoe = new ItemSMMHoe(TANZANITE).setUnlocalizedName("tanzaniteHoe").setTextureName(Reference.MODID + ":" + "tanzaniteHoe");
 	public static final Item tanzaniteSword = new ItemSMMSword(TANZANITE).setUnlocalizedName("tanzaniteSword").setTextureName(Reference.MODID + ":" + "tanzaniteSword");
+	public static final Item apatitePickaxe = new ItemSMMPickaxe(APATITE).setUnlocalizedName("apatitePickaxe").setTextureName(Reference.MODID + ":" + "apatitePickaxe");
+	public static final Item apatiteAxe = new ItemSMMAxe(APATITE).setUnlocalizedName("apatiteAxe").setTextureName(Reference.MODID + ":" + "apatiteAxe");
+	public static final Item apatiteShovel = new ItemSMMShovel(APATITE).setUnlocalizedName("apatiteShovel").setTextureName(Reference.MODID + ":" + "apatiteShovel");
+	public static final Item apatiteHoe = new ItemSMMHoe(APATITE).setUnlocalizedName("apatiteHoe").setTextureName(Reference.MODID + ":" + "apatiteHoe");
+	public static final Item apatiteSword = new ItemSMMSword(APATITE).setUnlocalizedName("apatiteSword").setTextureName(Reference.MODID + ":" + "apatiteSword");
 	
 	public static void initTools()
 	{
@@ -241,5 +247,10 @@ public class SMMTools
 		GameRegistry.registerItem(tanzaniteShovel, tanzaniteShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(tanzaniteHoe, tanzaniteHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(tanzaniteSword, tanzaniteSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(apatitePickaxe, apatitePickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(apatiteAxe, apatiteAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(apatiteShovel, apatiteShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(apatiteHoe, apatiteHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(apatiteSword, apatiteSword.getUnlocalizedName().substring(5));
 	}
 }

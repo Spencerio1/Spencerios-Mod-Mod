@@ -1704,6 +1704,48 @@ public class SMMCraftingManager
 			"a a",
 			'a', SMMItems.apatite
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.apatitePickaxe), new Object[] {
+			"aaa",
+			" / ",
+			" / ",
+			'a', SMMItems.apatite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.apatiteAxe), new Object[] {
+			"aa",
+			"a/",
+			" /",
+			'a', SMMItems.apatite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.apatiteAxe), new Object[] {
+			"aa",
+			"/a",
+			"/ ",
+			'a', SMMItems.apatite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.apatiteShovel), new Object[] {
+			"a",
+			"/",
+			"/",
+			'a', SMMItems.apatite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.apatiteHoe), new Object[] {
+			"aa",
+			" /",
+			" /",
+			'a', SMMItems.apatite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.apatiteHoe), new Object[] {
+			"aa",
+			"/ ",
+			"/ ",
+			'a', SMMItems.apatite, '/', Items.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMTools.apatiteSword), new Object[] {
+			"a",
+			"a",
+			"/",
+			'a', SMMItems.apatite, '/', Items.stick
+		});
 	}
 	private static void initShapelessRecipes()
 	{
