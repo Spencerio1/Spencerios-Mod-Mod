@@ -52,6 +52,8 @@ public class SMMBlocks
 	public static final Block tanzaniteBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("tanzaniteBlock").setBlockTextureName(Reference.MODID + ":" + "tanzaniteBlock");
 	public static final Block customSpawner = new BlockSMMSpawners().setHardness(5.0F).setStepSound(Block.soundTypeMetal).setBlockName("customSpawner").setBlockTextureName("minecraft:mob_spawner");
 	public static final Block bossSpawner = new BlockSMMSpawners().setHardness(5.0F).setStepSound(Block.soundTypeMetal).setBlockName("bossSpawner").setBlockTextureName("minecraft:mob_spawner");
+	public static final Block apatiteOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("apatiteOre").setBlockTextureName(Reference.MODID + ":" + "apatiteOre");
+	public static final Block apatiteBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("apatiteBlock").setBlockTextureName(Reference.MODID + ":" + "apatiteBlock");
 	
 	public static void initBlocks()
 	{
@@ -97,6 +99,8 @@ public class SMMBlocks
 		GameRegistry.registerBlock(tanzaniteBlock, tanzaniteBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(customSpawner, customSpawner.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(bossSpawner, bossSpawner.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(apatiteOre, apatiteOre.getUnlocalizedName().substring(5));
+		GameRegistry.registerBlock(apatiteBlock, apatiteBlock.getUnlocalizedName().substring(5));
 	}
 	private static void registerWithOreDictionary()
 	{
@@ -115,6 +119,7 @@ public class SMMBlocks
 		OreDictionary.registerOre("jadeOre", jadeOre);
 		OreDictionary.registerOre("limestone", limestone);
 		OreDictionary.registerOre("tanzaniteOre", tanzaniteOre);
+		OreDictionary.registerOre("apatiteOre", apatiteOre);
 	}
 	private static void setHarvestLevels()
 	{
@@ -150,5 +155,7 @@ public class SMMBlocks
 		tanzaniteBlock.setHarvestLevel("pickaxe", 1);
 		customSpawner.setHarvestLevel("pickaxe", 0);
 		bossSpawner.setHarvestLevel("pickaxe", 0);
+		apatiteOre.setHarvestLevel("pickaxe", 1);
+		apatiteBlock.setHarvestLevel("pickaxe", 0);
 	}
 }

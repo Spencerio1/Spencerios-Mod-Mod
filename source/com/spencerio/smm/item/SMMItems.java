@@ -38,6 +38,7 @@ public class SMMItems
 	public static final Item moltenIron = new ItemSMMGeneral().setUnlocalizedName("moltenIronIngot").setTextureName(Reference.MODID + ":" + "moltenIronIngot");
 	public static final Item steelIngot = new ItemSMMGeneral().setUnlocalizedName("steelIngot").setTextureName(Reference.MODID + ":" + "steelIngot");
 	public static final Item tanzanite = new ItemSMMTanzanite().setUnlocalizedName("tanzanite").setTextureName(Reference.MODID + ":" + "tanzanite");
+	public static final Item apatite = new ItemSMMApatite().setUnlocalizedName("apatite").setTextureName(Reference.MODID + ":" + "apatite");
 	
 	public static void initItems()
 	{
@@ -66,6 +67,7 @@ public class SMMItems
 		GameRegistry.registerItem(moltenIron, moltenIron.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(steelIngot, steelIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(tanzanite , tanzanite.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(apatite, apatite.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{
@@ -74,5 +76,6 @@ public class SMMItems
 		new ChestGenHooks("mineshaftCorridor").addItem(new WeightedRandomChestContent(new ItemStack(topaz), 1, 3, 3));
 		new ChestGenHooks("mineshaftCorridor").addItem(new WeightedRandomChestContent(new ItemStack(steelIngot), 1, 3, 3));
 		new ChestGenHooks("mineshaftCorridor").addItem(new WeightedRandomChestContent(new ItemStack(tanzanite), 1, 4, 2));
+		new ChestGenHooks("bonusChest").addItem(new WeightedRandomChestContent(new ItemStack(apatite), 1, 4, 6));
 	}
 }

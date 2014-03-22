@@ -33,6 +33,8 @@ tile.tanzaniteOre.name=Tanzanite Ore
 tile.tanzaniteBlock.name=Tanzanite Block
 tile.customSpawner.name=Customizable Spawner
 tile.bossSpawner.name=Customizable Boss Spawner
+tile.apatiteOre.name=Apatite Ore
+tile.apatiteBlock.name=Block of Apatite
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -53,6 +55,7 @@ item.limestoneDust.name=Limestone
 item.moltenIronIngot.name=Molten Iron Ingot
 item.steelIngot.name=Steel Ingot
 item.tanzanite.name=Tanzanite
+item.apatite.name=Apatite
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe
