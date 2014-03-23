@@ -45,7 +45,7 @@ public class SMMBlocks
 	public static final Block chysanthemum = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("chysanthemum").setBlockTextureName(Reference.MODID + ":" + "chysanthemum");
 	public static final Block camellia = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("camellia").setBlockTextureName(Reference.MODID + ":" + "camellia");
 	public static final Block hydrangea = new BlockSMMFlowers().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("hydrangea").setBlockTextureName(Reference.MODID + ":" + "hydrangea");
-	public static final Block help = new BlockSMMHelp().setHardness(0.6F).setResistance(1.0F).setStepSound(Block.soundTypeGravel).setBlockName("help").setBlockTextureName(Reference.MODID + ":" + "helpBlock");
+	public static final Block help = new BlockSMMHelp().setHardness(0.6F).setResistance(1.0F).setStepSound(Block.soundTypeGravel).setBlockName("help");
 	public static final Block limestone = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("limestone").setBlockTextureName(Reference.MODID + ":" + "limestone");
 	public static final Block steelBlock = new BlockSMMCompressed(Material.iron).setHardness(5.0F).setResistance(10.0F).setStepSound(Block.soundTypeMetal).setBlockName("steelBlock").setBlockTextureName(Reference.MODID + ":" + "steelBlock");
 	public static final Block tanzaniteOre = new BlockSMMOre().setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("tanzaniteOre").setBlockTextureName(Reference.MODID + ":" + "tanzaniteOre");
