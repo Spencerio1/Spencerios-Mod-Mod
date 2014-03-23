@@ -4,6 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
+import com.spencerio.smm.helper.SMMHashMapHelper;
 import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -136,6 +137,12 @@ public class SMMArmor
 	
 	public static void initArmor()
 	{
+		registerArmor();
+		addToHashMap();
+	}
+	
+	private static void registerArmor()
+	{
 		GameRegistry.registerItem(coalHelmet, coalHelmet.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(coalChestplate, coalChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(coalLeggings, coalLeggings.getUnlocalizedName().substring(5));
@@ -228,5 +235,100 @@ public class SMMArmor
 		GameRegistry.registerItem(apatiteChestplate, apatiteChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteLeggings, apatiteLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteBoots, apatiteBoots.getUnlocalizedName().substring(5));
+	}
+	private static void addToHashMap()
+	{
+		SMMHashMapHelper.addToArmorHashMap("coalHelmet", coalHelmet);
+		SMMHashMapHelper.addToArmorHashMap("coalChestplate", coalChestplate);
+		SMMHashMapHelper.addToArmorHashMap("coalLeggings", coalLeggings);
+		SMMHashMapHelper.addToArmorHashMap("coalBoots", coalBoots);
+		SMMHashMapHelper.addToArmorHashMap("emeraldHelmet", emeraldHelmet);
+		SMMHashMapHelper.addToArmorHashMap("emeraldChestplate", emeraldChestplate);
+		SMMHashMapHelper.addToArmorHashMap("emeraldLeggings", emeraldLeggings);
+		SMMHashMapHelper.addToArmorHashMap("emeraldBoots", emeraldBoots);
+		SMMHashMapHelper.addToArmorHashMap("redstoneHelmet", redstoneHelmet);
+		SMMHashMapHelper.addToArmorHashMap("redstoneChestplate", redstoneChestplate);
+		SMMHashMapHelper.addToArmorHashMap("redstoneLeggings", redstoneLeggings);
+		SMMHashMapHelper.addToArmorHashMap("redstoneBoots", redstoneBoots);
+		SMMHashMapHelper.addToArmorHashMap("lapisLazuliHelmet", lapisLazuliHelmet);
+		SMMHashMapHelper.addToArmorHashMap("lapisLazuliChestplate", lapisLazuliChestplate);
+		SMMHashMapHelper.addToArmorHashMap("lapisLazuliLeggings", lapisLazuliLeggings);
+		SMMHashMapHelper.addToArmorHashMap("lapisLazuliBoots", lapisLazuliBoots);
+		SMMHashMapHelper.addToArmorHashMap("earthQuartzHelmet", earthQuartzHelmet);
+		SMMHashMapHelper.addToArmorHashMap("earthQuartzChestplate", earthQuartzChestplate);
+		SMMHashMapHelper.addToArmorHashMap("earthQuartzLeggings", earthQuartzLeggings);
+		SMMHashMapHelper.addToArmorHashMap("earthQuartzBoots", earthQuartzBoots);
+		SMMHashMapHelper.addToArmorHashMap("copperHelmet", copperHelmet);
+		SMMHashMapHelper.addToArmorHashMap("copperChestplate", copperChestplate);
+		SMMHashMapHelper.addToArmorHashMap("copperLeggings", copperLeggings);
+		SMMHashMapHelper.addToArmorHashMap("copperBoots", copperBoots);
+		SMMHashMapHelper.addToArmorHashMap("carbonHelmet", carbonHelmet);
+		SMMHashMapHelper.addToArmorHashMap("carbonChestplate", carbonChestplate);
+		SMMHashMapHelper.addToArmorHashMap("carbonLeggings", carbonLeggings);
+		SMMHashMapHelper.addToArmorHashMap("carbonBoots", carbonBoots);
+		SMMHashMapHelper.addToArmorHashMap("silverHelmet", silverHelmet);
+		SMMHashMapHelper.addToArmorHashMap("silverChestplate", silverChestplate);
+		SMMHashMapHelper.addToArmorHashMap("silverLeggings", silverLeggings);
+		SMMHashMapHelper.addToArmorHashMap("silverBoots", silverBoots);
+		SMMHashMapHelper.addToArmorHashMap("cobaltHelmet", cobaltHelmet);
+		SMMHashMapHelper.addToArmorHashMap("cobaltChestplate", cobaltChestplate);
+		SMMHashMapHelper.addToArmorHashMap("cobaltLeggings", cobaltLeggings);
+		SMMHashMapHelper.addToArmorHashMap("cobaltBoots", cobaltBoots);
+		SMMHashMapHelper.addToArmorHashMap("rubyHelmet", rubyHelmet);
+		SMMHashMapHelper.addToArmorHashMap("rubyChestplate", rubyChestplate);
+		SMMHashMapHelper.addToArmorHashMap("rubyLeggings", rubyLeggings);
+		SMMHashMapHelper.addToArmorHashMap("rubyBoots", rubyBoots);
+		SMMHashMapHelper.addToArmorHashMap("titaniumHelmet", titaniumHelmet);
+		SMMHashMapHelper.addToArmorHashMap("titaniumChestplate", titaniumChestplate);
+		SMMHashMapHelper.addToArmorHashMap("titaniumLeggings", titaniumLeggings);
+		SMMHashMapHelper.addToArmorHashMap("titaniumBoots", titaniumBoots);
+		SMMHashMapHelper.addToArmorHashMap("hellishHelmet", hellishHelmet);
+		SMMHashMapHelper.addToArmorHashMap("hellishChestplate", hellishChestplate);
+		SMMHashMapHelper.addToArmorHashMap("hellishLeggings", hellishLeggings);
+		SMMHashMapHelper.addToArmorHashMap("hellishBoots", hellishBoots);
+		SMMHashMapHelper.addToArmorHashMap("leadHelmet", leadHelmet);
+		SMMHashMapHelper.addToArmorHashMap("leadChestplate", leadChestplate);
+		SMMHashMapHelper.addToArmorHashMap("leadLeggings", leadLeggings);
+		SMMHashMapHelper.addToArmorHashMap("leadBoots", leadBoots);
+		SMMHashMapHelper.addToArmorHashMap("obsidianHelmet", obsidianHelmet);
+		SMMHashMapHelper.addToArmorHashMap("obsidianChestplate", obsidianChestplate);
+		SMMHashMapHelper.addToArmorHashMap("obsidianLeggings", obsidianLeggings);
+		SMMHashMapHelper.addToArmorHashMap("obsidianBoots", obsidianBoots);
+		SMMHashMapHelper.addToArmorHashMap("endStoneHelmet", endStoneHelmet);
+		SMMHashMapHelper.addToArmorHashMap("endStoneChestplate", endStoneChestplate);
+		SMMHashMapHelper.addToArmorHashMap("endStoneLeggings", endStoneLeggings);
+		SMMHashMapHelper.addToArmorHashMap("endStoneBoots", endStoneBoots);
+		SMMHashMapHelper.addToArmorHashMap("cobblestoneHelmet", cobblestoneHelmet);
+		SMMHashMapHelper.addToArmorHashMap("cobblestoneChestplate", cobblestoneChestplate);
+		SMMHashMapHelper.addToArmorHashMap("cobblestoneLeggings", cobblestoneLeggings);
+		SMMHashMapHelper.addToArmorHashMap("cobblestoneBoots", cobblestoneBoots);
+		SMMHashMapHelper.addToArmorHashMap("woodHelmet", woodHelmet);
+		SMMHashMapHelper.addToArmorHashMap("woodChestplate", woodChestplate);
+		SMMHashMapHelper.addToArmorHashMap("woodLeggings", woodLeggings);
+		SMMHashMapHelper.addToArmorHashMap("woodBoots", woodBoots);
+		SMMHashMapHelper.addToArmorHashMap("sapphireHelmet", sapphireHelmet);
+		SMMHashMapHelper.addToArmorHashMap("sapphireChestplate", sapphireChestplate);
+		SMMHashMapHelper.addToArmorHashMap("sapphireLeggings", sapphireLeggings);
+		SMMHashMapHelper.addToArmorHashMap("sapphireBoots", sapphireBoots);
+		SMMHashMapHelper.addToArmorHashMap("topazHelmet", topazHelmet);
+		SMMHashMapHelper.addToArmorHashMap("topazChestplate", topazChestplate);
+		SMMHashMapHelper.addToArmorHashMap("topazLeggings", topazLeggings);
+		SMMHashMapHelper.addToArmorHashMap("topazBoots", topazBoots);
+		SMMHashMapHelper.addToArmorHashMap("jadeHelmet", jadeHelmet);
+		SMMHashMapHelper.addToArmorHashMap("jadeChestplate", jadeChestplate);
+		SMMHashMapHelper.addToArmorHashMap("jadeLeggings", jadeLeggings);
+		SMMHashMapHelper.addToArmorHashMap("jadeBoots", jadeBoots);
+		SMMHashMapHelper.addToArmorHashMap("steelHelmet", steelHelmet);
+		SMMHashMapHelper.addToArmorHashMap("steelChestplate", steelChestplate);
+		SMMHashMapHelper.addToArmorHashMap("steelLeggings", steelLeggings);
+		SMMHashMapHelper.addToArmorHashMap("steelBoots", steelBoots);
+		SMMHashMapHelper.addToArmorHashMap("tanzaniteHelmet", tanzaniteHelmet);
+		SMMHashMapHelper.addToArmorHashMap("tanzaniteChestplate", tanzaniteChestplate);
+		SMMHashMapHelper.addToArmorHashMap("tanzaniteLeggings", tanzaniteLeggings);
+		SMMHashMapHelper.addToArmorHashMap("tanzaniteBoots", tanzaniteBoots);
+		SMMHashMapHelper.addToArmorHashMap("apatiteHelmet", apatiteHelmet);
+		SMMHashMapHelper.addToArmorHashMap("apatiteChestplate", apatiteChestplate);
+		SMMHashMapHelper.addToArmorHashMap("apatiteLeggings", apatiteLeggings);
+		SMMHashMapHelper.addToArmorHashMap("apatiteBoots", apatiteBoots);
 	}
 }

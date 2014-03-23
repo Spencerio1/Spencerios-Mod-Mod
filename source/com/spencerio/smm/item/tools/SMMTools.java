@@ -4,6 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
+import com.spencerio.smm.helper.SMMHashMapHelper;
 import com.spencerio.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -147,6 +148,12 @@ public class SMMTools
 	
 	public static void initTools()
 	{
+		registerTools();
+		addToHashMap();
+	}
+	
+	private static void registerTools()
+	{
 		GameRegistry.registerItem(coalPickaxe, coalPickaxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(coalAxe, coalAxe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(coalShovel, coalShovel.getUnlocalizedName().substring(5));
@@ -252,5 +259,113 @@ public class SMMTools
 		GameRegistry.registerItem(apatiteShovel, apatiteShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteHoe, apatiteHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteSword, apatiteSword.getUnlocalizedName().substring(5));
+	}
+	private static void addToHashMap()
+	{
+		SMMHashMapHelper.addToToolsHashMap("coalPickaxe", coalPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("coalAxe", coalAxe);
+		SMMHashMapHelper.addToToolsHashMap("coalShovel", coalShovel);
+		SMMHashMapHelper.addToToolsHashMap("coalHoe", coalHoe);
+		SMMHashMapHelper.addToToolsHashMap("coalSword", coalSword);
+		SMMHashMapHelper.addToToolsHashMap("emeraldPickaxe", emeraldPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("emeraldAxe", emeraldAxe);
+		SMMHashMapHelper.addToToolsHashMap("emeraldShovel", emeraldShovel);
+		SMMHashMapHelper.addToToolsHashMap("emeraldHoe", emeraldHoe);
+		SMMHashMapHelper.addToToolsHashMap("emeraldSword", emeraldSword);
+		SMMHashMapHelper.addToToolsHashMap("redstonePickaxe", redstonePickaxe);
+		SMMHashMapHelper.addToToolsHashMap("redstoneAxe", redstoneAxe);
+		SMMHashMapHelper.addToToolsHashMap("redstoneShovel", redstoneShovel);
+		SMMHashMapHelper.addToToolsHashMap("redstoneHoe", redstoneHoe);
+		SMMHashMapHelper.addToToolsHashMap("redstoneSword", redstoneSword);
+		SMMHashMapHelper.addToToolsHashMap("lapisLazuliPickaxe", lapisLazuliPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("lapisLazuliAxe", lapisLazuliAxe);
+		SMMHashMapHelper.addToToolsHashMap("lapisLazuliShovel", lapisLazuliShovel);
+		SMMHashMapHelper.addToToolsHashMap("lapisLazuliHoe", lapisLazuliHoe);
+		SMMHashMapHelper.addToToolsHashMap("lapisLazuliSword", lapisLazuliSword);
+		SMMHashMapHelper.addToToolsHashMap("earthQuartzPickaxe", earthQuartzPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("earthQuartzAxe", earthQuartzAxe);
+		SMMHashMapHelper.addToToolsHashMap("earthQuartzShovel", earthQuartzShovel);
+		SMMHashMapHelper.addToToolsHashMap("earthQuartzHoe", earthQuartzHoe);
+		SMMHashMapHelper.addToToolsHashMap("earthQuartzSword", earthQuartzSword);
+		SMMHashMapHelper.addToToolsHashMap("copperPickaxe", copperPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("copperAxe", copperAxe);
+		SMMHashMapHelper.addToToolsHashMap("copperShovel", copperShovel);
+		SMMHashMapHelper.addToToolsHashMap("copperHoe", copperHoe);
+		SMMHashMapHelper.addToToolsHashMap("copperSword", copperSword);
+		SMMHashMapHelper.addToToolsHashMap("carbonPickaxe", carbonPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("carbonAxe", carbonAxe);
+		SMMHashMapHelper.addToToolsHashMap("carbonShovel", carbonShovel);
+		SMMHashMapHelper.addToToolsHashMap("carbonHoe", carbonHoe);
+		SMMHashMapHelper.addToToolsHashMap("carbonSword", carbonSword);
+		SMMHashMapHelper.addToToolsHashMap("silverPickaxe", silverPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("silverAxe", silverAxe);
+		SMMHashMapHelper.addToToolsHashMap("silverShovel", silverShovel);
+		SMMHashMapHelper.addToToolsHashMap("silverHoe", silverHoe);
+		SMMHashMapHelper.addToToolsHashMap("silverSword", silverSword);
+		SMMHashMapHelper.addToToolsHashMap("cobaltPickaxe", cobaltPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("cobaltAxe", cobaltAxe);
+		SMMHashMapHelper.addToToolsHashMap("cobaltShovel", cobaltShovel);
+		SMMHashMapHelper.addToToolsHashMap("cobaltHoe", cobaltHoe);
+		SMMHashMapHelper.addToToolsHashMap("cobaltSword", cobaltSword);
+		SMMHashMapHelper.addToToolsHashMap("rubyPickaxe", rubyPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("rubyAxe", rubyAxe);
+		SMMHashMapHelper.addToToolsHashMap("rubyShovel", rubyShovel);
+		SMMHashMapHelper.addToToolsHashMap("rubyHoe", rubyHoe);
+		SMMHashMapHelper.addToToolsHashMap("rubySword", rubySword);
+		SMMHashMapHelper.addToToolsHashMap("titaniumPickaxe", titaniumPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("titaniumAxe", titaniumAxe);
+		SMMHashMapHelper.addToToolsHashMap("titaniumShovel", titaniumShovel);
+		SMMHashMapHelper.addToToolsHashMap("titaniumHoe", titaniumHoe);
+		SMMHashMapHelper.addToToolsHashMap("titaniumSword", titaniumSword);
+		SMMHashMapHelper.addToToolsHashMap("hellishPickaxe", hellishPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("hellishAxe", hellishAxe);
+		SMMHashMapHelper.addToToolsHashMap("hellishShovel", hellishShovel);
+		SMMHashMapHelper.addToToolsHashMap("hellishHoe", hellishHoe);
+		SMMHashMapHelper.addToToolsHashMap("hellishSword", hellishSword);
+		SMMHashMapHelper.addToToolsHashMap("leadPickaxe", leadPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("leadAxe", leadAxe);
+		SMMHashMapHelper.addToToolsHashMap("leadShovel", leadShovel);
+		SMMHashMapHelper.addToToolsHashMap("leadHoe", leadHoe);
+		SMMHashMapHelper.addToToolsHashMap("leadSword", leadSword);
+		SMMHashMapHelper.addToToolsHashMap("obsidianPickaxe", obsidianPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("obsidianAxe", obsidianAxe);
+		SMMHashMapHelper.addToToolsHashMap("obsidianShovel", obsidianShovel);
+		SMMHashMapHelper.addToToolsHashMap("obsidianHoe", obsidianHoe);
+		SMMHashMapHelper.addToToolsHashMap("obsidianSword", obsidianSword);
+		SMMHashMapHelper.addToToolsHashMap("endStonePickaxe", endStonePickaxe);
+		SMMHashMapHelper.addToToolsHashMap("endStoneAxe", endStoneAxe);
+		SMMHashMapHelper.addToToolsHashMap("endStoneShovel", endStoneShovel);
+		SMMHashMapHelper.addToToolsHashMap("endStoneHoe", endStoneHoe);
+		SMMHashMapHelper.addToToolsHashMap("endStoneSword", endStoneSword);
+		SMMHashMapHelper.addToToolsHashMap("sapphirePickaxe", sapphirePickaxe);
+		SMMHashMapHelper.addToToolsHashMap("sapphireAxe", sapphireAxe);
+		SMMHashMapHelper.addToToolsHashMap("sapphireShovel", sapphireShovel);
+		SMMHashMapHelper.addToToolsHashMap("sapphireHoe", sapphireHoe);
+		SMMHashMapHelper.addToToolsHashMap("sapphireSword", sapphireSword);
+		SMMHashMapHelper.addToToolsHashMap("topazPickaxe", topazPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("topazAxe", topazAxe);
+		SMMHashMapHelper.addToToolsHashMap("topazShovel", topazShovel);
+		SMMHashMapHelper.addToToolsHashMap("topazHoe", topazHoe);
+		SMMHashMapHelper.addToToolsHashMap("topazSword", topazSword);
+		SMMHashMapHelper.addToToolsHashMap("jadePickaxe", jadePickaxe);
+		SMMHashMapHelper.addToToolsHashMap("jadeAxe", jadeAxe);
+		SMMHashMapHelper.addToToolsHashMap("jadeShovel", jadeShovel);
+		SMMHashMapHelper.addToToolsHashMap("jadeHoe", jadeHoe);
+		SMMHashMapHelper.addToToolsHashMap("jadeSword", jadeSword);
+		SMMHashMapHelper.addToToolsHashMap("steelPickaxe", steelPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("steelAxe", steelAxe);
+		SMMHashMapHelper.addToToolsHashMap("steelShovel", steelShovel);
+		SMMHashMapHelper.addToToolsHashMap("steelHoe", steelHoe);
+		SMMHashMapHelper.addToToolsHashMap("steelSword", steelSword);
+		SMMHashMapHelper.addToToolsHashMap("tanzanitePickaxe", tanzanitePickaxe);
+		SMMHashMapHelper.addToToolsHashMap("tanzaniteAxe", tanzaniteAxe);
+		SMMHashMapHelper.addToToolsHashMap("tanzaniteShovel", tanzaniteShovel);
+		SMMHashMapHelper.addToToolsHashMap("tanzaniteHoe", tanzaniteHoe);
+		SMMHashMapHelper.addToToolsHashMap("tanzaniteSword", tanzaniteSword);
+		SMMHashMapHelper.addToToolsHashMap("apatitePickaxe", apatitePickaxe);
+		SMMHashMapHelper.addToToolsHashMap("apatiteAxe", apatiteAxe);
+		SMMHashMapHelper.addToToolsHashMap("apatiteShovel", apatiteShovel);
+		SMMHashMapHelper.addToToolsHashMap("apatiteHoe", apatiteHoe);
+		SMMHashMapHelper.addToToolsHashMap("apatiteSword", apatiteSword);
 	}
 }

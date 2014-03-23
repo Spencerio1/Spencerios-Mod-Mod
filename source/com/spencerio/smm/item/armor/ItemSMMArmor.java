@@ -1,10 +1,10 @@
 package com.spencerio.smm.item.armor;
 
-import com.spencerio.smm.SpenceriosModMod;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+
+import com.spencerio.smm.SpenceriosModMod;
 
 /**
  * The file for all of the Armor in Spencerio's Mod Mod
