@@ -39,6 +39,7 @@ public class SMMTools
 	public static final ToolMaterial STEEL = EnumHelper.addToolMaterial("STEEL", 5, 3800, 11F, 4, 12);
 	public static final ToolMaterial TANZANITE = EnumHelper.addToolMaterial("TANZANITE", 4, 3900, 14F, 5, 13);
 	public static final ToolMaterial APATITE = EnumHelper.addToolMaterial("APATITE", 4, 3025, 11F, 3, 13);
+	public static final ToolMaterial NETHERQUARTZ = EnumHelper.addToolMaterial("NETHERQUARTZ", 1, 200, 14F, 2, 20);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -145,6 +146,11 @@ public class SMMTools
 	public static final Item apatiteShovel = new ItemSMMShovel(APATITE).setUnlocalizedName("apatiteShovel").setTextureName(Reference.MODID + ":" + "apatiteShovel");
 	public static final Item apatiteHoe = new ItemSMMHoe(APATITE).setUnlocalizedName("apatiteHoe").setTextureName(Reference.MODID + ":" + "apatiteHoe");
 	public static final Item apatiteSword = new ItemSMMSword(APATITE).setUnlocalizedName("apatiteSword").setTextureName(Reference.MODID + ":" + "apatiteSword");
+	public static final Item netherQuartzPickaxe = new ItemSMMPickaxe(NETHERQUARTZ).setUnlocalizedName("netherQuartzPickaxe").setTextureName(Reference.MODID + ":" + "netherQuartzPickaxe");
+	public static final Item netherQuartzAxe = new ItemSMMAxe(NETHERQUARTZ).setUnlocalizedName("netherQuartzAxe").setTextureName(Reference.MODID + ":" + "netherQuartzAxe");
+	public static final Item netherQuartzShovel = new ItemSMMShovel(NETHERQUARTZ).setUnlocalizedName("netherQuartzShovel").setTextureName(Reference.MODID + ":" + "netherQuartzShovel");
+	public static final Item netherQuartzHoe = new ItemSMMHoe(NETHERQUARTZ).setUnlocalizedName("netherQuartzHoe").setTextureName(Reference.MODID + ":" + "netherQuartzHoe");
+	public static final Item netherQuartzSword = new ItemSMMSword(NETHERQUARTZ).setUnlocalizedName("netherQuartzSword").setTextureName(Reference.MODID + ":" + "netherQuartzSword");
 	
 	public static void initTools()
 	{
@@ -259,6 +265,11 @@ public class SMMTools
 		GameRegistry.registerItem(apatiteShovel, apatiteShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteHoe, apatiteHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteSword, apatiteSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzPickaxe, netherQuartzPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzAxe, netherQuartzAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzShovel, netherQuartzShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzHoe, netherQuartzHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzSword, netherQuartzSword.getUnlocalizedName().substring(5));
 	}
 	private static void addToHashMap()
 	{
@@ -367,5 +378,10 @@ public class SMMTools
 		SMMHashMapHelper.addToToolsHashMap("apatiteShovel", apatiteShovel);
 		SMMHashMapHelper.addToToolsHashMap("apatiteHoe", apatiteHoe);
 		SMMHashMapHelper.addToToolsHashMap("apatiteSword", apatiteSword);
+		SMMHashMapHelper.addToToolsHashMap("netherQuartzPickaxe", netherQuartzPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("netherQuartzAxe", netherQuartzAxe);
+		SMMHashMapHelper.addToToolsHashMap("netherQuartzShovel", netherQuartzShovel);
+		SMMHashMapHelper.addToToolsHashMap("netherQuartzHoe", netherQuartzHoe);
+		SMMHashMapHelper.addToToolsHashMap("netherQuartzSword", netherQuartzSword);
 	}
 }
