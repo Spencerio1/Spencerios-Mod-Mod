@@ -24,7 +24,7 @@ public class BlockSMMOre extends BlockOre
 	
 	public Item getItemDropped(int par1, Random par2Random, int par3)
 	{
-		return this == SMMBlocks.earthQuartzOre ? SMMItems.earthQuartz : this == SMMBlocks.rubyOre ? SMMItems.ruby : this == SMMBlocks.sapphireOre ? SMMItems.sapphire : this == SMMBlocks.topazOre ? SMMItems.topaz : this == SMMBlocks.saltBlock ? SMMItems.salt : this == SMMBlocks.jadeOre ? SMMItems.jade : this == SMMBlocks.limestone ? SMMItems.limestone : this == SMMBlocks.tanzaniteOre ? SMMItems.tanzanite : this == SMMBlocks.apatiteOre ? SMMItems.apatite : Item.getItemFromBlock(this);
+		return this == SMMBlocks.earthQuartzOre ? SMMItems.earthQuartz : this == SMMBlocks.rubyOre ? SMMItems.ruby : this == SMMBlocks.sapphireOre ? SMMItems.sapphire : this == SMMBlocks.topazOre ? SMMItems.topaz : this == SMMBlocks.saltBlock ? SMMItems.salt : this == SMMBlocks.jadeOre ? SMMItems.jade : this == SMMBlocks.limestone ? SMMItems.limestone : this == SMMBlocks.tanzaniteOre ? SMMItems.tanzanite : this == SMMBlocks.apatiteOre ? SMMItems.apatite : this == SMMBlocks.amethystOre ? SMMItems.amethyst : Item.getItemFromBlock(this);
 	}
 	
 	public int quantityDropped(Random par1Random)

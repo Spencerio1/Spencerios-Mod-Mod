@@ -39,6 +39,7 @@ public class SMMItems
 	public static final Item steelIngot = new ItemSMMGeneral().setUnlocalizedName("steelIngot").setTextureName(Reference.MODID + ":" + "steelIngot");
 	public static final Item tanzanite = new ItemSMMTanzanite().setUnlocalizedName("tanzanite").setTextureName(Reference.MODID + ":" + "tanzanite");
 	public static final Item apatite = new ItemSMMApatite().setUnlocalizedName("apatite").setTextureName(Reference.MODID + ":" + "apatite");
+	public static final Item amethyst = new ItemSMMGeneral().setUnlocalizedName("amethyst").setTextureName(Reference.MODID + ":" + "amethyst");
 	
 	public static void initItems()
 	{
@@ -68,6 +69,7 @@ public class SMMItems
 		GameRegistry.registerItem(steelIngot, steelIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(tanzanite , tanzanite.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatite, apatite.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(amethyst, amethyst.getUnlocalizedName().substring(5));
 	}
 	private static void generateItemsInChests()
 	{

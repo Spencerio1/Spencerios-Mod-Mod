@@ -45,6 +45,7 @@ public class SMMCraftingManager
 		SMMRecipeHelper.addBlockRecipes(SMMItems.steelIngot, SMMBlocks.steelBlock);
 		SMMRecipeHelper.addBlockRecipes(SMMItems.tanzanite, SMMBlocks.tanzaniteBlock);
 		SMMRecipeHelper.addBlockRecipes(SMMItems.apatite, SMMBlocks.apatiteBlock);
+		SMMRecipeHelper.addBlockRecipes(SMMItems.amethyst, SMMBlocks.amethystBlock);
 		
 		SMMRecipeHelper.addArmorRecipes("coal", Items.coal);
 		SMMRecipeHelper.addArmorRecipes("emerald", Items.emerald);
@@ -374,5 +375,6 @@ public class SMMCraftingManager
 		FurnaceRecipes.smelting().func_151396_a(Items.iron_ingot, new ItemStack(SMMItems.moltenIron), 1.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.tanzaniteOre, new ItemStack(SMMItems.tanzanite), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.apatiteOre, new ItemStack(SMMItems.apatite), 0.0F);
+		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.amethystOre, new ItemStack(SMMItems.amethyst), 0.0F);
 	}
 }

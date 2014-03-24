@@ -35,6 +35,8 @@ tile.customSpawner.name=Customizable Spawner
 tile.bossSpawner.name=Customizable Boss Spawner
 tile.apatiteOre.name=Apatite Ore
 tile.apatiteBlock.name=Block of Apatite
+tile.amethystOre.name=Amethyst Ore
+tile.amethystBlock.name=Amethyst Block
 
 item.earthQuartz.name=Earth Quartz
 item.copperIngot.name=Copper Ingot
@@ -56,6 +58,7 @@ item.moltenIronIngot.name=Molten Iron Ingot
 item.steelIngot.name=Steel Ingot
 item.tanzanite.name=Tanzanite
 item.apatite.name=Apatite
+item.amethyst.name=Amethyst
 
 item.coalPickaxe.name=Coal Pickaxe
 item.coalAxe.name=Coal Axe
