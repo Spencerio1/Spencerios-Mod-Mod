@@ -40,6 +40,7 @@ public class SMMTools
 	public static final ToolMaterial TANZANITE = EnumHelper.addToolMaterial("TANZANITE", 4, 3900, 14F, 5, 13);
 	public static final ToolMaterial APATITE = EnumHelper.addToolMaterial("APATITE", 4, 3025, 11F, 3, 13);
 	public static final ToolMaterial NETHERQUARTZ = EnumHelper.addToolMaterial("NETHERQUARTZ", 1, 200, 14F, 2, 20);
+	public static final ToolMaterial AMETHYST = EnumHelper.addToolMaterial("AMETHYST", 4, 3450, 13F, 5, 13);
 	
 	public static final Item coalPickaxe = new ItemSMMPickaxe(COAL).setUnlocalizedName("coalPickaxe").setTextureName(Reference.MODID + ":" + "coalPickaxe");
 	public static final Item coalAxe = new ItemSMMAxe(COAL).setUnlocalizedName("coalAxe").setTextureName(Reference.MODID + ":" + "coalAxe");
@@ -151,6 +152,11 @@ public class SMMTools
 	public static final Item netherQuartzShovel = new ItemSMMShovel(NETHERQUARTZ).setUnlocalizedName("netherQuartzShovel").setTextureName(Reference.MODID + ":" + "netherQuartzShovel");
 	public static final Item netherQuartzHoe = new ItemSMMHoe(NETHERQUARTZ).setUnlocalizedName("netherQuartzHoe").setTextureName(Reference.MODID + ":" + "netherQuartzHoe");
 	public static final Item netherQuartzSword = new ItemSMMSword(NETHERQUARTZ).setUnlocalizedName("netherQuartzSword").setTextureName(Reference.MODID + ":" + "netherQuartzSword");
+	public static final Item amethystPickaxe = new ItemSMMPickaxe(AMETHYST).setUnlocalizedName("amethystPickaxe").setTextureName(Reference.MODID + ":" + "amethystPickaxe");
+	public static final Item amethystAxe = new ItemSMMAxe(AMETHYST).setUnlocalizedName("amethystAxe").setTextureName(Reference.MODID + ":" + "amethystAxe");
+	public static final Item amethystShovel = new ItemSMMShovel(AMETHYST).setUnlocalizedName("amethystShovel").setTextureName(Reference.MODID + ":" + "amethystShovel");
+	public static final Item amethystHoe = new ItemSMMHoe(AMETHYST).setUnlocalizedName("amethystHoe").setTextureName(Reference.MODID + ":" + "amethystHoe");
+	public static final Item amethystSword = new ItemSMMSword(AMETHYST).setUnlocalizedName("amethystSword").setTextureName(Reference.MODID + ":" + "amethystSword");
 	
 	public static void initTools()
 	{
@@ -265,11 +271,11 @@ public class SMMTools
 		GameRegistry.registerItem(apatiteShovel, apatiteShovel.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteHoe, apatiteHoe.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteSword, apatiteSword.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(netherQuartzPickaxe, netherQuartzPickaxe.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(netherQuartzAxe, netherQuartzAxe.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(netherQuartzShovel, netherQuartzShovel.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(netherQuartzHoe, netherQuartzHoe.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(netherQuartzSword, netherQuartzSword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(amethystPickaxe, amethystPickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(amethystAxe, amethystAxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(amethystShovel, amethystShovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(amethystHoe, amethystHoe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(amethystSword, amethystSword.getUnlocalizedName().substring(5));
 	}
 	private static void addToHashMap()
 	{
@@ -383,5 +389,10 @@ public class SMMTools
 		SMMHashMapHelper.addToToolsHashMap("netherQuartzShovel", netherQuartzShovel);
 		SMMHashMapHelper.addToToolsHashMap("netherQuartzHoe", netherQuartzHoe);
 		SMMHashMapHelper.addToToolsHashMap("netherQuartzSword", netherQuartzSword);
+		SMMHashMapHelper.addToToolsHashMap("amethystPickaxe", amethystPickaxe);
+		SMMHashMapHelper.addToToolsHashMap("amethystAxe", amethystAxe);
+		SMMHashMapHelper.addToToolsHashMap("amethystShovel", amethystShovel);
+		SMMHashMapHelper.addToToolsHashMap("amethystHoe", amethystHoe);
+		SMMHashMapHelper.addToToolsHashMap("amethystSword", amethystSword);
 	}
 }

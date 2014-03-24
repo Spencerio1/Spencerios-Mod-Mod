@@ -170,6 +170,11 @@ item.netherQuartzAxe.name=Nether Quartz Axe
 item.netherQuartzShovel.name=Nether Quartz Shovel
 item.netherQuartzHoe.name=Nether Quartz Hoe
 item.netherQuartzSword.name=Nether Quartz Sword
+item.amethystPickaxe.name=Amethyst Pickaxe
+item.amethystAxe.name=Amethyst Axe
+item.amethystShovel.name=Amethyst Shovel
+item.amethystHoe.name=Amethyst Hoe
+item.amethystSword.name=Amethyst Sword
 
 item.coalHelmet.name=Coal Helmet
 item.coalChestplate.name=Coal Chestplate

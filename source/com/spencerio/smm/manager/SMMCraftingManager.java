@@ -95,6 +95,7 @@ public class SMMCraftingManager
 		SMMRecipeHelper.addToolRecipes("tanzanite", SMMItems.tanzanite);
 		SMMRecipeHelper.addToolRecipes("apatite", SMMItems.apatite);
 		SMMRecipeHelper.addToolRecipes("netherQuartz", Items.quartz);
+		SMMRecipeHelper.addToolRecipes("amethyst", SMMItems.amethyst);
 	}
 	
 	private static void initShapedRecipes()
