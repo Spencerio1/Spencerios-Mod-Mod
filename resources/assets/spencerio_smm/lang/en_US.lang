@@ -267,6 +267,10 @@ item.netherQuartzHelmet.name=Nether Quartz Helmet
 item.netherQuartzChestplate.name=Nether Quartz Chestplate
 item.netherQuartzLeggings.name=Nether Quartz Leggings
 item.netherQuartzBoots.name=Nether Quartz Boots
+item.amethystHelmet.name=Amethyst Helmet
+item.amethystChestplate.name=Amethyst Chestplate
+item.amethystLeggings.name=Amethyst Leggings
+item.amethystBoots.name=Amethyst Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools
