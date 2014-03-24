@@ -69,6 +69,7 @@ public class SMMCraftingManager
 		SMMRecipeHelper.addArmorRecipes("steel", SMMItems.steelIngot);
 		SMMRecipeHelper.addArmorRecipes("tanzanite", SMMItems.tanzanite);
 		SMMRecipeHelper.addArmorRecipes("apatite", SMMItems.apatite);
+		SMMRecipeHelper.addArmorRecipes("netherQuartz", Items.quartz);
 		
 		SMMRecipeHelper.addToolRecipes("coal", Items.coal);
 		SMMRecipeHelper.addToolRecipes("emerald", Items.emerald);

@@ -255,6 +255,10 @@ item.apatiteHelmet.name=Apatite Helmet
 item.apatiteChestplate.name=Apatite Chestplate
 item.apatiteLeggings.name=Apatite Leggings
 item.apatiteBoots.name=Apatite Boots
+item.netherQuartzHelmet.name=Nether Quartz Helmet
+item.netherQuartzChestplate.name=Nether Quartz Chestplate
+item.netherQuartzLeggings.name=Nether Quartz Leggings
+item.netherQuartzBoots.name=Nether Quartz Boots
 
 itemGroup.tabSMMArmor=Spencerio's Armor
 itemGroup.tabSMMTools=Spencerio's Tools

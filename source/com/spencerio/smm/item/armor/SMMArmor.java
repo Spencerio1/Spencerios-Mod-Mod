@@ -41,6 +41,7 @@ public class SMMArmor
 	public static final ArmorMaterial STEEL = EnumHelper.addArmorMaterial("STEEL", 45, new int[] {4, 7, 5, 4}, 12);
 	public static final ArmorMaterial TANZANITE = EnumHelper.addArmorMaterial("TANZANITE", 35, new int[] {4, 7, 5, 4}, 13);
 	public static final ArmorMaterial APATITE = EnumHelper.addArmorMaterial("APATITE", 28, new int[] {3, 7, 6, 4}, 13);
+	public static final ArmorMaterial NETHERQUARTZ = EnumHelper.addArmorMaterial("NETHERQUARTZ", 24, new int[] {2, 6, 4, 3}, 20);
 	
 	public static final Item coalHelmet = new ItemSMMArmor(COAL, 0, 0, "coal").setUnlocalizedName("coalHelmet").setTextureName(Reference.MODID + ":" + "coalHelmet");
 	public static final Item coalChestplate = new ItemSMMArmor(COAL, 0, 1, "coal").setUnlocalizedName("coalChestplate").setTextureName(Reference.MODID + ":" + "coalChestplate");
@@ -134,6 +135,10 @@ public class SMMArmor
 	public static final Item apatiteChestplate = new ItemSMMArmor(APATITE, 0, 1, "apatite").setUnlocalizedName("apatiteChestplate").setTextureName(Reference.MODID + ":" + "apatiteChestplate");
 	public static final Item apatiteLeggings = new ItemSMMArmor(APATITE, 0, 2, "apatite").setUnlocalizedName("apatiteLeggings").setTextureName(Reference.MODID + ":" + "apatiteLeggings");
 	public static final Item apatiteBoots = new ItemSMMArmor(APATITE, 0, 3, "apatite").setUnlocalizedName("apatiteBoots").setTextureName(Reference.MODID + ":" + "apatiteBoots");
+	public static final Item netherQuartzHelmet = new ItemSMMArmor(NETHERQUARTZ, 0, 0, "netherQuartz").setUnlocalizedName("netherQuartzHelmet").setTextureName(Reference.MODID + ":" + "netherQuartzHelmet");
+	public static final Item netherQuartzChestplate = new ItemSMMArmor(NETHERQUARTZ, 0, 1, "netherQuartz").setUnlocalizedName("netherQuartzChestplate").setTextureName(Reference.MODID + ":" + "netherQuartzChestplate");
+	public static final Item netherQuartzLeggings = new ItemSMMArmor(NETHERQUARTZ, 0, 2, "netherQuartz").setUnlocalizedName("netherQuartzLeggings").setTextureName(Reference.MODID + ":" + "netherQuartzLeggings");
+	public static final Item netherQuartzBoots = new ItemSMMArmor(NETHERQUARTZ, 0, 3, "netherQuartz").setUnlocalizedName("netherQuartzBoots").setTextureName(Reference.MODID + ":" + "netherQuartzBoots");
 	
 	public static void initArmor()
 	{
@@ -235,6 +240,10 @@ public class SMMArmor
 		GameRegistry.registerItem(apatiteChestplate, apatiteChestplate.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteLeggings, apatiteLeggings.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatiteBoots, apatiteBoots.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzHelmet, netherQuartzHelmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzChestplate, netherQuartzChestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzLeggings, netherQuartzLeggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(netherQuartzBoots, netherQuartzBoots.getUnlocalizedName().substring(5));
 	}
 	private static void addToHashMap()
 	{
@@ -330,5 +339,9 @@ public class SMMArmor
 		SMMHashMapHelper.addToArmorHashMap("apatiteChestplate", apatiteChestplate);
 		SMMHashMapHelper.addToArmorHashMap("apatiteLeggings", apatiteLeggings);
 		SMMHashMapHelper.addToArmorHashMap("apatiteBoots", apatiteBoots);
+		SMMHashMapHelper.addToArmorHashMap("netherQuartzHelmet", netherQuartzHelmet);
+		SMMHashMapHelper.addToArmorHashMap("netherQuartzChestplate", netherQuartzChestplate);
+		SMMHashMapHelper.addToArmorHashMap("netherQuartzLeggings", netherQuartzLeggings);
+		SMMHashMapHelper.addToArmorHashMap("netherQuartzBoots", netherQuartzBoots);
 	}
 }
