@@ -22,23 +22,26 @@ public class ItemSMMDGStaff extends Item
 		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
 	}
 
-	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer Entityplayer) {
-
+	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer Entityplayer)
+	{
 		MovingObjectPosition Coord = Entityplayer.rayTrace(300, 1);
-		if(Coord != null && Coord.typeOfHit == MovingObjectType.BLOCK){
+		if(Coord != null && Coord.typeOfHit == MovingObjectType.BLOCK)
+		{
 			EntityLightningBolt Lightning = new EntityLightningBolt(world, 1, 1, 1);
 			Lightning.setPosition(Coord.blockX,Coord.blockY,Coord.blockZ);
 			world.spawnEntityInWorld(Lightning);
+			itemStack.damageItem(10, Entityplayer);
 		}
 		return itemStack;
 	}
 
 	public boolean onItemUse(ItemStack itemstack, EntityPlayer entity, World world, int i, int j, int k, int l, float a, float b, float c){
 		super.onItemUse(itemstack, entity, world, i, j, k, l, a, b, c);
-
-		world.func_147480_a(i,j,k,true);
-		itemstack.damageItem(1, entity);
-
+		if(!world.isRemote)
+		{
+			world.func_147480_a(i,j,k,true);
+			itemstack.damageItem(1, entity);
+		}
 		return true;
 	}
 	
