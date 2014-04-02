@@ -1,6 +1,7 @@
 package com.spencerio.smm;
 
 import java.io.File;
+import java.util.EnumMap;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -12,6 +13,7 @@ import com.spencerio.smm.item.armor.SMMArmor;
 import com.spencerio.smm.item.tools.SMMTools;
 import com.spencerio.smm.lib.Reference;
 import com.spencerio.smm.manager.SMMAchievementManager;
+import com.spencerio.smm.manager.SMMChannelManager;
 import com.spencerio.smm.manager.SMMConfigManager;
 import com.spencerio.smm.manager.SMMCraftingManager;
 import com.spencerio.smm.manager.SMMGenerationManager;
@@ -22,7 +24,10 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.FMLEmbeddedChannel;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
 
 /**
  * Spencerio's Mod Mod
@@ -36,6 +41,7 @@ public class SpenceriosModMod
 	public static SpenceriosModMod instance;
 	
 	SMMGenerationManager eventManager = new SMMGenerationManager();
+	EnumMap<Side, FMLEmbeddedChannel> channels = NetworkRegistry.INSTANCE.newChannel(Reference.MODID, new SMMChannelManager());
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
