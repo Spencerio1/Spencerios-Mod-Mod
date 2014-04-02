@@ -37,8 +37,8 @@ public class SMMItems
 	public static final Item limestone = new ItemSMMGeneral().setUnlocalizedName("limestoneDust").setTextureName(Reference.MODID + ":" + "limestone");
 	public static final Item moltenIron = new ItemSMMGeneral().setUnlocalizedName("moltenIronIngot").setTextureName(Reference.MODID + ":" + "moltenIronIngot");
 	public static final Item steelIngot = new ItemSMMGeneral().setUnlocalizedName("steelIngot").setTextureName(Reference.MODID + ":" + "steelIngot");
-	public static final Item tanzanite = new ItemSMMTanzanite().setUnlocalizedName("tanzanite").setTextureName(Reference.MODID + ":" + "tanzanite");
-	public static final Item apatite = new ItemSMMApatite().setUnlocalizedName("apatite").setTextureName(Reference.MODID + ":" + "apatite");
+	public static final Item tanzanite = new ItemSMMGeneral().setUnlocalizedName("tanzanite").setTextureName(Reference.MODID + ":" + "tanzanite");
+	public static final Item apatite = new ItemSMMGeneral().setUnlocalizedName("apatite").setTextureName(Reference.MODID + ":" + "apatite");
 	public static final Item amethyst = new ItemSMMGeneral().setUnlocalizedName("amethyst").setTextureName(Reference.MODID + ":" + "amethyst");
 	
 	public static void initItems()
