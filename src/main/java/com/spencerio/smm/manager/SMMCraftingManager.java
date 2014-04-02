@@ -338,6 +338,18 @@ public class SMMCraftingManager
 			"sss",
 			'm', SMMItems.moltenIron, 'l', SMMItems.limestone, 's', Blocks.stone
 		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.customSpawner), new Object[] {
+			"beb",
+			"bhb",
+			"bdb",
+			'b', Blocks.iron_bars, 'e', Items.egg, 'h', new ItemStack(Items.skull, 1, 1), 'd', Blocks.dragon_egg
+		});
+		GameRegistry.addRecipe(new ItemStack(SMMBlocks.bossSpawner), new Object[] {
+			"EhE",
+			"bdb",
+			"iei",
+			'E', Items.emerald, 'h', new ItemStack(Items.skull, 1, 1), 'b', Blocks.bedrock, 'd', Blocks.dragon_egg, 'i', Blocks.iron_bars, 'e', Items.egg
+		});
 	}
 	private static void initShapelessRecipes()
 	{
