@@ -21,6 +21,10 @@ import cpw.mods.fml.common.IWorldGenerator;
  */
 public class SMMGenerationManager implements IWorldGenerator
 {
+	public static int chyCTS;
+	public static int camCTS;
+	public static int hydCTS;
+	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
 	{
@@ -55,9 +59,9 @@ public class SMMGenerationManager implements IWorldGenerator
     	this.addOreSpawn(SMMBlocks.apatiteOre, world, random, x, z, 16, 16, 16, 10, 0, 63);
     	this.addOreSpawn(SMMBlocks.amethystOre, world, random, x, z, 16, 16, 6, 6, 0, 63);
     	
-    	this.addFlowerSpawn(SMMBlocks.chysanthemum, world, random, x, z, 16, 16, 2, 256);
-    	this.addFlowerSpawn(SMMBlocks.camellia, world, random, x, z, 16, 16, 2, 256);
-    	this.addFlowerSpawn(SMMBlocks.hydrangea, world, random, x, z, 16, 16, 2, 256);
+    	this.addFlowerSpawn(SMMBlocks.chysanthemum, world, random, x, z, 16, 16, chyCTS, 256);
+    	this.addFlowerSpawn(SMMBlocks.camellia, world, random, x, z, 16, 16, camCTS, 256);
+    	this.addFlowerSpawn(SMMBlocks.hydrangea, world, random, x, z, 16, 16, hydCTS, 256);
     }
     private void generateNether(World world, Random random, int x, int z)
     {

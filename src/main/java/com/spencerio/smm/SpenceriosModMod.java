@@ -1,5 +1,7 @@
 package com.spencerio.smm;
 
+import java.io.File;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -10,6 +12,7 @@ import com.spencerio.smm.item.armor.SMMArmor;
 import com.spencerio.smm.item.tools.SMMTools;
 import com.spencerio.smm.lib.Reference;
 import com.spencerio.smm.manager.SMMAchievementManager;
+import com.spencerio.smm.manager.SMMConfigManager;
 import com.spencerio.smm.manager.SMMCraftingManager;
 import com.spencerio.smm.manager.SMMGenerationManager;
 
@@ -37,6 +40,7 @@ public class SpenceriosModMod
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		SMMConfigManager.init(new File(event.getModConfigurationDirectory(), "/SMM.cfg"));
 		GameRegistry.registerWorldGenerator(eventManager, 0);
 		SMMBlocks.initBlocks();
 		SMMItems.initItems();
