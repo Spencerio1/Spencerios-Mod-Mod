@@ -17,6 +17,7 @@ import com.spencerio.smm.manager.SMMChannelManager;
 import com.spencerio.smm.manager.SMMConfigManager;
 import com.spencerio.smm.manager.SMMCraftingManager;
 import com.spencerio.smm.manager.SMMGenerationManager;
+import com.spencerio.smm.manager.SMMGuiManager;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -60,6 +61,7 @@ public class SpenceriosModMod
 		SMMAchievementManager.registerAchievements();
 		FMLCommonHandler.instance().bus().register(new SMMAchievementToggles());
 		SMMCraftingManager.registerRecipes();
+		new SMMGuiManager();
 	}
 	
 	public static CreativeTabs tabSMMArmor = new CreativeTabs("tabSMMArmor") {
