@@ -20,6 +20,7 @@ public class SMMConfigManager
 		ConfigFields.chysanthemumRarity = config.get(ConfigFields.FLOWERS_CATEGORY, ConfigFields.CHY_KEY, ConfigFields.CHY_DEFAULT, ConfigFields.CHY_COMMENT).getInt(ConfigFields.CHY_DEFAULT);
 		ConfigFields.camelliaRarity = config.get(ConfigFields.FLOWERS_CATEGORY, ConfigFields.CAM_KEY, ConfigFields.CAM_DEFAULT, ConfigFields.CAM_COMMENT).getInt(ConfigFields.CAM_DEFAULT);
 		ConfigFields.hydrangeaRarity = config.get(ConfigFields.FLOWERS_CATEGORY, ConfigFields.HYD_KEY, ConfigFields.HYD_DEFAULT, ConfigFields.HYD_COMMENT).getInt(ConfigFields.HYD_DEFAULT);
+		ConfigFields.madagascarianForestBiomeID = config.get(ConfigFields.ID_CATEGORY, ConfigFields.MFBID_KEY, ConfigFields.MFBID_DEFAULT, ConfigFields.MFBID_COMMENT).getInt(ConfigFields.MFBID_DEFAULT);
 		
 		if(config.hasChanged())
 			config.save();

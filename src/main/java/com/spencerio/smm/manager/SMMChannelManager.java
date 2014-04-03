@@ -7,8 +7,12 @@ import com.spencerio.smm.network.ISMMPacket;
 
 import cpw.mods.fml.common.network.FMLIndexedMessageToMessageCodec;
 
-public class SMMChannelManager extends FMLIndexedMessageToMessageCodec<ISMMPacket> {
-
+public class SMMChannelManager extends FMLIndexedMessageToMessageCodec<ISMMPacket>
+{
+	public SMMChannelManager()
+	{
+	}
+	
 	@Override
 	public void encodeInto(ChannelHandlerContext ctx, ISMMPacket msg, ByteBuf target) throws Exception
 	{

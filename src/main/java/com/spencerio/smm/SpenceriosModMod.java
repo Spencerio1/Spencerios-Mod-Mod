@@ -5,6 +5,10 @@ import java.util.EnumMap;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeDictionary.Type;
+import net.minecraftforge.common.BiomeManager;
 
 import com.spencerio.smm.block.SMMBlocks;
 import com.spencerio.smm.event.SMMAchievementToggles;
@@ -18,6 +22,7 @@ import com.spencerio.smm.manager.SMMConfigManager;
 import com.spencerio.smm.manager.SMMCraftingManager;
 import com.spencerio.smm.manager.SMMGenerationManager;
 import com.spencerio.smm.manager.SMMGuiManager;
+import com.spencerio.smm.world.biome.SMMBiomeGenMadagascarianForest;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -43,12 +48,15 @@ public class SpenceriosModMod
 	
 	SMMGenerationManager eventManager = new SMMGenerationManager();
 	EnumMap<Side, FMLEmbeddedChannel> channels = NetworkRegistry.INSTANCE.newChannel(Reference.MODID, new SMMChannelManager());
+	public static final BiomeGenBase mgForest = new SMMBiomeGenMadagascarianForest().setBiomeName("MadagascarianForest");
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		SMMConfigManager.init(new File(event.getModConfigurationDirectory(), "/SMM.cfg"));
 		GameRegistry.registerWorldGenerator(eventManager, 0);
+		BiomeDictionary.registerBiomeType(mgForest, Type.FOREST);
+		BiomeManager.addSpawnBiome(mgForest);
 		SMMBlocks.initBlocks();
 		SMMItems.initItems();
 		SMMArmor.initArmor();

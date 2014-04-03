@@ -6,6 +6,9 @@ import net.minecraft.world.World;
 
 import com.spencerio.smm.SpenceriosModMod;
 import com.spencerio.smm.block.BlockSMMHelp;
+import com.spencerio.smm.block.BlockSMMSpawners;
+import com.spencerio.smm.client.gui.SMMCustomSpawnerContainer;
+import com.spencerio.smm.client.gui.SMMCustomSpawnerGUI;
 import com.spencerio.smm.client.gui.SMMHelpBlockContainer;
 import com.spencerio.smm.client.gui.SMMHelpBlockGUI;
 
@@ -29,6 +32,11 @@ public class SMMGuiManager implements IGuiHandler
 				if(block != null && block instanceof BlockSMMHelp)
 					return new SMMHelpBlockContainer();
 				break;
+			case 1:
+				Block block1 = world.getBlock(x, y, z);
+				if(block1 != null && block1 instanceof BlockSMMSpawners)
+					return new SMMCustomSpawnerContainer();
+				break;
 		}
 		return null;
 	}
@@ -42,6 +50,11 @@ public class SMMGuiManager implements IGuiHandler
 				Block block = world.getBlock(x, y, z);
 				if(block != null && block instanceof BlockSMMHelp)
 					return new SMMHelpBlockGUI();
+				break;
+			case 1:
+				Block block1 = world.getBlock(x, y, z);
+				if(block1 != null && block1 instanceof BlockSMMSpawners)
+					return new SMMCustomSpawnerGUI();
 				break;
 		}
 		return null;

@@ -29,7 +29,7 @@ public class SMMHelpBlockGUI extends GuiContainer
 		ySize = 221;
 	}
 	
-	private static final ResourceLocation background = new ResourceLocation(Reference.MODID, "textures/gui/background.png");
+	private static final ResourceLocation background = new ResourceLocation(Reference.MODID, "textures/gui/background_helpBlock.png");
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int z, int y)

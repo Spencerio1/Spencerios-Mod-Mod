@@ -5,6 +5,7 @@ public abstract class ConfigFields
 {
 	public static final String CONTROLLER_CATEGORY = "Config Controller";
 	public static final String FLOWERS_CATEGORY = "Flower Generation";
+	public static final String ID_CATEGORY = "IDs";
 	
 	public static boolean flowersUseSameRarity;
 	public static final String FUSR_KEY = "flowersUseSameRarity";
@@ -30,4 +31,9 @@ public abstract class ConfigFields
 	public static final String HYD_KEY = "hydrangeaRarity";
 	public static final int HYD_DEFAULT = 2;
 	public static final String HYD_COMMENT = "The rarity for Hydrangea. WILL ONLY BE READ IF THE flowersUseSameRarity FIELD ABOVE IS SET TO false.";
+	
+	public static int madagascarianForestBiomeID;
+	public static final String MFBID_KEY = "madagascarianForestBiomeID";
+	public static final int MFBID_DEFAULT = 50;
+	public static final String MFBID_COMMENT = "The biome ID for the Madagacarian Forest. Change this if it conflicts with other mods.";
 }
