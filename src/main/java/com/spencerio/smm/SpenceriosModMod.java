@@ -48,7 +48,7 @@ public class SpenceriosModMod
 	
 	SMMGenerationManager eventManager = new SMMGenerationManager();
 	EnumMap<Side, FMLEmbeddedChannel> channels = NetworkRegistry.INSTANCE.newChannel(Reference.MODID, new SMMChannelManager());
-	public static final BiomeGenBase mgForest = new SMMBiomeGenMadagascarianForest().setBiomeName("MadagascarianForest");
+	public static final BiomeGenBase mgForest = new SMMBiomeGenMadagascarianForest().setBiomeName("Madagascarian Forest");
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
@@ -74,25 +74,25 @@ public class SpenceriosModMod
 	
 	public static CreativeTabs tabSMMArmor = new CreativeTabs("tabSMMArmor") {
 		public Item getTabIconItem() {
-			return SMMArmor.redstoneChestplate;
+			return SMMArmor.rubyChestplate;
 		}
 	};
 	
 	public static CreativeTabs tabSMMTools = new CreativeTabs("tabSMMTools") {
 		public Item getTabIconItem() {
-			return SMMTools.redstoneSword;
+			return SMMItems.diamondGoldStaff;
 		}
 	};
 	
 	public static CreativeTabs tabSMMBlocks = new CreativeTabs("tabSMMBlocks") {
 		public Item getTabIconItem() {
-			return Item.getItemFromBlock(SMMBlocks.earthQuartzOre);
+			return Item.getItemFromBlock(SMMBlocks.rubyOre);
 		}
 	};
 	
 	public static CreativeTabs tabSMMItems = new CreativeTabs("tabSMMItems") {
 		public Item getTabIconItem() {
-			return SMMItems.earthQuartz;
+			return SMMItems.ruby;
 		}
 	};
 	
