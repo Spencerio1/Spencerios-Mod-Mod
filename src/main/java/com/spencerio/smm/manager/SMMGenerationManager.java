@@ -1,5 +1,7 @@
 package com.spencerio.smm.manager;
 
+import static net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType.DUNGEON;
+
 import java.util.Random;
 
 import net.minecraft.block.Block;
@@ -8,8 +10,10 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenFlowers;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraftforge.event.terraingen.TerrainGen;
 
 import com.spencerio.smm.block.SMMBlocks;
+import com.spencerio.smm.world.decor.SMMObsidianDungeon;
 
 import cpw.mods.fml.common.IWorldGenerator;
 
@@ -31,7 +35,7 @@ public class SMMGenerationManager implements IWorldGenerator
 		switch(world.provider.dimensionId)
         {
         	case -1: generateNether(world, random, chunkX * 16, chunkZ * 16);
-            case 0: generateSurface(world, random, chunkX * 16, chunkZ * 16);
+            case 0: generateSurface(world, random, chunkX * 16, chunkZ * 16, chunkGenerator);
             case 1: generateEnd(world, random, chunkX * 16, chunkZ * 16);
         }
 	}
@@ -40,7 +44,7 @@ public class SMMGenerationManager implements IWorldGenerator
     {
 		
     }
-    private void generateSurface(World world, Random random, int x, int z)
+    private void generateSurface(World world, Random random, int x, int z, IChunkProvider chunkGenerator)
     {
     	this.addOreSpawn(SMMBlocks.earthQuartzOre, world, random, x, z, 16, 16, 7, 13, 0, 63);
     	this.addOreSpawn(SMMBlocks.copperOre, world, random, x, z, 16, 16, 6, 5, 0, 63);
@@ -62,6 +66,8 @@ public class SMMGenerationManager implements IWorldGenerator
     	this.addFlowerSpawn(SMMBlocks.chysanthemum, world, random, x, z, 16, 16, chyCTS, 256);
     	this.addFlowerSpawn(SMMBlocks.camellia, world, random, x, z, 16, 16, camCTS, 256);
     	this.addFlowerSpawn(SMMBlocks.hydrangea, world, random, x, z, 16, 16, hydCTS, 256);
+    	
+    	this.addDungeonSpawn(chunkGenerator, world, random, x, z);
     }
     private void generateNether(World world, Random random, int x, int z)
     {
@@ -103,5 +109,19 @@ public class SMMGenerationManager implements IWorldGenerator
 	        int posZ = blockZPos + random.nextInt(maxZ) + 8;
 	        (new WorldGenFlowers(flower)).generate(world, random, posX, posY, posZ);
 	    }
+	}
+	
+	public void addDungeonSpawn(IChunkProvider chunkGenerator, World world, Random random, int blockXPos, int blockZPos)
+	{
+		int chunkX = blockXPos / 16;
+		int chunkZ = blockZPos / 16;
+	   	boolean doGen = TerrainGen.populate(chunkGenerator, world, random, chunkX, chunkZ, false, DUNGEON);
+		for (int x = 0; doGen && x < 8; ++x)
+        {
+            int posX = blockXPos + random.nextInt(16) + 8;
+            int posY = random.nextInt(256);
+            int posZ = blockZPos + random.nextInt(16) + 8;
+            (new SMMObsidianDungeon()).generate(world, random, posX, posY, posZ);
+        }
 	}
 }
