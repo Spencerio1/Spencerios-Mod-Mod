@@ -28,6 +28,8 @@ public class BlockSMMSpawners extends Block
 	{
 		if(this == SMMBlocks.customSpawner)
 			FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, 1, world, x, y, z);
+		else if(this == SMMBlocks.bossSpawner)
+			FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, 2, world, x, y, z);
 		return true;
 	}
 }
