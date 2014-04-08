@@ -17,8 +17,8 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "NB21"
-group= "com.spencerio.smm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+version = "0.9.5.2 [Beta]"
+group= "com.spencerio.smm"
 archivesBaseName = "Spencerio's Mod Mod"
 
 minecraft {
