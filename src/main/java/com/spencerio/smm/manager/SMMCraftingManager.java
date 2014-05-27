@@ -390,5 +390,6 @@ public class SMMCraftingManager
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.tanzaniteOre, new ItemStack(SMMItems.tanzanite), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.apatiteOre, new ItemStack(SMMItems.apatite), 0.0F);
 		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.amethystOre, new ItemStack(SMMItems.amethyst), 0.0F);
+		FurnaceRecipes.smelting().func_151393_a(Blocks.soul_sand, new (Blocks.glass), 0.0F);
 	}
 }
