@@ -19,7 +19,7 @@ public class BlockSMMHelp extends Block
 	@SideOnly(Side.CLIENT)
 	private IIcon topIcon;
 	
-	protected BlockSMMHelp() {
+	public BlockSMMHelp() {
 		super(Material.ground);
 		this.setCreativeTab(SpenceriosModMod.tabSMMBlocks);
 	}

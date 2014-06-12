@@ -1,6 +1,6 @@
 package com.github.spencerio1.smm.creativetab;
 
-import com.github.spencerio1.smm.block.SMMBlocks;
+import com.github.spencerio1.smm.init.SMMBlocks;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

@@ -7,7 +7,7 @@ import com.github.spencerio1.smm.SpenceriosModMod;
 
 public class BlockSMMFlowers extends BlockBush
 {
-	protected BlockSMMFlowers() {
+	public BlockSMMFlowers() {
 		super(Material.plants);
 		this.setCreativeTab(SpenceriosModMod.tabSMMMisc);
 	}

@@ -6,12 +6,13 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
+import com.github.spencerio1.smm.init.SMMBlocks;
 
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 
 public class BlockSMMSpawners extends Block
 {
-	protected BlockSMMSpawners()
+	public BlockSMMSpawners()
 	{
 		super(Material.rock);
 		this.setCreativeTab(SpenceriosModMod.tabSMMMisc);

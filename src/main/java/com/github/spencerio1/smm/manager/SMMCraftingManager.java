@@ -5,8 +5,8 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 
-import com.github.spencerio1.smm.block.SMMBlocks;
 import com.github.spencerio1.smm.helper.SMMRecipeHelper;
+import com.github.spencerio1.smm.init.SMMBlocks;
 import com.github.spencerio1.smm.item.SMMItems;
 
 import cpw.mods.fml.common.registry.GameRegistry;

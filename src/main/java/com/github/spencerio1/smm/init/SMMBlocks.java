@@ -1,9 +1,14 @@
-package com.github.spencerio1.smm.block;
+package com.github.spencerio1.smm.init;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.oredict.OreDictionary;
 
+import com.github.spencerio1.smm.block.BlockSMMCompressed;
+import com.github.spencerio1.smm.block.BlockSMMFlowers;
+import com.github.spencerio1.smm.block.BlockSMMHelp;
+import com.github.spencerio1.smm.block.BlockSMMOre;
+import com.github.spencerio1.smm.block.BlockSMMSpawners;
 import com.github.spencerio1.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;

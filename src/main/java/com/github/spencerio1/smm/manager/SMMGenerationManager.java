@@ -12,7 +12,7 @@ import net.minecraft.world.gen.feature.WorldGenFlowers;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.event.terraingen.TerrainGen;
 
-import com.github.spencerio1.smm.block.SMMBlocks;
+import com.github.spencerio1.smm.init.SMMBlocks;
 import com.github.spencerio1.smm.world.decor.SMMObsidianDungeon;
 
 import cpw.mods.fml.common.IWorldGenerator;

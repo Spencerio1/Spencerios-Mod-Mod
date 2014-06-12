@@ -6,6 +6,7 @@ import net.minecraft.block.BlockOre;
 import net.minecraft.item.Item;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
+import com.github.spencerio1.smm.init.SMMBlocks;
 import com.github.spencerio1.smm.item.SMMItems;
 
 /**

@@ -8,13 +8,13 @@ import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.common.BiomeManager;
 
-import com.github.spencerio1.smm.block.SMMBlocks;
 import com.github.spencerio1.smm.creativetab.SMMTabArmor;
 import com.github.spencerio1.smm.creativetab.SMMTabBlocks;
 import com.github.spencerio1.smm.creativetab.SMMTabItems;
 import com.github.spencerio1.smm.creativetab.SMMTabMisc;
 import com.github.spencerio1.smm.creativetab.SMMTabTools;
 import com.github.spencerio1.smm.event.SMMAchievementToggles;
+import com.github.spencerio1.smm.init.SMMBlocks;
 import com.github.spencerio1.smm.item.SMMItems;
 import com.github.spencerio1.smm.item.armor.SMMArmor;
 import com.github.spencerio1.smm.item.tools.SMMTools;
