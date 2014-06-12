@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.9.5.4 [Beta]"
-group= "com.spencerio.smm"
-archivesBaseName = "Spencerio's Mod Mod"
+version = "0.9.5.4-Beta"
+group= "com.github.spencerio1"
+archivesBaseName = "SpenceriosModMod"
 
 minecraft {
     version = "1.7.2-10.12.1.1060"
@@ -27,6 +27,10 @@ minecraft {
 }
 processResources
 {
+    // this will ensure that this task is redone when the versions change.
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+    
     // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
