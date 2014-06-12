@@ -12,4 +12,5 @@ public class Reference
 	public static final String MOD_NAME = "Spencerio's Mod Mod";
 	public static final String SMM_VERSION = "@MOD_VERSION@";
 	public static final String DEPENDENCIES = "required-after:Forge@[10.12.0.1060,)";
+	public static final String CHANNEL = "spenceriosmodmod";
 }
