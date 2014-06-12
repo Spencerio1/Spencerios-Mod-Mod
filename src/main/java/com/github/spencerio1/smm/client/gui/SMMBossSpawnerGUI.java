@@ -13,6 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 
+import com.github.spencerio1.smm.helper.LocalizationHelper;
 import com.github.spencerio1.smm.lib.Reference;
 
 public class SMMBossSpawnerGUI extends GuiContainer
@@ -44,8 +45,8 @@ public class SMMBossSpawnerGUI extends GuiContainer
 		super.initGui();
 		buttonList.clear();
 		
-		buttonList.add(new GuiButton(0, guiLeft + 8, guiTop + 8, 117, 20, "Wither"));
-		buttonList.add(new GuiButton(1, guiLeft + 131, guiTop + 8, 117, 20, "Ender Dragon"));
+		buttonList.add(new GuiButton(0, guiLeft + 8, guiTop + 8, 117, 20, LocalizationHelper.localize("entity.WitherBoss.name")));
+		buttonList.add(new GuiButton(1, guiLeft + 131, guiTop + 8, 117, 20, LocalizationHelper.localize("entity.EnderDragon.name")));
 	}
 	
 	@Override

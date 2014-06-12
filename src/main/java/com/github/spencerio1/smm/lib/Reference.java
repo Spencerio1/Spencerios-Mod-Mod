@@ -6,11 +6,10 @@ package com.github.spencerio1.smm.lib;
  * @author Parker8283
  * @see cpw.mods.fml.common.Mod
  */
-public class Reference
-{
-	public static final String MODID = "spencerio1_smm";
+public abstract class Reference {
+	public static final String MODID = "spencerio_smm";
 	public static final String MOD_NAME = "Spencerio's Mod Mod";
 	public static final String SMM_VERSION = "@MOD_VERSION@";
-	public static final String DEPENDENCIES = "required-after:Forge@[10.12.0.1060,)";
+	public static final String DEPENDENCIES = "required-after:Forge@[10.12.1.1060,)";
 	public static final String CHANNEL = "spenceriosmodmod";
 }

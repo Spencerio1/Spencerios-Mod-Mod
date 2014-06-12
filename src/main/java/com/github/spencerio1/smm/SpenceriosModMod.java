@@ -9,7 +9,11 @@ import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.common.BiomeManager;
 
 import com.github.spencerio1.smm.block.SMMBlocks;
-import com.github.spencerio1.smm.creativetab.SMMCreativeTab;
+import com.github.spencerio1.smm.creativetab.SMMTabArmor;
+import com.github.spencerio1.smm.creativetab.SMMTabBlocks;
+import com.github.spencerio1.smm.creativetab.SMMTabItems;
+import com.github.spencerio1.smm.creativetab.SMMTabMisc;
+import com.github.spencerio1.smm.creativetab.SMMTabTools;
 import com.github.spencerio1.smm.event.SMMAchievementToggles;
 import com.github.spencerio1.smm.item.SMMItems;
 import com.github.spencerio1.smm.item.armor.SMMArmor;
@@ -44,11 +48,11 @@ public class SpenceriosModMod
 	SMMGenerationManager eventManager = new SMMGenerationManager();
 	public static final BiomeGenBase mgForest = new SMMBiomeGenMadagascarianForest().setBiomeName("Madagascarian Forest");
 	
-	public static final CreativeTabs tabSMMArmor = new SMMCreativeTab("tabSMMArmor", SMMArmor.rubyChestplate);
-	public static final CreativeTabs tabSMMTools = new SMMCreativeTab("tabSMMTools", SMMItems.diamondGoldStaff);
-	public static final CreativeTabs tabSMMBlocks = new SMMCreativeTab("tabSMMBlocks", SMMBlocks.rubyBlock);
-	public static final CreativeTabs tabSMMItems = new SMMCreativeTab("tabSMMItems", SMMItems.ruby);
-	public static final CreativeTabs tabSMMMisc = new SMMCreativeTab("tabSMMMisc", SMMBlocks.chysanthemum);
+	public static CreativeTabs tabSMMArmor = new SMMTabArmor();
+	public static CreativeTabs tabSMMTools = new SMMTabTools();
+	public static CreativeTabs tabSMMBlocks = new SMMTabBlocks();
+	public static CreativeTabs tabSMMItems = new SMMTabItems();
+	public static CreativeTabs tabSMMMisc = new SMMTabMisc();
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
