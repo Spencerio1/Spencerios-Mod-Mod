@@ -1,13 +1,15 @@
-package com.github.spencerio1.smm.item.armor;
+package com.github.spencerio1.smm.init;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
 import com.github.spencerio1.smm.helper.SMMHashMapHelper;
+import com.github.spencerio1.smm.item.armor.ItemSMMArmor;
 import com.github.spencerio1.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.GameRegistry.ObjectHolder;
 
 /**
  * The file in which all of the Armor is initialized for Spencerio's Mod Mod
@@ -16,6 +18,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @see net.minecraft.item.Item
  * @see net.minecraft.init.Items
  */
+@ObjectHolder(Reference.MODID)
 public class SMMArmor
 {
 	public static final ArmorMaterial COAL = EnumHelper.addArmorMaterial("COAL", 30, new int[] {4, 7, 6, 5}, 64);

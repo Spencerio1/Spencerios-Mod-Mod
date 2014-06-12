@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
 import com.github.spencerio1.smm.init.SMMBlocks;
-import com.github.spencerio1.smm.item.SMMItems;
+import com.github.spencerio1.smm.init.SMMItems;
 
 /**
  * The class for all of the Ores for Spencerio's Mod Mod

@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
+import com.github.spencerio1.smm.init.SMMItems;
 
 /**
  * The file for (almost) all of the items in Spencerio's Mod Mod

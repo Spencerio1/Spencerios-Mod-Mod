@@ -1,14 +1,16 @@
-package com.github.spencerio1.smm.item;
+package com.github.spencerio1.smm.init;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
 
+import com.github.spencerio1.smm.item.ItemSMMGeneral;
 import com.github.spencerio1.smm.item.tools.ItemSMMDGStaff;
 import com.github.spencerio1.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.GameRegistry.ObjectHolder;
 
 /**
  * The file where all of the non-tool and armor Items are initialized for Spencerio's Mod Mod
@@ -17,6 +19,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @see net.minecraft.item.Item
  * @see net.minecraft.init.Items
  */
+@ObjectHolder(Reference.MODID)
 public class SMMItems
 {
 	public static final Item earthQuartz = new ItemSMMGeneral().setUnlocalizedName("earthQuartz").setTextureName("minecraft:quartz");

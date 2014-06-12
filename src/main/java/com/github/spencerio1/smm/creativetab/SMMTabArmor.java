@@ -3,7 +3,7 @@ package com.github.spencerio1.smm.creativetab;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-import com.github.spencerio1.smm.item.armor.SMMArmor;
+import com.github.spencerio1.smm.init.SMMArmor;
 
 public class SMMTabArmor extends CreativeTabs {
 

@@ -1,13 +1,19 @@
-package com.github.spencerio1.smm.item.tools;
+package com.github.spencerio1.smm.init;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
 import com.github.spencerio1.smm.helper.SMMHashMapHelper;
+import com.github.spencerio1.smm.item.tools.ItemSMMAxe;
+import com.github.spencerio1.smm.item.tools.ItemSMMHoe;
+import com.github.spencerio1.smm.item.tools.ItemSMMPickaxe;
+import com.github.spencerio1.smm.item.tools.ItemSMMShovel;
+import com.github.spencerio1.smm.item.tools.ItemSMMSword;
 import com.github.spencerio1.smm.lib.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.GameRegistry.ObjectHolder;
 
 /**
  * The file in which all of the Tools are initialized for Spencerio's Mod Mod
@@ -16,6 +22,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @see net.minecraft.item.Item
  * @see net.minecraft.init.Items
  */
+@ObjectHolder(Reference.MODID)
 public class SMMTools
 {
 	public static final ToolMaterial COAL = EnumHelper.addToolMaterial("COAL", 1, 128, 30F, 2, 64);

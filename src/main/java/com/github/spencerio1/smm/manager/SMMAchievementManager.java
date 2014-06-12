@@ -3,7 +3,7 @@ package com.github.spencerio1.smm.manager;
 import net.minecraft.stats.Achievement;
 import net.minecraftforge.common.AchievementPage;
 
-import com.github.spencerio1.smm.item.SMMItems;
+import com.github.spencerio1.smm.init.SMMItems;
 
 public class SMMAchievementManager
 {
