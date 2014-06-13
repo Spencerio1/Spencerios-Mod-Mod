@@ -3,7 +3,6 @@ package com.github.spencerio1.smm.manager;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
 
 import com.github.spencerio1.smm.helper.SMMRecipeHelper;
 import com.github.spencerio1.smm.init.SMMBlocks;
@@ -336,7 +335,7 @@ public class SMMCraftingManager
 			"mmm",
 			"lll",
 			"sss",
-			'm', SMMItems.moltenIron, 'l', SMMItems.limestone, 's', Blocks.stone
+			'm', SMMItems.moltenIronIngot, 'l', SMMItems.limestone, 's', Blocks.stone
 		});
 		GameRegistry.addRecipe(new ItemStack(SMMBlocks.customSpawner), new Object[] {
 			"beb",
@@ -374,22 +373,22 @@ public class SMMCraftingManager
 	}
 	private static void initFurnaceRecipes()
 	{
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.earthQuartzOre, new ItemStack(SMMItems.earthQuartz), 0.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.copperOre, new ItemStack(SMMItems.copperIngot), 1.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.carbonOre, new ItemStack(SMMItems.carbonIngot), 1.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.silverOre, new ItemStack(SMMItems.silverIngot), 1.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.cobaltOre, new ItemStack(SMMItems.cobaltIngot), 1.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.rubyOre, new ItemStack(SMMItems.ruby), 0.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.titaniumOre, new ItemStack(SMMItems.titaniumIngot), 1.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.hellishOre, new ItemStack(SMMItems.hellishIngot), 1.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.leadOre, new ItemStack(SMMItems.leadIngot), 1.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.sapphireOre, new ItemStack(SMMItems.sapphire), 0.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.topazOre, new ItemStack(SMMItems.topaz), 0.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.jadeOre, new ItemStack(SMMItems.jade), 0.0F);
-		FurnaceRecipes.smelting().func_151396_a(Items.iron_ingot, new ItemStack(SMMItems.moltenIron), 1.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.tanzaniteOre, new ItemStack(SMMItems.tanzanite), 0.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.apatiteOre, new ItemStack(SMMItems.apatite), 0.0F);
-		FurnaceRecipes.smelting().func_151393_a(SMMBlocks.amethystOre, new ItemStack(SMMItems.amethyst), 0.0F);
-		FurnaceRecipes.smelting().func_151393_a(Blocks.soul_sand, new ItemStack(Blocks.glass), 0.0F);
+		GameRegistry.addSmelting(SMMBlocks.earthQuartzOre, new ItemStack(SMMItems.earthQuartz), 0.0F);
+		GameRegistry.addSmelting(SMMBlocks.copperOre, new ItemStack(SMMItems.copperIngot), 1.0F);
+		GameRegistry.addSmelting(SMMBlocks.carbonOre, new ItemStack(SMMItems.carbonIngot), 1.0F);
+		GameRegistry.addSmelting(SMMBlocks.silverOre, new ItemStack(SMMItems.silverIngot), 1.0F);
+		GameRegistry.addSmelting(SMMBlocks.cobaltOre, new ItemStack(SMMItems.cobaltIngot), 1.0F);
+		GameRegistry.addSmelting(SMMBlocks.rubyOre, new ItemStack(SMMItems.ruby), 0.0F);
+		GameRegistry.addSmelting(SMMBlocks.titaniumOre, new ItemStack(SMMItems.titaniumIngot), 1.0F);
+		GameRegistry.addSmelting(SMMBlocks.hellishOre, new ItemStack(SMMItems.hellishIngot), 1.0F);
+		GameRegistry.addSmelting(SMMBlocks.leadOre, new ItemStack(SMMItems.leadIngot), 1.0F);
+		GameRegistry.addSmelting(SMMBlocks.sapphireOre, new ItemStack(SMMItems.sapphire), 0.0F);
+		GameRegistry.addSmelting(SMMBlocks.topazOre, new ItemStack(SMMItems.topaz), 0.0F);
+		GameRegistry.addSmelting(SMMBlocks.jadeOre, new ItemStack(SMMItems.jade), 0.0F);
+		GameRegistry.addSmelting(Items.iron_ingot, new ItemStack(SMMItems.moltenIronIngot), 1.0F);
+		GameRegistry.addSmelting(SMMBlocks.tanzaniteOre, new ItemStack(SMMItems.tanzanite), 0.0F);
+		GameRegistry.addSmelting(SMMBlocks.apatiteOre, new ItemStack(SMMItems.apatite), 0.0F);
+		GameRegistry.addSmelting(SMMBlocks.amethystOre, new ItemStack(SMMItems.amethyst), 0.0F);
+		GameRegistry.addSmelting(Blocks.soul_sand, new ItemStack(Blocks.glass), 0.0F);
 	}
 }

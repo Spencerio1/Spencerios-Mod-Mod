@@ -38,7 +38,7 @@ public class SMMItems
 	public static final Item film = new ItemSMMGeneral().setUnlocalizedName("film").setTextureName(Reference.MODID + ":" + "film");
 	public static final Item jade = new ItemSMMGeneral().setUnlocalizedName("jade").setTextureName(Reference.MODID + ":" + "jade");
 	public static final Item limestone = new ItemSMMGeneral().setUnlocalizedName("limestoneDust").setTextureName(Reference.MODID + ":" + "limestone");
-	public static final Item moltenIron = new ItemSMMGeneral().setUnlocalizedName("moltenIronIngot").setTextureName(Reference.MODID + ":" + "moltenIronIngot");
+	public static final Item moltenIronIngot = new ItemSMMGeneral().setUnlocalizedName("moltenIronIngot").setTextureName(Reference.MODID + ":" + "moltenIronIngot");
 	public static final Item steelIngot = new ItemSMMGeneral().setUnlocalizedName("steelIngot").setTextureName(Reference.MODID + ":" + "steelIngot");
 	public static final Item tanzanite = new ItemSMMGeneral().setUnlocalizedName("tanzanite").setTextureName(Reference.MODID + ":" + "tanzanite");
 	public static final Item apatite = new ItemSMMGeneral().setUnlocalizedName("apatite").setTextureName(Reference.MODID + ":" + "apatite");
@@ -68,7 +68,7 @@ public class SMMItems
 		GameRegistry.registerItem(film, film.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(jade, jade.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(limestone, limestone.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(moltenIron, moltenIron.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(moltenIronIngot, moltenIronIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(steelIngot, steelIngot.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(tanzanite , tanzanite.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(apatite, apatite.getUnlocalizedName().substring(5));
