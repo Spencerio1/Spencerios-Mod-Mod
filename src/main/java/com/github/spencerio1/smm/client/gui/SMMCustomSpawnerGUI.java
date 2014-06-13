@@ -6,13 +6,12 @@ import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
 
 import org.lwjgl.opengl.GL11;
 
+import com.github.spencerio1.smm.SpenceriosModMod;
 import com.github.spencerio1.smm.common.gui.SMMCustomSpawnerContainer;
 import com.github.spencerio1.smm.helper.LocalizationHelper;
 import com.github.spencerio1.smm.lib.Reference;
@@ -23,7 +22,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class SMMCustomSpawnerGUI extends GuiContainer
 {
-	EntityPlayer entity = Minecraft.getMinecraft().thePlayer;
+	private EntityPlayer entity = SpenceriosModMod.proxy.getClientPlayer();
 
 	public SMMCustomSpawnerGUI()
 	{
@@ -82,13 +81,7 @@ public class SMMCustomSpawnerGUI extends GuiContainer
 	@Override
 	protected void actionPerformed(GuiButton button)
 	{
-		World world = null;
-		WorldServer[] list = MinecraftServer.getServer().worldServers;
-		for(WorldServer ins : list)
-		{
-			if(ins.provider.dimensionId==entity.worldObj.provider.dimensionId)
-				world = ins;
-		}
+		World world = SpenceriosModMod.proxy.getServerWorld(entity.worldObj.provider.dimensionId);
 		Entity spawn;
 		switch(button.id){
 			case 0:
