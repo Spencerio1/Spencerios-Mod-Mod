@@ -36,4 +36,9 @@ public abstract class ConfigFields
 	public static final String MFBID_KEY = "madagascarianForestBiomeID";
 	public static final int MFBID_DEFAULT = 50;
 	public static final String MFBID_COMMENT = "The biome ID for the Madagacarian Forest. Change this if it conflicts with other mods.";
+	
+	public static int madagascarianForestRarity;
+	public static final String MFBR_KEY = "madagascarianForestRarity";
+	public static final int MFBR_DEFAULT = 10;
+	public static final String MFBR_COMMENT = "The rarity weight for the Madagascarian Forest. Higher = more common.";
 }

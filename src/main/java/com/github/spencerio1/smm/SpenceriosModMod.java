@@ -17,6 +17,7 @@ import com.github.spencerio1.smm.init.SMMArmor;
 import com.github.spencerio1.smm.init.SMMBlocks;
 import com.github.spencerio1.smm.init.SMMItems;
 import com.github.spencerio1.smm.init.SMMTools;
+import com.github.spencerio1.smm.lib.ConfigFields;
 import com.github.spencerio1.smm.lib.Reference;
 import com.github.spencerio1.smm.manager.SMMAchievementManager;
 import com.github.spencerio1.smm.manager.SMMConfigManager;
@@ -62,7 +63,7 @@ public class SpenceriosModMod
 		SMMArmor.initArmor();
 		SMMTools.initTools();
 		GameRegistry.registerWorldGenerator(new SMMGenerationManager(), 0);
-		BiomeManager.warmBiomes.add(new BiomeEntry(mgForest, 10));
+		BiomeManager.warmBiomes.add(new BiomeEntry(mgForest, ConfigFields.madagascarianForestRarity));
 		BiomeManager.addSpawnBiome(mgForest);
 	}
 	
