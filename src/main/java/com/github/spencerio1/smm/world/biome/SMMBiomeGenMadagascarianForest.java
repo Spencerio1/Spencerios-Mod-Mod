@@ -15,6 +15,7 @@ public class SMMBiomeGenMadagascarianForest extends BiomeGenBase
 	public SMMBiomeGenMadagascarianForest()
 	{
 		super(ConfigFields.madagascarianForestBiomeID);
+		this.setBiomeName("Madagascarian Forest");
 		this.theBiomeDecorator.generateLakes = false;
 		this.theBiomeDecorator.treesPerChunk = 3;
 		this.theBiomeDecorator.flowersPerChunk = 40;

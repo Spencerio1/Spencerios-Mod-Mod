@@ -5,6 +5,7 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
+import com.github.spencerio1.smm.helper.SMMHashMapHelper;
 
 /**
  * The file for all of the Armor in Spencerio's Mod Mod
@@ -28,5 +29,18 @@ public class ItemSMMArmor extends ItemArmor
 			return "spencerio_smm:textures/models/armor/" + armorName + "_layer_2.png";
 		else
 			return "spencerio_smm:textures/models/armor/" + armorName + "_layer_1.png";
+	}
+	
+	public ItemSMMArmor setUnlocalizedName(String par1Str) {
+		return (ItemSMMArmor)super.setUnlocalizedName(par1Str);
+	}
+	
+	public ItemSMMArmor setTextureName(String par1Str) {
+		return (ItemSMMArmor)super.setTextureName(par1Str);
+	}
+	
+	public ItemSMMArmor add() {
+		SMMHashMapHelper.addToArmorHashMap(getUnlocalizedName().substring(5), this);
+		return this;
 	}
 }

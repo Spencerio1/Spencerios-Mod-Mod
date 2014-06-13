@@ -1,8 +1,9 @@
 package com.github.spencerio1.smm.item.tools;
 
-import com.github.spencerio1.smm.SpenceriosModMod;
-
 import net.minecraft.item.ItemAxe;
+
+import com.github.spencerio1.smm.SpenceriosModMod;
+import com.github.spencerio1.smm.helper.SMMHashMapHelper;
 
 /**
  * The file for all of the Axes in Spencerio's Mod Mod
@@ -15,5 +16,18 @@ public class ItemSMMAxe extends ItemAxe
 	public ItemSMMAxe(ToolMaterial toolMaterial) {
 		super(toolMaterial);
 		this.setCreativeTab(SpenceriosModMod.tabSMMTools);
+	}
+	
+	public ItemSMMAxe setUnlocalizedName(String par1Str) {
+		return (ItemSMMAxe)super.setUnlocalizedName(par1Str);
+	}
+	
+	public ItemSMMAxe setTextureName(String par1Str) {
+		return (ItemSMMAxe)super.setTextureName(par1Str);
+	}
+	
+	public ItemSMMAxe add() {
+		SMMHashMapHelper.addToToolsHashMap(getUnlocalizedName().substring(5), this);
+		return this;
 	}
 }

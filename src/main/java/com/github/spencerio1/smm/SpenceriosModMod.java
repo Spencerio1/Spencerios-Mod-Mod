@@ -4,9 +4,8 @@ import java.io.File;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraftforge.common.BiomeDictionary;
-import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeManager.BiomeEntry;
 
 import com.github.spencerio1.smm.creativetab.SMMTabArmor;
 import com.github.spencerio1.smm.creativetab.SMMTabBlocks;
@@ -45,8 +44,7 @@ public class SpenceriosModMod
 	@Instance(Reference.MODID)
 	public static SpenceriosModMod instance;
 	
-	SMMGenerationManager eventManager = new SMMGenerationManager();
-	public static final BiomeGenBase mgForest = new SMMBiomeGenMadagascarianForest().setBiomeName("Madagascarian Forest");
+	public static final BiomeGenBase mgForest = new SMMBiomeGenMadagascarianForest();
 	
 	public static CreativeTabs tabSMMArmor = new SMMTabArmor();
 	public static CreativeTabs tabSMMTools = new SMMTabTools();
@@ -58,13 +56,13 @@ public class SpenceriosModMod
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		SMMConfigManager.init(new File(event.getModConfigurationDirectory().getAbsolutePath() + File.separator + "SMM.cfg"));
-		GameRegistry.registerWorldGenerator(eventManager, 0);
-		BiomeDictionary.registerBiomeType(mgForest, Type.FOREST);
-		BiomeManager.addSpawnBiome(mgForest);
 		SMMBlocks.initBlocks();
 		SMMItems.initItems();
 		SMMArmor.initArmor();
 		SMMTools.initTools();
+		GameRegistry.registerWorldGenerator(new SMMGenerationManager(), 0);
+		BiomeManager.warmBiomes.add(new BiomeEntry(mgForest, 10));
+		BiomeManager.addSpawnBiome(mgForest);
 	}
 	
 	@EventHandler
