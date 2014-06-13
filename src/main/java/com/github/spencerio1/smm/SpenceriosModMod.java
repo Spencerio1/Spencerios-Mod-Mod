@@ -23,6 +23,7 @@ import com.github.spencerio1.smm.manager.SMMConfigManager;
 import com.github.spencerio1.smm.manager.SMMCraftingManager;
 import com.github.spencerio1.smm.manager.SMMGenerationManager;
 import com.github.spencerio1.smm.manager.SMMGuiManager;
+import com.github.spencerio1.smm.oredict.SMMOreDictRegistries;
 import com.github.spencerio1.smm.world.biome.SMMBiomeGenMadagascarianForest;
 
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -68,6 +69,7 @@ public class SpenceriosModMod
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		new SMMOreDictRegistries();
 		SMMAchievementManager.registerAchievements();
 		FMLCommonHandler.instance().bus().register(new SMMAchievementToggles());
 		SMMCraftingManager.registerRecipes();

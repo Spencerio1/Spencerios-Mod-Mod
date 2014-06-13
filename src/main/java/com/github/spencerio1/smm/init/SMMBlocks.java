@@ -2,7 +2,6 @@ package com.github.spencerio1.smm.init;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.oredict.OreDictionary;
 
 import com.github.spencerio1.smm.block.BlockSMMCompressed;
 import com.github.spencerio1.smm.block.BlockSMMFlowers;
@@ -67,7 +66,6 @@ public class SMMBlocks
 	public static void initBlocks()
 	{
 		registerBlocks();
-		registerWithOreDictionary();
 		setHarvestLevels();
 	}
 	
@@ -112,48 +110,6 @@ public class SMMBlocks
 		GameRegistry.registerBlock(apatiteBlock, apatiteBlock.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(amethystOre, amethystOre.getUnlocalizedName().substring(5));
 		GameRegistry.registerBlock(amethystBlock, amethystBlock.getUnlocalizedName().substring(5));
-	}
-	private static void registerWithOreDictionary()
-	{
-		OreDictionary.registerOre("oreEarthQuartz", earthQuartzOre);
-		OreDictionary.registerOre("blockEarthQuartz", earthQuartzBlock);
-		OreDictionary.registerOre("oreCopper", copperOre);
-		OreDictionary.registerOre("blockCopper", copperBlock);
-		OreDictionary.registerOre("oreCarbon", carbonOre);
-		OreDictionary.registerOre("blockCarbon", carbonBlock);
-		OreDictionary.registerOre("oreSilver", silverOre);
-		OreDictionary.registerOre("blockSilver", silverBlock);
-		OreDictionary.registerOre("oreCobalt", cobaltOre);
-		OreDictionary.registerOre("blockCobalt", cobaltBlock);
-		OreDictionary.registerOre("oreRuby", rubyOre);
-		OreDictionary.registerOre("blockRuby", rubyBlock);
-		OreDictionary.registerOre("oreTitanium", titaniumOre);
-		OreDictionary.registerOre("blockTitanium", titaniumBlock);
-		OreDictionary.registerOre("oreHellish", hellishOre);
-		OreDictionary.registerOre("blockHellish", hellishBlock);
-		OreDictionary.registerOre("oreLead", leadOre);
-		OreDictionary.registerOre("blockLead", leadBlock);
-		OreDictionary.registerOre("oreSapphire", sapphireOre);
-		OreDictionary.registerOre("blockSapphire", sapphireBlock);
-		OreDictionary.registerOre("oreTopaz", topazOre);
-		OreDictionary.registerOre("blockTopaz", topazBlock);
-		OreDictionary.registerOre("blockSalt", saltBlock);
-		OreDictionary.registerOre("oreJade", jadeOre);
-		OreDictionary.registerOre("blockJade", jadeBlock);
-		OreDictionary.registerOre("flowerChysanthemum", chysanthemum);
-		OreDictionary.registerOre("flowerCamellia", camellia);
-		OreDictionary.registerOre("flowerHydrangea", hydrangea);
-		OreDictionary.registerOre("blockHelp", help);
-		OreDictionary.registerOre("blockLimestone", limestone);
-		OreDictionary.registerOre("blockSteel", steelBlock);
-		OreDictionary.registerOre("oreTanzanite", tanzaniteOre);
-		OreDictionary.registerOre("blockTanzanite", tanzaniteBlock);
-		OreDictionary.registerOre("spawnerCustomizable", customSpawner);
-		OreDictionary.registerOre("spawnerBoss", bossSpawner);
-		OreDictionary.registerOre("oreApatite", apatiteOre);
-		OreDictionary.registerOre("blockApatite", apatiteBlock);
-		OreDictionary.registerOre("oreAmethyst", amethystOre);
-		OreDictionary.registerOre("blockAmethyst", amethystBlock);
 	}
 	private static void setHarvestLevels()
 	{
