@@ -1,9 +1,9 @@
 package com.github.spencerio1.smm.helper;
 
 import net.minecraft.block.Block;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import com.github.spencerio1.smm.lib.HashMaps;
 
@@ -58,6 +58,31 @@ public abstract class RecipeHelper
 			'x', itemMadeFrom
 		});
 	}
+	public static void addArmorRecipes(String armorPrefix, String oreDictName)
+	{
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.armor.get(armorPrefix + "Helmet"), new Object[] {
+			"xxx",
+			"x x",
+			'x', oreDictName
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.armor.get(armorPrefix + "Chestplate"), new Object[] {
+			"x x",
+			"xxx",
+			"xxx",
+			'x', oreDictName
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.armor.get(armorPrefix + "Leggings"), new Object[] {
+			"xxx",
+			"x x",
+			"x x",
+			'x', oreDictName
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.armor.get(armorPrefix + "Boots"), new Object[] {
+			"x x",
+			"x x",
+			'x', oreDictName
+		}));
+	}
 	
 	public static void addToolRecipes(String toolPrefix, Block blockMadeFrom)
 	{
@@ -69,47 +94,92 @@ public abstract class RecipeHelper
 	}
 	public static void addToolRecipes(String toolPrefix, ItemStack itemMadeFrom)
 	{
-		GameRegistry.addRecipe(new ItemStack(HashMaps.tools.get(toolPrefix + "Pickaxe")), new Object[] {
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Pickaxe"), new Object[] {
 			"xxx",
 			" / ",
 			" / ",
-			'x', itemMadeFrom, '/', Items.stick
-		});
-		GameRegistry.addRecipe(new ItemStack(HashMaps.tools.get(toolPrefix + "Axe")), new Object[] {
+			'x', itemMadeFrom, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Axe"), new Object[] {
 			"xx",
 			"x/",
 			" /",
-			'x', itemMadeFrom, '/', Items.stick
-		});
-		GameRegistry.addRecipe(new ItemStack(HashMaps.tools.get(toolPrefix + "Axe")), new Object[] {
+			'x', itemMadeFrom, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Axe"), new Object[] {
 			"xx",
 			"/x",
 			"/ ",
-			'x', itemMadeFrom, '/', Items.stick
-		});
-		GameRegistry.addRecipe(new ItemStack(HashMaps.tools.get(toolPrefix + "Shovel")), new Object[] {
+			'x', itemMadeFrom, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Shovel"), new Object[] {
 			"x",
 			"/",
 			"/",
-			'x', itemMadeFrom, '/', Items.stick
-		});
-		GameRegistry.addRecipe(new ItemStack(HashMaps.tools.get(toolPrefix + "Hoe")), new Object[] {
+			'x', itemMadeFrom, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Hoe"), new Object[] {
 			"xx",
 			" /",
 			" /",
-			'x', itemMadeFrom, '/', Items.stick
-		});
-		GameRegistry.addRecipe(new ItemStack(HashMaps.tools.get(toolPrefix + "Hoe")), new Object[] {
+			'x', itemMadeFrom, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Hoe"), new Object[] {
 			"xx",
 			"/ ",
 			"/ ",
-			'x', itemMadeFrom, '/', Items.stick
-		});
-		GameRegistry.addRecipe(new ItemStack(HashMaps.tools.get(toolPrefix + "Sword")), new Object[] {
+			'x', itemMadeFrom, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Sword"), new Object[] {
 			"x",
 			"x",
 			"/",
-			'x', itemMadeFrom, '/', Items.stick
-		});
+			'x', itemMadeFrom, '/', "stickWood"
+		}));
+	}
+	public static void addToolRecipes(String toolPrefix, String oreDictName)
+	{
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Pickaxe"), new Object[] {
+			"xxx",
+			" / ",
+			" / ",
+			'x', oreDictName, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Axe"), new Object[] {
+			"xx",
+			"x/",
+			" /",
+			'x', oreDictName, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Axe"), new Object[] {
+			"xx",
+			"/x",
+			"/ ",
+			'x', oreDictName, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Shovel"), new Object[] {
+			"x",
+			"/",
+			"/",
+			'x', oreDictName, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Hoe"), new Object[] {
+			"xx",
+			" /",
+			" /",
+			'x', oreDictName, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Hoe"), new Object[] {
+			"xx",
+			"/ ",
+			"/ ",
+			'x', oreDictName, '/', "stickWood"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(HashMaps.tools.get(toolPrefix + "Sword"), new Object[] {
+			"x",
+			"x",
+			"/",
+			'x', oreDictName, '/', "stickWood"
+		}));
 	}
 }
