@@ -1,5 +1,6 @@
 package com.github.spencerio1.smm.item.tools;
 
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
@@ -29,5 +30,15 @@ public class ItemSMMSword extends ItemSword
 	public ItemSMMSword add() {
 		HashMapHelper.addToToolsHashMap(getUnlocalizedName().substring(5), this);
 		return this;
+	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		return "item.smm." + super.getUnlocalizedName().substring(5);
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack par1ItemStack) {
+		return "item.smm." + super.getUnlocalizedName().substring(5);
 	}
 }

@@ -52,27 +52,27 @@ public class SMMItems
 	
 	private static void registerItems()
 	{
-		GameRegistry.registerItem(earthQuartz, earthQuartz.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(copperIngot, copperIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(carbonIngot, carbonIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(silverIngot, silverIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(cobaltIngot, cobaltIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ruby, ruby.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(titaniumIngot, titaniumIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(hellishIngot, hellishIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(leadIngot, leadIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(sapphire, sapphire.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(topaz, topaz.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(salt, salt.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(diamondGoldStaff, diamondGoldStaff.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(film, film.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(jade, jade.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(limestone, limestone.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(moltenIronIngot, moltenIronIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(steelIngot, steelIngot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(tanzanite , tanzanite.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(apatite, apatite.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(amethyst, amethyst.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(earthQuartz, earthQuartz.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(copperIngot, copperIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(carbonIngot, carbonIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(silverIngot, silverIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(cobaltIngot, cobaltIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(ruby, ruby.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(titaniumIngot, titaniumIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(hellishIngot, hellishIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(leadIngot, leadIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(sapphire, sapphire.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(topaz, topaz.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(salt, salt.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(diamondGoldStaff, diamondGoldStaff.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(film, film.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(jade, jade.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(limestone, limestone.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(moltenIronIngot, moltenIronIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(steelIngot, steelIngot.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(tanzanite , tanzanite.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(apatite, apatite.getUnlocalizedName().substring(9));
+		GameRegistry.registerItem(amethyst, amethyst.getUnlocalizedName().substring(9));
 	}
 	private static void generateItemsInChests()
 	{

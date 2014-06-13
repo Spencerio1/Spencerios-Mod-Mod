@@ -70,4 +70,14 @@ public class ItemSMMDGStaff extends Item
     {
         return 0;
     }
+	
+	@Override
+	public String getUnlocalizedName() {
+		return "item.smm." + super.getUnlocalizedName().substring(5);
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack par1ItemStack) {
+		return "item.smm." + super.getUnlocalizedName().substring(5);
+	}
 }

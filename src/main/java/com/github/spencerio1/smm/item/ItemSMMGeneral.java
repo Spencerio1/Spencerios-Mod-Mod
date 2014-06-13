@@ -31,4 +31,14 @@ public class ItemSMMGeneral extends Item
 		else if(stack.getItem() == SMMItems.apatite)
 			list.add("Sounds like appetite!");
 	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		return "item.smm." + super.getUnlocalizedName().substring(5);
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack par1ItemStack) {
+		return "item.smm." + super.getUnlocalizedName().substring(5);
+	}
 }

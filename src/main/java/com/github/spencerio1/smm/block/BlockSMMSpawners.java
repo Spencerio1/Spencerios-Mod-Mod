@@ -34,4 +34,9 @@ public class BlockSMMSpawners extends Block
 			FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, GuiIds.BOSS_SPAWNER, world, x, y, z);
 		return true;
 	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		return "tile.smm." + super.getUnlocalizedName().substring(5);
+	}
 }

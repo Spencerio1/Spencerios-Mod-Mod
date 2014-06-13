@@ -32,4 +32,9 @@ public class BlockSMMOre extends BlockOre
 	{
 		return this == SMMBlocks.saltBlock ? 4 : this == SMMBlocks.limestone ? 4 : 1;
 	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		return "tile.smm." + super.getUnlocalizedName().substring(5);
+	}
 }

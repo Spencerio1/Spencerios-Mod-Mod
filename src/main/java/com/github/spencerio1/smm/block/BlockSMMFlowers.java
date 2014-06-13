@@ -11,4 +11,9 @@ public class BlockSMMFlowers extends BlockBush
 		super(Material.plants);
 		this.setCreativeTab(SpenceriosModMod.tabSMMMisc);
 	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		return "tile.smm." + super.getUnlocalizedName().substring(5);
+	}
 }

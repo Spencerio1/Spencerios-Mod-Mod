@@ -17,4 +17,9 @@ public class BlockSMMCompressed extends Block
 		super(par1Material);
 		this.setCreativeTab(SpenceriosModMod.tabSMMBlocks);
 	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		return "tile.smm." + super.getUnlocalizedName().substring(5);
+	}
 }

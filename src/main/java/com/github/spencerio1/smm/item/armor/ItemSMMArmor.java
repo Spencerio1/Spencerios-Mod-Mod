@@ -43,4 +43,14 @@ public class ItemSMMArmor extends ItemArmor
 		HashMapHelper.addToArmorHashMap(getUnlocalizedName().substring(5), this);
 		return this;
 	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		return "item.smm." + super.getUnlocalizedName().substring(5);
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack par1ItemStack) {
+		return "item.smm." + super.getUnlocalizedName().substring(5);
+	}
 }
