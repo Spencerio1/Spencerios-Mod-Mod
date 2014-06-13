@@ -10,6 +10,7 @@ import net.minecraft.util.ResourceLocation;
 
 import org.lwjgl.opengl.GL11;
 
+import com.github.spencerio1.smm.common.gui.SMMHelpBlockContainer;
 import com.github.spencerio1.smm.helper.LocalizationHelper;
 import com.github.spencerio1.smm.lib.Reference;
 

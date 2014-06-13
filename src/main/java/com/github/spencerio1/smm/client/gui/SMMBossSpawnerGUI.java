@@ -13,6 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 
+import com.github.spencerio1.smm.common.gui.SMMBossSpawnerContainer;
 import com.github.spencerio1.smm.helper.LocalizationHelper;
 import com.github.spencerio1.smm.lib.Reference;
 

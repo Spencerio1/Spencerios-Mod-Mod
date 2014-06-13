@@ -13,6 +13,7 @@ import net.minecraft.world.WorldServer;
 
 import org.lwjgl.opengl.GL11;
 
+import com.github.spencerio1.smm.common.gui.SMMCustomSpawnerContainer;
 import com.github.spencerio1.smm.helper.LocalizationHelper;
 import com.github.spencerio1.smm.lib.Reference;
 

@@ -1,4 +1,4 @@
-package com.github.spencerio1.smm.client.gui;
+package com.github.spencerio1.smm.common.gui;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;

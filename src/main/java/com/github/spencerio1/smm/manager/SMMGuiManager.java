@@ -7,12 +7,12 @@ import net.minecraft.world.World;
 import com.github.spencerio1.smm.SpenceriosModMod;
 import com.github.spencerio1.smm.block.BlockSMMHelp;
 import com.github.spencerio1.smm.block.BlockSMMSpawners;
-import com.github.spencerio1.smm.client.gui.SMMBossSpawnerContainer;
 import com.github.spencerio1.smm.client.gui.SMMBossSpawnerGUI;
-import com.github.spencerio1.smm.client.gui.SMMCustomSpawnerContainer;
 import com.github.spencerio1.smm.client.gui.SMMCustomSpawnerGUI;
-import com.github.spencerio1.smm.client.gui.SMMHelpBlockContainer;
 import com.github.spencerio1.smm.client.gui.SMMHelpBlockGUI;
+import com.github.spencerio1.smm.common.gui.SMMBossSpawnerContainer;
+import com.github.spencerio1.smm.common.gui.SMMCustomSpawnerContainer;
+import com.github.spencerio1.smm.common.gui.SMMHelpBlockContainer;
 
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
