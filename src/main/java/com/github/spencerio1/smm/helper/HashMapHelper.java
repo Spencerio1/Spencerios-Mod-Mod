@@ -4,7 +4,7 @@ import net.minecraft.item.Item;
 
 import com.github.spencerio1.smm.lib.HashMaps;
 
-public abstract class SMMHashMapHelper
+public abstract class HashMapHelper
 {
 	public static void addToArmorHashMap(String key, Item armor)
 	{

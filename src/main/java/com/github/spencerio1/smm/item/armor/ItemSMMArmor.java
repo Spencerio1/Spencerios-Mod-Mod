@@ -5,7 +5,7 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
-import com.github.spencerio1.smm.helper.SMMHashMapHelper;
+import com.github.spencerio1.smm.helper.HashMapHelper;
 
 /**
  * The file for all of the Armor in Spencerio's Mod Mod
@@ -40,7 +40,7 @@ public class ItemSMMArmor extends ItemArmor
 	}
 	
 	public ItemSMMArmor add() {
-		SMMHashMapHelper.addToArmorHashMap(getUnlocalizedName().substring(5), this);
+		HashMapHelper.addToArmorHashMap(getUnlocalizedName().substring(5), this);
 		return this;
 	}
 }

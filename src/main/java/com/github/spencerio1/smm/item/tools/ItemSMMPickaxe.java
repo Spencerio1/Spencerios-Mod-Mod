@@ -3,7 +3,7 @@ package com.github.spencerio1.smm.item.tools;
 import net.minecraft.item.ItemPickaxe;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
-import com.github.spencerio1.smm.helper.SMMHashMapHelper;
+import com.github.spencerio1.smm.helper.HashMapHelper;
 
 /**
  * The file for all of the Pickaxes for Spencerio's Mod Mod
@@ -27,7 +27,7 @@ public class ItemSMMPickaxe extends ItemPickaxe
 	}
 	
 	public ItemSMMPickaxe add() {
-		SMMHashMapHelper.addToToolsHashMap(getUnlocalizedName().substring(5), this);
+		HashMapHelper.addToToolsHashMap(getUnlocalizedName().substring(5), this);
 		return this;
 	}
 }

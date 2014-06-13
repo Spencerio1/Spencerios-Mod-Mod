@@ -4,7 +4,7 @@ import java.io.File;
 
 import net.minecraftforge.common.config.Configuration;
 
-import com.github.spencerio1.smm.helper.SMMConfigToCodeHelper;
+import com.github.spencerio1.smm.helper.ConfigToCodeHelper;
 import com.github.spencerio1.smm.lib.ConfigFields;
 
 public class SMMConfigManager 
@@ -25,6 +25,6 @@ public class SMMConfigManager
 		if(config.hasChanged())
 			config.save();
 		
-		SMMConfigToCodeHelper.load();
+		ConfigToCodeHelper.load();
 	}
 }

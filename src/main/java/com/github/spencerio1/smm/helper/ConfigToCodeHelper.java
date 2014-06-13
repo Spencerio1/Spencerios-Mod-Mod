@@ -3,7 +3,7 @@ package com.github.spencerio1.smm.helper;
 import com.github.spencerio1.smm.lib.ConfigFields;
 import com.github.spencerio1.smm.manager.SMMGenerationManager;
 
-public abstract class SMMConfigToCodeHelper
+public abstract class ConfigToCodeHelper
 {
 	public static void load()
 	{

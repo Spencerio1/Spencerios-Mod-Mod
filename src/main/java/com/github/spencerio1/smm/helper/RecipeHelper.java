@@ -9,7 +9,7 @@ import com.github.spencerio1.smm.lib.HashMaps;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
-public abstract class SMMRecipeHelper
+public abstract class RecipeHelper
 {
 	public static void addBlockRecipes(Item item, Block block)
 	{
