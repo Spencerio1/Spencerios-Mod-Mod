@@ -25,12 +25,14 @@ import com.github.spencerio1.smm.manager.SMMCraftingManager;
 import com.github.spencerio1.smm.manager.SMMGenerationManager;
 import com.github.spencerio1.smm.manager.SMMGuiManager;
 import com.github.spencerio1.smm.oredict.SMMOreDictRegistries;
+import com.github.spencerio1.smm.proxy.IProxy;
 import com.github.spencerio1.smm.world.biome.SMMBiomeGenMadagascarianForest;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -45,6 +47,9 @@ public class SpenceriosModMod
 {
 	@Instance(Reference.MODID)
 	public static SpenceriosModMod instance;
+	
+	@SidedProxy(clientSide = "com.github.spencerio1.smm.proxy.ClientProxy", serverSide = "com.github.spencerio1.smm.proxy.ServerProxy")
+	public static IProxy proxy;
 	
 	public static final BiomeGenBase mgForest = new SMMBiomeGenMadagascarianForest();
 	
