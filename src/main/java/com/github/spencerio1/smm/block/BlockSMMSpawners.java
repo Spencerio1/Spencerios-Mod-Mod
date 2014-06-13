@@ -7,6 +7,7 @@ import net.minecraft.world.World;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
 import com.github.spencerio1.smm.init.SMMBlocks;
+import com.github.spencerio1.smm.lib.GuiIds;
 
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 
@@ -28,9 +29,9 @@ public class BlockSMMSpawners extends Block
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer entityPlayer, int side, float hitX, float hitY, float hitZ)
 	{
 		if(this == SMMBlocks.customSpawner)
-			FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, 1, world, x, y, z);
+			FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, GuiIds.CUSTOM_SPAWNER, world, x, y, z);
 		else if(this == SMMBlocks.bossSpawner)
-			FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, 2, world, x, y, z);
+			FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, GuiIds.BOSS_SPAWNER, world, x, y, z);
 		return true;
 	}
 }

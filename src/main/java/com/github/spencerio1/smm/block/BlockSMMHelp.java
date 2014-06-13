@@ -8,6 +8,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
+import com.github.spencerio1.smm.lib.GuiIds;
 import com.github.spencerio1.smm.lib.Reference;
 
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
@@ -45,7 +46,7 @@ public class BlockSMMHelp extends Block
 	@Override
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer entityPlayer, int side, float hitX, float hitY, float hitZ)
 	{
-		FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, 0, world, x, y, z);
+		FMLNetworkHandler.openGui(entityPlayer, SpenceriosModMod.instance, GuiIds.HELP_BLOCK, world, x, y, z);
 		return true;
 	}
 }
