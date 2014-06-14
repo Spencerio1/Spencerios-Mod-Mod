@@ -14,7 +14,7 @@ import org.lwjgl.opengl.GL11;
 import com.github.spencerio1.smm.SpenceriosModMod;
 import com.github.spencerio1.smm.common.gui.SMMCustomSpawnerContainer;
 import com.github.spencerio1.smm.helper.LocalizationHelper;
-import com.github.spencerio1.smm.lib.Reference;
+import com.github.spencerio1.smm.lib.ModInfo;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -32,7 +32,7 @@ public class SMMCustomSpawnerGUI extends GuiContainer
 		ySize = 256;
 	}
 
-	private static final ResourceLocation background = new ResourceLocation(Reference.MODID, "textures/gui/background_customSpawner.png");
+	private static final ResourceLocation background = new ResourceLocation(ModInfo.MODID, "textures/gui/background_customSpawner.png");
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int x, int y)

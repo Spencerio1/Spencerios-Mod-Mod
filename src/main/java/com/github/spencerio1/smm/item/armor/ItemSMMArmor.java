@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
 import com.github.spencerio1.smm.helper.HashMapHelper;
-import com.github.spencerio1.smm.lib.Reference;
+import com.github.spencerio1.smm.lib.ModInfo;
 
 /**
  * The file for all of the Armor in Spencerio's Mod Mod
@@ -29,9 +29,9 @@ public class ItemSMMArmor extends ItemArmor
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
 		if(stack.toString().contains("leggings") || stack.toString().contains("Leggings")) {
-			return Reference.MODID + ":textures/models/armor/" + RenderBiped.bipedArmorFilenamePrefix[index] + "_layer_2.png";
+			return ModInfo.MODID + ":textures/models/armor/" + RenderBiped.bipedArmorFilenamePrefix[index] + "_layer_2.png";
 		} else {
-			return Reference.MODID + ":textures/models/armor/" + RenderBiped.bipedArmorFilenamePrefix[index] + "_layer_1.png";
+			return ModInfo.MODID + ":textures/models/armor/" + RenderBiped.bipedArmorFilenamePrefix[index] + "_layer_1.png";
 		}
 	}
 

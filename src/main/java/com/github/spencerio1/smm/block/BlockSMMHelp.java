@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 
 import com.github.spencerio1.smm.SpenceriosModMod;
 import com.github.spencerio1.smm.lib.GuiIds;
-import com.github.spencerio1.smm.lib.Reference;
+import com.github.spencerio1.smm.lib.ModInfo;
 
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
@@ -29,8 +29,8 @@ public class BlockSMMHelp extends Block
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister register)
 	{
-		blockIcon = register.registerIcon(Reference.MODID + ":" + "helpBlock");
-		topIcon = register.registerIcon(Reference.MODID + ":" + "helpBlockTop");
+		blockIcon = register.registerIcon(ModInfo.MODID + ":" + "helpBlock");
+		topIcon = register.registerIcon(ModInfo.MODID + ":" + "helpBlockTop");
 	}
 	
 	@Override

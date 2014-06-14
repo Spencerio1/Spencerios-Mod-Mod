@@ -6,7 +6,7 @@ package com.github.spencerio1.smm.lib;
  * @author Parker8283
  * @see cpw.mods.fml.common.Mod
  */
-public abstract class Reference {
+public abstract class ModInfo {
 	public static final String MODID = "spencerio_smm";
 	public static final String MOD_NAME = "Spencerio's Mod Mod";
 	public static final String SMM_VERSION = "@MOD_VERSION@";

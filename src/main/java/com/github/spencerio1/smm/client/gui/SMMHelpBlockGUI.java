@@ -12,7 +12,7 @@ import org.lwjgl.opengl.GL11;
 
 import com.github.spencerio1.smm.common.gui.SMMHelpBlockContainer;
 import com.github.spencerio1.smm.helper.LocalizationHelper;
-import com.github.spencerio1.smm.lib.Reference;
+import com.github.spencerio1.smm.lib.ModInfo;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -28,7 +28,7 @@ public class SMMHelpBlockGUI extends GuiContainer
 		ySize = 221;
 	}
 
-	private static final ResourceLocation background = new ResourceLocation(Reference.MODID, "textures/gui/background_helpBlock.png");
+	private static final ResourceLocation background = new ResourceLocation(ModInfo.MODID, "textures/gui/background_helpBlock.png");
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int z, int y)

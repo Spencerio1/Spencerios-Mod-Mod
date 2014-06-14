@@ -14,7 +14,7 @@ import org.lwjgl.opengl.GL11;
 import com.github.spencerio1.smm.SpenceriosModMod;
 import com.github.spencerio1.smm.common.gui.SMMBossSpawnerContainer;
 import com.github.spencerio1.smm.helper.LocalizationHelper;
-import com.github.spencerio1.smm.lib.Reference;
+import com.github.spencerio1.smm.lib.ModInfo;
 
 public class SMMBossSpawnerGUI extends GuiContainer
 {
@@ -28,7 +28,7 @@ public class SMMBossSpawnerGUI extends GuiContainer
 		ySize = 36;
 	}
 
-	private static final ResourceLocation background = new ResourceLocation(Reference.MODID, "textures/gui/background_bossSpawner.png");
+	private static final ResourceLocation background = new ResourceLocation(ModInfo.MODID, "textures/gui/background_bossSpawner.png");
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int x, int y)

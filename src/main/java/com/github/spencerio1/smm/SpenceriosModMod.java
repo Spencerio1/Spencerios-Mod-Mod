@@ -18,7 +18,7 @@ import com.github.spencerio1.smm.init.SMMBlocks;
 import com.github.spencerio1.smm.init.SMMItems;
 import com.github.spencerio1.smm.init.SMMTools;
 import com.github.spencerio1.smm.lib.ConfigFields;
-import com.github.spencerio1.smm.lib.Reference;
+import com.github.spencerio1.smm.lib.ModInfo;
 import com.github.spencerio1.smm.manager.SMMAchievementManager;
 import com.github.spencerio1.smm.manager.SMMConfigManager;
 import com.github.spencerio1.smm.manager.SMMCraftingManager;
@@ -42,10 +42,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @author Spencerio
  * @author Parker8283
  */
-@Mod(modid = Reference.MODID, name = Reference.MOD_NAME, version = Reference.SMM_VERSION, dependencies = Reference.DEPENDENCIES)
+@Mod(modid = ModInfo.MODID, name = ModInfo.MOD_NAME, version = ModInfo.SMM_VERSION, dependencies = ModInfo.DEPENDENCIES)
 public class SpenceriosModMod
 {
-	@Instance(Reference.MODID)
+	@Instance(ModInfo.MODID)
 	public static SpenceriosModMod instance;
 	
 	@SidedProxy(clientSide = "com.github.spencerio1.smm.proxy.ClientProxy", serverSide = "com.github.spencerio1.smm.proxy.ServerProxy")
