@@ -17,7 +17,17 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "0.9.5.4-Beta"
+// Define properties file
+ext.configFile = file "build.properties"
+
+configFile.withReader {
+	// Load config.  It shall from now be referenced as simply config or project.config
+	def prop = new Properties()
+	prop.load(it)
+	project.ext.config = new ConfigSlurper().parse prop
+}
+
+version = config.jar_version
 group= "com.github.spencerio1"
 archivesBaseName = "SpenceriosModMod"
 
@@ -26,7 +36,7 @@ minecraft {
     assetDir = "../run/assets"
     
     replaceIn "lib/ModInfo.java"
-    replace "@MOD_VERSION@", project.version
+    replace "@MOD_VERSION@", config.ingame_version
 }
 processResources
 {
@@ -39,7 +49,7 @@ processResources
         include 'mcmod.info'
                 
         // replace version and mcversion
-        expand 'version':project.version, 'mcversion':project.minecraft.version
+        expand 'version':config.ingame_version, 'mcversion':project.minecraft.version
     }
         
     // copy everything else, thats not the mcmod.info
